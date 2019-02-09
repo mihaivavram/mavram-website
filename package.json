@@ -1,0 +1,43 @@
+{
+  "name": "mavram-website",
+  "version": "1.0.0",
+  "description": "A repository for my website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihaivavram/mavram-website.git"
+  },
+  "keywords": [
+    "personal",
+    "website"
+  ],
+  "author": "Mihai Avram",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mihaivavram/mavram-website/issues"
+  },
+  "homepage": "https://github.com/mihaivavram/mavram-website#readme",
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-scripts": "^2.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
