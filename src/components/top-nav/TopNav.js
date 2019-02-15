@@ -2,11 +2,8 @@ import React, { Component } from 'react';
 import './TopNav.css';
 
 class TopNav extends Component {
-  constructor() {
-    super()
-    this.state = {
-
-    }
+  constructor(props) {
+    super(props)
 
     // Binding all methods to 'this'
     this.aboutPageClick = this.aboutPageClick.bind(this)
@@ -18,27 +15,27 @@ class TopNav extends Component {
   }
 
   aboutPageClick() {
-
+    this.props.stateHandler("aboutPage");
   }
 
   cvPageClick() {
-
+    this.props.stateHandler("cvPage");
   }
 
   publicationsPageClick() {
-
+    this.props.stateHandler("publicationsPage");
   }
 
   projectsPageClick() {
-
+    this.props.stateHandler("projectsPage");
   }
 
   timeLapsePageClick() {
-
+    this.props.stateHandler("timeLapsePage");
   }
 
   connectPageClick() {
-
+    this.props.stateHandler("connectPage");
   }
 
   render() {
