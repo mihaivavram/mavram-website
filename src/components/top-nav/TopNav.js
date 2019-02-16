@@ -53,32 +53,32 @@ class TopNav extends Component {
           <div id='navButtons'>
             <button id="aboutPage"
                     className="myButtons"
-                    onClick={ this.aboutPageClick() }
+                    onClick={ this.aboutPageClick }
                     type="button">About
             </button>
             <button id="cvPage"
                     className="myButtons"
-                    onClick={ this.cvPageClick() }
+                    onClick={ this.cvPageClick }
                     type="button">CV
             </button>
             <button id="publicationsPage"
                     className="myButtons"
-                    onClick={ this.publicationsPageClick() }
+                    onClick={ this.publicationsPageClick }
                     type="button">Publications
             </button>
             <button id="projectsPage"
                     className="myButtons"
-                    onClick={ this.projectsPageClick() }
+                    onClick={ this.projectsPageClick }
                     type="button">Projects
             </button>
             <button id="timeLapsePage"
                     className="myButtons"
-                    onClick={ this.timeLapsePageClick() }
+                    onClick={ this.timeLapsePageClick }
                     type="button">Time Lapse
             </button>
             <button id="connectPage"
                     className="myButtons"
-                    onClick={ this.connectPageClick() }
+                    onClick={ this.connectPageClick }
                     type="button">Connect
             </button>
           </div>

@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        &copy Mihai Avram - 2019
+         Mihai Avram - 2019
       </footer>
     );
   }
