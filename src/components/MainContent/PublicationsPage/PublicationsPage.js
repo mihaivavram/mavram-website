@@ -60,7 +60,7 @@ class PublicationsPage extends Component {
         Mihai Avram, Sorin Matei
         <i>Journal - Journal of Purdue Undergraduate Research 2013</i>
         <a target="_blank"
-           href="pdf/CivilianDeathsAndTheIraqWar.pdf">
+           href="https://docs.lib.purdue.edu/jpur/vol3/iss1/2/">
            (Download as PDF)</a>
     </div>
     )

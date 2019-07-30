@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import ResumeFile from '../../../static-contents/pdfs/MihaiAvram_CV.pdf'
+import ResumeImage1 from '../../../static-contents/images/ResumeImage1.png'
+import ResumeImage2 from '../../../static-contents/images/ResumeImage2.png'
+import ResumeImage3 from '../../../static-contents/images/ResumeImage3.png'
+import ResumeImage4 from '../../../static-contents/images/ResumeImage4.png'
 
 class CvPage extends Component {
   constructor(props) {
@@ -8,11 +13,18 @@ class CvPage extends Component {
   render() {
     return(
       <div className='centerContents' id='cv'>
-          <b>Resume:</b>
-          <a href="pdf/MihaiAvram_CV.pdf">Download As PDF</a>
-          <img className='myResume' src='images/ResumeImage1.png'/>
-          <img className='myResume' src='images/ResumeImage2.png'/>
-          <img className='myResume' src='images/ResumeImage3.png'/>
+          <b>Resume:</b> <a href={ResumeFile}
+            target='_blank'>
+            Download As PDF
+          </a>
+          <img className='myResume'
+               src={ResumeImage1}/>
+          <img className='myResume'
+               src={ResumeImage2}/>
+          <img className='myResume'
+               src={ResumeImage3}/>
+         <img className='myResume'
+               src={ResumeImage4}/>
       </div>
     )
 

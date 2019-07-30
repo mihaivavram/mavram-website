@@ -1,4 +1,15 @@
 import React, { Component } from 'react';
+import FakeyLogo from '../../../static-contents/images/FakeyLogo.png';
+import ScheduleBuddyLogo from '../../../static-contents/images/ScheduleBuddyInterimLogo.jpg';
+import AdvLearningLogo from '../../../static-contents/images/AdversarialLearningSocialNetworks.jpg';
+import FourcasterLogo from '../../../static-contents/images/4CasterLogo.png';
+import HoaxyLogo from '../../../static-contents/images/HoaxySocialNetwork.png';
+import GraphCountingLogo from '../../../static-contents/images/GraphCounting.png';
+import KnowledgeLinkerLogo from '../../../static-contents/images/KnowledgeLinker.png';
+import EchoGlobalLogo from '../../../static-contents/images/EchoGlobalLogistics.png';
+import FHLBCLogo from '../../../static-contents/images/FHLBCDevOps.png';
+import RadiativeTransportLogo from '../../../static-contents/images/RadiativeTransport.jpeg';
+import CivIraqWarLogo from '../../../static-contents/images/IraqWar.jpg';
 
 class ProjectsPage extends Component {
   constructor(props) {
@@ -9,44 +20,38 @@ class ProjectsPage extends Component {
     return(
       <div className='centerContents' id='projects'>
         <b>Current Projects</b>
-        <div className='projectTemplate'>
+        <div class='projectTemplate'>
           <div>
-            <img src="images/AdversarialLearningSocialNetworks.jpg"/>
+            <img src={ScheduleBuddyLogo}/>
           </div>
           <div>
             <div>
-            <b>Adversarial Learning on Social Networks</b>
+            <b>Schedule Buddy</b>
             </div>
             <div>
-              In this project we are aiming to find the optimal adversarial
-              sequence which can yield positive or negative outcomes
-              in a social network.  For instance, if a person has very
-              few friends and wants to be very influential in a short
-              amount of time, what are the most optimal moves that
-              the given person should make in order to achieve the
-              maximum amount of influence. So far, we have created a
-              Python framework that can perform adversarial perturbations
-              using various user-defined metrics such as configured graphs,
-              node positions, budget functions and costs, and evaluation metrics.
-              Note: Code cannot yet be made available as the work is propritary
-              and funded by
-              <a about="_blank"
-                 href="https://www.arl.army.mil/www/default.cfm?page=3050">IoBT</a>.
+              Current calendars and scheduling systems are static, and often,
+              superimposed by other people. Schedule Buddy is a scheduling
+              system that serves to be a fiduciary for taking ownership of
+              our own lives. In progressing towards higher well being and
+              goal-driven behavior change in order to improve our lives,
+              and our planet, one scheduled task at a time.
+              We use AI as well as goal-driven tasks and scheduling
+              paradigms backed by science to provide actionable insights
+              that can make users aware of ways to improve their well being
+              and achieve their goals.
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div class='projectTemplate'>
           <div>
-            <img src="images/FakeyLogo.png"/>
+            <img src={FakeyLogo}/>
           </div>
           <div>
             <div>
             <b>Fakey - The News Feed Literacy Game
-              (<a target="_blank" href="https:/fakey.iuni.iu.edu">Web</a>,
-              <a target="_blank"
+              (<a target="_blank" href="https:/fakey.iuni.iu.edu">Web</a>, <a target="_blank"
                  href="https://play.google.com/store/apps/details?id=com.cnets.fakey">Android
-              </a>,
-              <a target="_blank"
+              </a>, <a target="_blank"
                  href="https://itunes.apple.com/us/app/fakey-news/id1386410642?mt=8">iOS</a>)
             </b>
             </div>
@@ -61,57 +66,56 @@ class ProjectsPage extends Component {
               is fact-checked. We created this game for media literacy
               as well as for research in uncovering patterns in
               the way people interact with social media news feeds.
-              Currently we are brainstorming extra features we should add
-              to Fakey.
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div class='projectTemplate'>
           <div>
-            <img src="images/OpenUptownLogo.png"/>
+            <img src={AdvLearningLogo}/>
           </div>
           <div>
             <div>
-            <b>Code For America: YGL Website Project</b>
+            <b>Adversarial Learning on Social Networks
+              (<a target="_blank"
+                 href="https://github.com/uiuc-ischool-scanr/social-network-adversarial-perturbations">Code</a>)
+            </b>
             </div>
             <div>
-              Collaborating with the Chicago Code for America
-              <a about="_blank"
-                 href="https://brigade.codeforamerica.org/brigades/Open-Uptown/">team</a>
-              to create a
-              <a about="_blank"
-                 href="https://github.com/Open-Uptown/chicago-ygl-website">website</a>
-              for the nonprofit Young Government Leaders
-              (YGL) using WordPress, PHP, and Docker in order
-              to empower YGL and provide a sustainable solution for YGL’s
-              needs and capabilities.
+              In this project we are aiming to find the optimal adversarial
+              sequence which can yield positive or negative outcomes
+              in a social network.  For instance, if a person has very
+              few friends and wants to be very influential in a short
+              amount of time, what are the most optimal moves that
+              the given person should make in order to achieve the
+              maximum amount of influence.
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div class='projectTemplate'>
           <div>
-            <img src="images/DemocratizedKnowledgeStream.jpeg"/>
+            <img src={FourcasterLogo}/>
           </div>
           <div>
             <div>
-            <b>Crowdsourced and Democratized Knowledge Systems Stream</b>
+            <b>4Caster
+            (<a target="_blank"
+               href="https://4castersports.com/">Web</a>)
+            </b>
             </div>
             <div>
-              Imagine wanting to understand all the politicians that are
-              frontrunners in the upcoming elections, or comparing all
-              grocery store milk prices to find the cheapest milk in the area.
-              Now imagine all of this information being available all in one place
-              and contributed by the people via a Wiki model. This project
-              aims to create a space where any complex idea or related pieces of
-              information can be organized, discussed, and understood by the people
-              in a very quick and robust way.
+            4Caster is sports betting reimagined. We are developing a
+            groundbreaking sports betting platform untainted by commission
+            fees and bookmakers. Our allegiance lies with the users and
+            the users alone. Our ultimate goal is to build a robust global
+            prediction market.
             </div>
           </div>
         </div>
         <b>Past Projects</b>
-        <div className='projectTemplate'>
+        <br />
+        <div class='projectTemplate'>
           <div>
-            <img src="images/HoaxySocialNetwork.png"/>
+            <img src={HoaxyLogo}/>
           </div>
           <div>
             <div>
@@ -130,9 +134,9 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div class='projectTemplate'>
           <div>
-            <img src="images/GraphCounting.png"/>
+            <img src={GraphCountingLogo}/>
           </div>
           <div>
             <div>
@@ -144,8 +148,7 @@ class ProjectsPage extends Component {
               number of embeddings (sequences of DNA for instance,
               or number of single-child families).  In order to perform
               such a feat, we used an HPC Machine Learning framework
-              called
-              <a target="_blank"
+              called <a target="_blank"
                  href="https://dsc-spidal.github.io/harp/">Harp</a>,
               and implemented various algorithms that could scale to
               many nodes and edges using a high-performance computing
@@ -153,9 +156,9 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div class='projectTemplate'>
           <div>
-            <img src="images/KnowledgeLinker.png"/>
+            <img src={KnowledgeLinkerLogo}/>
           </div>
           <div>
             <div>
@@ -171,9 +174,9 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div class='projectTemplate'>
           <div>
-            <img id='echoGlobalLogistics' src="images/EchoGlobalLogistics.png"/>
+            <img id='echoGlobalLogistics' src={EchoGlobalLogo}/>
           </div>
           <div>
             <div>
@@ -189,9 +192,9 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div class='projectTemplate'>
           <div>
-            <img src="images/FHLBCDevOps.png"/>
+            <img src={FHLBCLogo}/>
           </div>
           <div>
             <div>
@@ -210,9 +213,9 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div class='projectTemplate'>
           <div>
-            <img src="images/RadiativeTransport.jpeg"/>
+            <img src={RadiativeTransportLogo}/>
           </div>
           <div>
             <div>
@@ -228,16 +231,15 @@ class ProjectsPage extends Component {
               tasked with creating an applet that can visualize and graph
               the intensity of light based on the constants of absorption
               and scattering as light protrudes random media. The applet
-              was created in Java and can be found
-              <a target="_blank"
+              was created in Java and can be found <a target="_blank"
                  href="https://sites.google.com/site/ezrte13/">
                  here</a>.
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div class='projectTemplate'>
           <div>
-            <img src="images/IraqWar.jpg"/>
+            <img src={CivIraqWarLogo}/>
           </div>
           <div>
             <div>
