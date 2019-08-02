@@ -11,7 +11,8 @@ class AboutPage extends Component {
       <b>Hello,</b>
       <br />
       <p>
-          I am a second-year Ph.D. student
+          I am a full stack-developer, freelancer, and social entrepreneur.
+          I am also a second-year Ph.D. student
           (currently on a one year break)
           studying Information Science at the University of Illinois
           at Urbana-Champaign under Dr. <a target="_blank"
@@ -21,7 +22,7 @@ class AboutPage extends Component {
           AI, blockchain, etc.). I am the creator of <a target="_blank"
              href="https://fakey.iuni.iu.edu/">Fakey</a> (a news literacy game)
           and am currently focusing on being the CTO of <a target="_blank"
-             href="https://fourcaster-stage.appspot.com/">4Caster</a>,
+             href="https://4castersports.com/">4Caster</a>,
           which is a decentralized sports betting and prediction market
           startup using blockchain technologies. I am also the leader and
           innovator behind Schedule Buddy, which is an AI-powered

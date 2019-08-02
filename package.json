@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/mihaivavram/mavram-website#readme",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-scripts": "^2.1.3"
