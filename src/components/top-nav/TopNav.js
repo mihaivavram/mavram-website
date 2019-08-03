@@ -61,15 +61,15 @@ class TopNav extends Component {
                     onClick={ this.cvPageClick }
                     type="button">CV
             </button>
-            <button id="publicationsPage"
-                    className="myButtons"
-                    onClick={ this.publicationsPageClick }
-                    type="button">Publications
-            </button>
             <button id="projectsPage"
                     className="myButtons"
                     onClick={ this.projectsPageClick }
                     type="button">Projects
+            </button>
+            <button id="publicationsPage"
+                    className="myButtons"
+                    onClick={ this.publicationsPageClick }
+                    type="button">Publications
             </button>
             <button id="timeLapsePage"
                     className="myButtons"
