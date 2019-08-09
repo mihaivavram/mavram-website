@@ -97,13 +97,13 @@ class ProjectsPage extends Component {
           </div>
           <div>
             <div>
-            <b>4Caster
+            <b>4castersports
             (<a target="_blank"
                href="https://4castersports.com/">Web</a>)
             </b>
             </div>
             <div>
-            4Caster is sports betting reimagined. We are developing a
+            4castersports is sports betting reimagined. We are developing a
             groundbreaking sports betting platform untainted by commission
             fees and bookmakers. Our allegiance lies with the users and
             the users alone. Our ultimate goal is to build a robust global

@@ -25,20 +25,6 @@ function MainContent(props) {
   else if (props.mainContentState === 'connectPage') {
     return <ConnectPage />;
   }
-
-  // aboutPage - cvPage - publicationsPage - projectsPage
-  // timeLapsePage - connectPage
-
-  // render() {
-  //   return(
-  //
-  //   );
-  // }
-
-
-
-
-
 }
 
 export default MainContent;

@@ -13,9 +13,8 @@ class TimeLapsePage extends Component {
             <b>Accomplished:</b>
             <br></br>
             Started working at <a target="_blank"
-               href="https://4castersports.com/">4Caster</a> as a back-end
-            developer and now
-            as a CTO.  4Caster is a decentralized sports betting and
+               href="https://4castersports.com/">4castersports</a> as a full-stack
+            developer and freelancer.  4castersports is a decentralized sports betting and
             prediction market startup using blockchain technologiesCompleted a
             Python framework to enable all kinds of experimental
             simulations in networks using any desired graphs, node positions,

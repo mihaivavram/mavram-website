@@ -21,8 +21,8 @@ class AboutPage extends Component {
           using technology (web development, full-stack development,
           AI, blockchain, etc.). I am the creator of <a target="_blank"
              href="https://fakey.iuni.iu.edu/">Fakey</a> (a news literacy game)
-          and am currently focusing on being the CTO of <a target="_blank"
-             href="https://4castersports.com/">4Caster</a>,
+          and am currently focusing on being a dev lead and freelancer at <a target="_blank"
+             href="https://4castersports.com/">4castersports</a>,
           which is a decentralized sports betting and prediction market
           startup using blockchain technologies. I am also the leader and
           innovator behind Schedule Buddy, which is an AI-powered

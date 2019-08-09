@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './TopNav.css';
+import MihaiHeadshot from '../../static-contents/images/MihaiMidClassy.png'
 
 class TopNav extends Component {
   constructor(props) {
@@ -43,10 +44,10 @@ class TopNav extends Component {
         <div>
           <div id='headerContents'>
             <div id='myHeadshot'>
-              <img src={ require('./MihaiMidClassy.JPG') }
+              <img src={ MihaiHeadshot }
                    alt='Mihai Avram'
                    width="150"
-                   height="200"/>
+                   height="160"/>
               <div id='headerName'><b>Mihai Avram</b></div>
             </div>
           </div>

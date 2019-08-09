@@ -28,7 +28,6 @@
 
 #myHeadshot img
 {
-  border-radius: 50%;
   border: 5px solid gray;
 }
 
@@ -61,7 +60,6 @@
 
 #aboutPage
 {
-    /* color: #505739; */
     text-align: middle;
     background-color: rgb(255,248,220);
 }
@@ -169,7 +167,7 @@ html
 {
   height: auto;
   width: auto;
-  border: 5px solid blue;
+  border: 5px solid #ededed;
   margin: 0;
 }
 
@@ -178,7 +176,7 @@ body
     height: auto;
     width: auto;
     float: center;
-    border: 10px solid orange;
+    border: 10px solid white;
     font-family: Arial, Helvetica, sans-serif;
     -webkit-background-size: cover;
     -moz-background-size: cover;

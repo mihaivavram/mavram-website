@@ -17,8 +17,8 @@
 
 #myHeadshot img
 {
-  border-radius: 50%;
-  border: 5px solid gray;
+  border-radius: 5%;
+  border: 2px solid gray;
 }
 
 @media screen and (max-width: 1250px) {
