@@ -22,10 +22,10 @@ class AboutPage extends Component {
           AI, blockchain, etc.). I am the creator of <a target="_blank"
              href="https://fakey.iuni.iu.edu/">Fakey</a> (a news literacy game)
           and am currently focusing on being a dev lead and freelancer at <a target="_blank"
-             href="https://4castersports.com/">4castersports</a>,
+             href="https://4castersports.com/">4Castersports</a>,
           which is a decentralized sports betting and prediction market
           startup using blockchain technologies. I am also the leader and
-          innovator behind Schedule Buddy, which is an AI-powered
+          innovator behind Welsome, which is an AI-powered
           scheduling system that can empower people to live happier,
           healthier, and more productive lives while also in-tune
           with improving the world through micro-actions.
@@ -37,7 +37,7 @@ class AboutPage extends Component {
       <b>What am I up to nowadays?</b>
       <ol>
         <li>Working as a full-stack freelancer</li>
-        <li>Working on expanding and launching Schedule Buddy,
+        <li>Working on expanding and launching Welsome,
         a well being and social impact scheduling system</li>
         <li>Supporting and expanding <a target="_blank"
              href="https://fakey.iuni.iu.edu/">Fakey</a>

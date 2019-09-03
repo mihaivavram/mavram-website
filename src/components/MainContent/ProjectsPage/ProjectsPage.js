@@ -26,11 +26,11 @@ class ProjectsPage extends Component {
           </div>
           <div>
             <div>
-            <b>Schedule Buddy</b>
+            <b>Welsome</b>
             </div>
             <div>
               Current calendars and scheduling systems are static, and often,
-              superimposed by other people. Schedule Buddy is a scheduling
+              superimposed by other people. Welsome is a scheduling
               system that serves to be a fiduciary for taking ownership of
               our own lives. In progressing towards higher well being and
               goal-driven behavior change in order to improve our lives,
@@ -97,13 +97,13 @@ class ProjectsPage extends Component {
           </div>
           <div>
             <div>
-            <b>4castersports
+            <b>4Castersports
             (<a target="_blank"
                href="https://4castersports.com/">Web</a>)
             </b>
             </div>
             <div>
-            4castersports is sports betting reimagined. We are developing a
+            4Castersports is sports betting reimagined. We are developing a
             groundbreaking sports betting platform untainted by commission
             fees and bookmakers. Our allegiance lies with the users and
             the users alone. Our ultimate goal is to build a robust global

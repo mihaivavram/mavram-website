@@ -13,14 +13,14 @@ class TimeLapsePage extends Component {
             <b>Accomplished:</b>
             <br></br>
             Started working at <a target="_blank"
-               href="https://4castersports.com/">4castersports</a> as a full-stack
-            developer and freelancer.  4castersports is a decentralized sports betting and
+               href="https://4castersports.com/">4Castersports</a> as a full-stack
+            developer and freelancer.  4Castersports is a decentralized sports betting and
             prediction market startup using blockchain technologiesCompleted a
             Python framework to enable all kinds of experimental
             simulations in networks using any desired graphs, node positions,
             budgets, functions, and evaluation metrics/goals. Presented the
             project at a local iSchool Corporate Showcase Conference at
-            Universiy of Illinois. Started a project called Schedule Buddy,
+            Universiy of Illinois. Started a project called Welsome,
             which is a well being and
             social impact scheduling system. Our group got an A+ on the project
             and we are looking to launch the project as part of a social
