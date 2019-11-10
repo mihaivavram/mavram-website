@@ -146,6 +146,7 @@
   float: middle;
   font-size: 20px;
   height: auto;
+  min-height: 600px;
   display: block;
   margin-top: 1em;
   margin-left: auto;
