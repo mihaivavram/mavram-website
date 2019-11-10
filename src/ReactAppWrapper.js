@@ -58,9 +58,11 @@ class ReactAppWrapper extends Component {
 
   render() {
     return (
-      <div>
-        <TopNav stateHandler={ this.stateHandler }/>
-        { this.state.mainContentComponent }
+      <div id="topmost-container">
+        <div id="main-content">
+          <TopNav stateHandler={ this.stateHandler }/>
+          { this.state.mainContentComponent }
+        </div>
         <Footer />
       </div>
     );
