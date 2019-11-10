@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import AboutPage from './AboutPage/AboutPage.js'
-import CvPage from './CvPage/CvPage.js'
-import PublicationsPage from './PublicationsPage/PublicationsPage.js'
-import ProjectsPage from './ProjectsPage/ProjectsPage.js'
-import TimeLapsePage from './TimeLapsePage/TimeLapsePage.js'
-import ConnectPage from './ConnectPage/ConnectPage.js'
+import AboutPage from './AboutPage/AboutPage.jsx'
+import CvPage from './CvPage/CvPage.jsx'
+import PublicationsPage from './PublicationsPage/PublicationsPage.jsx'
+import ProjectsPage from './ProjectsPage/ProjectsPage.jsx'
+import TimeLapsePage from './TimeLapsePage/TimeLapsePage.jsx'
+import ConnectPage from './ConnectPage/ConnectPage.jsx'
 
 function MainContent(props) {
   if (props.mainContentState === 'aboutPage') {

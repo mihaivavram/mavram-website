@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import TopNav from './components/top-nav/TopNav.js'
-import MainContent from './components/MainContent/MainContent.js'
-import AboutPage from './components/MainContent/AboutPage/AboutPage.js'
-import CvPage from './components/MainContent/CvPage/CvPage.js'
-import PublicationsPage from './components/MainContent/PublicationsPage/PublicationsPage.js'
-import ProjectsPage from './components/MainContent/ProjectsPage/ProjectsPage.js'
-import TimeLapsePage from './components/MainContent/TimeLapsePage/TimeLapsePage.js'
-import ConnectPage from './components/MainContent/ConnectPage/ConnectPage.js'
-import Footer from './components/Footer.js'
+import TopNav from './components/top-nav/TopNav.jsx'
+import MainContent from './components/MainContent/MainContent.jsx'
+import AboutPage from './components/MainContent/AboutPage/AboutPage.jsx'
+import CvPage from './components/MainContent/CvPage/CvPage.jsx'
+import PublicationsPage from './components/MainContent/PublicationsPage/PublicationsPage.jsx'
+import ProjectsPage from './components/MainContent/ProjectsPage/ProjectsPage.jsx'
+import TimeLapsePage from './components/MainContent/TimeLapsePage/TimeLapsePage.jsx'
+import ConnectPage from './components/MainContent/ConnectPage/ConnectPage.jsx'
+import Footer from './components/Footer.jsx'
 import './ReactAppWrapper.css';
 
 class ReactAppWrapper extends Component {
