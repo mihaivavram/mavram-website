@@ -129,6 +129,14 @@
   left: 0;
 }
 
+.selectedNavButton {
+  border-bottom: 3px solid black;
+}
+
+.nonSelectedNavButton {
+  border: none;
+}
+
 @media screen and (max-height: 300px) {
 	ul {
 		margin-top: 40px;

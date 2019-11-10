@@ -8,9 +8,9 @@ class PublicationsPage extends Component {
 
   render() {
     return(
-      <div class='centerContents' id='publications'>
+      <div className='centerContents' id='publications'>
           <b>Publications:</b>
-          <div class="publication">
+          <div className="publication">
             <b>
               <i>Adversarial perturbations to manipulate the
                  perception of power and influence in networks
@@ -28,7 +28,7 @@ class PublicationsPage extends Component {
                href={AsonamPaper}>
                (Download as PDF)</a>
           </div>
-          <div class="publication">
+          <div className="publication">
             <b>
               <i>HarpLDA+: Optimizing Latent Dirichlet Allocation for
                  Parallel Efficiency
@@ -44,7 +44,7 @@ class PublicationsPage extends Component {
                href="http://dsc.soic.indiana.edu/publications/HarpLDA%2B%20Optimizing%20Latent%20Dirichlet%20Allocation%20for%20Parallel%20Efficiency.pdf">
                (Download as PDF)</a>
           </div>
-          <div class="publication">
+          <div className="publication">
             <b>
               <i>
                 Finding and counting tree-like subgraphs using MapReduce
@@ -61,7 +61,7 @@ class PublicationsPage extends Component {
                href="http://dsc.soic.indiana.edu/publications/tmscssi_2017_harp_sahad.pdf">
                (Download as PDF)</a>
           </div>
-          <div class="publication">
+          <div className="publication">
             <b>
               <i>RelSifter: Scoring Triples from Type-like Relations
               </i>
@@ -76,7 +76,7 @@ class PublicationsPage extends Component {
                href="http://www.uni-weimar.de/medien/webis/events/wsdm-cup-17/wsdmcup17-papers-final/wsdmcup17-triple-scoring/shiralkar17-notebook.pdf">
                (Download as PDF)</a>
           </div>
-          <div class="publication">
+          <div className="publication">
             <b>
               <i>A Fast Algorithm to the Radiative Transport Equation and
                  Implementation of Theory Into an Applet
@@ -91,7 +91,7 @@ class PublicationsPage extends Component {
                href="http://www.mmachida.com/ezrte/RTEReport.pdf">
                (Download as PDF)</a>
           </div>
-          <div class="publication">
+          <div className="publication">
             <b>
               <i>Civilian Deaths and the Iraq War
               </i>

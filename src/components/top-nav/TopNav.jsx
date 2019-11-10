@@ -52,40 +52,58 @@ class TopNav extends Component {
             </div>
           </div>
           {/* Nabar design inspired by: https://codepen.io/jstn/pen/zuDst */}
-          <div class="navButtons">
+          <div className="navButtons">
             <ul>
               <li>
-                <a href="#"
+                <a className={ (this.props.currentState === 'aboutPage'
+                                ? 'selectedNavButton'
+                                : 'nonSelectedNavButton') }
+                   href="#"
                    onClick={ this.aboutPageClick }>
                    About
                 </a>
               </li>
               <li>
-                <a href="#"
+              <a className={ (this.props.currentState === 'cvPage'
+                              ? 'selectedNavButton'
+                              : 'nonSelectedNavButton') }
+                   href="#"
                    onClick={ this.cvPageClick }>
                    CV
                 </a>
               </li>
               <li>
-                <a href="#"
+              <a className={ (this.props.currentState === 'projectsPage'
+                              ? 'selectedNavButton'
+                              : 'nonSelectedNavButton') }
+                   href="#"
                    onClick={ this.projectsPageClick }>
                    Projects
                 </a>
               </li>
               <li>
-                <a href="#"
+              <a className={ (this.props.currentState === 'publicationsPage'
+                              ? 'selectedNavButton'
+                              : 'nonSelectedNavButton') }
+                   href="#"
                    onClick={ this.publicationsPageClick }>
                    Publications
                 </a>
               </li>
               <li>
-                <a href="#"
+              <a className={ (this.props.currentState === 'timeLapsePage'
+                              ? 'selectedNavButton'
+                              : 'nonSelectedNavButton') }
+                   href="#"
                    onClick={ this.timeLapsePageClick }>
                    TimeLapse
                 </a>
               </li>
               <li>
-                <a href="#"
+              <a className={ (this.props.currentState === 'connectPage'
+                              ? 'selectedNavButton'
+                              : 'nonSelectedNavButton') }
+                   href="#"
                    onClick={ this.connectPageClick }>
                    Connect
                 </a>

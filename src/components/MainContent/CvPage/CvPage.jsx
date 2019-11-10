@@ -13,7 +13,7 @@ class CvPage extends Component {
             target='_blank'>
             Download As PDF
           </a>
-          <iframe class='myResume' src={ResumeFile} >
+          <iframe className='myResume' src={ResumeFile} >
           </iframe>
       </div>
     )

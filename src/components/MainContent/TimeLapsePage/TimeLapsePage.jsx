@@ -7,7 +7,7 @@ class TimeLapsePage extends Component {
 
   render() {
     return(
-      <div class='centerContents' id='timelapse'>
+      <div className='centerContents' id='timelapse'>
           <div>
             <h1>Spring 2019</h1>
             <b>Accomplished:</b>

@@ -28,7 +28,7 @@ class ReactAppWrapper extends Component {
   }
 
   stateHandler(currentState) {
-    let mainContent = this.discernMainContent(currentState);
+    const mainContent = this.discernMainContent(currentState);
     this.setState({
       mainContentState: currentState,
       mainContentComponent: mainContent
@@ -60,7 +60,8 @@ class ReactAppWrapper extends Component {
     return (
       <div id="topmost-container">
         <div id="main-content">
-          <TopNav stateHandler={ this.stateHandler }/>
+          <TopNav currentState={ this.state.mainContentState }
+                  stateHandler={ this.stateHandler }/>
           { this.state.mainContentComponent }
         </div>
         <Footer />
