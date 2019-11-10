@@ -115,6 +115,7 @@
 .navButtons a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
+  bottom: -2px;
   content: "";
   display: block;
   height: 3px;
