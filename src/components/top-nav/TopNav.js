@@ -51,39 +51,48 @@ class TopNav extends Component {
               <div id='headerName'><b>Mihai Avram</b></div>
             </div>
           </div>
-          <div id='navButtons'>
-            <button id="aboutPage"
-                    className="myButtons"
-                    onClick={ this.aboutPageClick }
-                    type="button">About
-            </button>
-            <button id="cvPage"
-                    className="myButtons"
-                    onClick={ this.cvPageClick }
-                    type="button">CV
-            </button>
-            <button id="projectsPage"
-                    className="myButtons"
-                    onClick={ this.projectsPageClick }
-                    type="button">Projects
-            </button>
-            <button id="publicationsPage"
-                    className="myButtons"
-                    onClick={ this.publicationsPageClick }
-                    type="button">Publications
-            </button>
-            <button id="timeLapsePage"
-                    className="myButtons"
-                    onClick={ this.timeLapsePageClick }
-                    type="button">Time Lapse
-            </button>
-            <button id="connectPage"
-                    className="myButtons"
-                    onClick={ this.connectPageClick }
-                    type="button">Connect
-            </button>
+          {/* Nabar design inspired by: https://codepen.io/jstn/pen/zuDst */}
+          <div class="navButtons">
+            <ul>
+              <li>
+                <a href="#"
+                   onClick={ this.aboutPageClick }>
+                   About
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                   onClick={ this.cvPageClick }>
+                   CV
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                   onClick={ this.projectsPageClick }>
+                   Projects
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                   onClick={ this.publicationsPageClick }>
+                   Publications
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                   onClick={ this.timeLapsePageClick }>
+                   TimeLapse
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                   onClick={ this.connectPageClick }>
+                   Connect
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
+      </div>
     );
   }
 }

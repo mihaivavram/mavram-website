@@ -40,7 +40,6 @@
     }
 }
 
-
 #headerText
 {
   float: middle;
@@ -66,15 +65,6 @@
   color: black;
 }
 
-@media screen and (max-width: 1250px) {
-    #headerContents {
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      display: block
-    }
-}
-
 #navButtons
 {
   margin-top: 5%;
@@ -88,111 +78,59 @@
     }
 }
 
-.selected {
-    color:#505739;
-}
-
-@media screen and (max-width: 1000px) {
-    .projectTemplate {
-        display: inline-block;
+@media screen and (max-width: 1250px) {
+    #headerContents {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      display: block
     }
 }
 
-.myButtons
-{
-  display: inline;
-  font-size: 22px;
+.navButtons {
+  display: block
 }
 
-header
-{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(192,192,192);
+.navButtons ul {
+  margin: 0 auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  text-align: center;
+}
+.navButtons li {
+  display: inline-block;
+  position: relative;
+  padding: 15px 0;
+}
+.navButtons a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.navButtons a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navButtons a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
-
-ul.connectContents
-{
-  list-style-type: none;
-}
-
-ul.connectContents li
-{
-  margin: 1%
-}
-
-nav div
-{
-    height: 50px;
-    list-style-type: none;
-    margin-top: 50px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
-    background-color: rgb(88, 88, 88);
-}
-
-nav button
-{
-    height: 100%;
-    width: 150px;
-    font-size: 15px;
-    display: block;
-    justify-content: center;
-}
-
-button
-{
-    -moz-box-shadow: 0px 1px 0px 0px #1c1b18;
-    -webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
-    box-shadow: 0px 1px 0px 0px #1c1b18;
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
-    background:-moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
-    background:-webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
-    background:-o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
-    background:-ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
-    background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
-    background-color:#eae0c2;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
-    border-radius:15px;
-    border:2px solid #333029;
-    padding: 10px;
-    margin: 25px;
-    cursor:pointer;
-    color: black;
-    font-family:Arial;
-    font-size:14px;
-    font-weight:bold;
-    padding:12px 16px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #ffffff;
-}
-
-a
-{
-    text-decoration: none;
-    color: red;
-    font-weight: bold
-}
-
-a:link
-{
-    text-decoration: underline;
-    color: black;
-}
-
-a:visited
-{
-    color: black;
-}
-
-a:hover
-{
-    color: rgb(255,248,220);
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
 }
