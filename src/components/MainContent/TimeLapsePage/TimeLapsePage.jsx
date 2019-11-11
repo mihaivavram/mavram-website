@@ -9,6 +9,48 @@ class TimeLapsePage extends Component {
     return(
       <div className='centerContents' id='timelapse'>
           <div>
+            <h1>Summer 2019</h1>
+            <b>Accomplished:</b>
+            <br></br>
+            I spent most of my summer working on Welsome which I hope to launch
+            very soon this coming fall. I also continued to learn the ropes
+            about freelancing and entrepreneurship and attended the <a
+               target="_blank"
+               href="https://medium.com/social-enterprise-alliance/hundreds-of-social-entrepreneurs-gathered-in-one-place-for-three-days-heres-what-happened-c5414241e2d1">
+               Social Enterprise Alliance 2019 Summit
+             </a> where learned a lot about social entrepreneurship and made
+            some wonderful connections. I have also been working
+            with various freelance clients. One
+            such client involved developing a medical device web service
+            written using Node.js, React, using Stripe for payments,
+            and Sendgrid for e-mail pipelines. Another client I worked with
+            involved doing some analysis and benchmarking on machine learning
+            frameworks which can detect automated accounts on social media.
+            I also helped another client by creating a smart network analysis
+            tool to analyze and simulate a semblance of a smart city.
+            <br></br>
+            <br></br>
+            <b>Lessons Learned:</b>
+            <br></br>
+            One of the most important investments we can make is in ourselves
+            through learning or thinking about how we can improve our lives.
+            In the past, I haven't made enough time to learn or think about
+            life optimizations; however, I have pledged to try to learn at least
+            two hours per day while taking the time to journal and think in the
+            mornings about important decisions or optimizations I should make
+            in my life. I have also subscribed to many learning and meta-learning
+            blogs such as <a target="_blank"
+                             href="https://seths.blog//">
+                             Seth Godin's Blog
+            </a>, Shane Parrish's <a target="_blank"
+                             href="https://fs.blog/the-knowledge-project/">
+                             Knowledge Project
+            </a>, and the <a target="_blank"
+                             href="https://fullstackbulletin.com/">
+                             Fullstack Bulletin
+            </a> for example.
+          </div>
+          <div>
             <h1>Spring 2019</h1>
             <b>Accomplished:</b>
             <br></br>

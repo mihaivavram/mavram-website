@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FakeyLogo from '../../../static-contents/images/FakeyLogo.png';
-import ScheduleBuddyLogo from '../../../static-contents/images/ScheduleBuddyInterimLogo.jpg';
+import WelsomeLogo from '../../../static-contents/images/WelsomeLogo.png';
 import AdvLearningLogo from '../../../static-contents/images/AdversarialLearningSocialNetworks.jpg';
 import FourcasterLogo from '../../../static-contents/images/4CasterLogo.png';
 import HoaxyLogo from '../../../static-contents/images/HoaxySocialNetwork.png';
@@ -22,23 +22,21 @@ class ProjectsPage extends Component {
         <b>Current Projects</b>
         <div className='projectTemplate'>
           <div>
-            <img src={ScheduleBuddyLogo}/>
+            <img src={WelsomeLogo}/>
           </div>
           <div>
             <div>
             <b>Welsome</b>
             </div>
             <div>
-              Current calendars and scheduling systems are static, and often,
-              superimposed by other people. Welsome is a scheduling
-              system that serves to be a fiduciary for taking ownership of
-              our own lives. In progressing towards higher well being and
-              goal-driven behavior change in order to improve our lives,
-              and our planet, one scheduled task at a time.
-              We use AI as well as goal-driven tasks and scheduling
-              paradigms backed by science to provide actionable insights
-              that can make users aware of ways to improve their well being
-              and achieve their goals.
+              Welsome is a platform for self improvement and social impact.
+              We all want to improve at something, whether it is our health,
+              happiness, finances, relationships, or removing our carbon
+              footprint, you name it. Welsome provides resources, actionable
+              insights, and a socially gamified community for us to improve in
+              all areas of life with a focus on impact. The gloal behind Welsome
+              is to create a platform that holds us accountable for improving
+              our lives, and the planet.
             </div>
           </div>
         </div>
