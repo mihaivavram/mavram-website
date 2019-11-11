@@ -41,8 +41,7 @@ class TopNav extends Component {
 
   render() {
     return (
-        <div>
-          <div id='headerContents'>
+        <div id='headerContents'>
             <div id='myHeadshot'>
               <img src={ MihaiHeadshot }
                    alt='Headshot of Mihai Avram'
@@ -50,7 +49,6 @@ class TopNav extends Component {
                    height="150"/>
               <div id='headerName'><b>Mihai Avram</b></div>
             </div>
-          </div>
           {/* Nabar design inspired by: https://codepen.io/jstn/pen/zuDst */}
           <div className="navButtons">
             <ul>

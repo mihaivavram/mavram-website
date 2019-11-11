@@ -11,7 +11,7 @@
 
 #myHeadshot
 {
-  margin: 5%;
+  margin: 1%;
   display: inline-block;
 }
 
@@ -61,12 +61,16 @@
 
 #headerContents
 {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
   color: black;
 }
 
 #navButtons
 {
+  align-content: center;
+  padding-left: 4rem;
   margin-top: 5%;
   vertical-align: top;
   display: inline-block;
