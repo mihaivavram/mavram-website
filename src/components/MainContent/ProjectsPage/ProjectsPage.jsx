@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SocialBotLogo from '../../../static-contents/images/SocialBotLogo.jpg';
 import FakeyLogo from '../../../static-contents/images/FakeyLogo.png';
 import WelsomeLogo from '../../../static-contents/images/WelsomeLogo.png';
 import AdvLearningLogo from '../../../static-contents/images/AdversarialLearningSocialNetworks.jpg';
@@ -69,6 +70,34 @@ class ProjectsPage extends Component {
         </div>
         <div className='projectTemplate'>
           <div>
+            <img src={SocialBotLogo}/>
+          </div>
+          <div>
+            <div>
+            <b>Identifying Automated Accounts on Twitter
+              (<a target="_blank" href="https://github.com/mihaivavram/twitterbots">
+                Code
+              </a>)
+            </b>
+            </div>
+            <div>
+              This project involves working with the <a target="_blank"
+                 href="https://github.com/duo-labs/twitterbots">duo-labs
+              </a> framework to classify and identify Twitter bots using
+              Machine Learning classifiers such as Logistic Regression, Naive
+              Bayes, Decision Trees, AdaBoost, and Random Forest. These
+              classifiers have been implemented in R, with feature extraction
+              methods written in Python, Scala, and Spark. The specifics of the
+              project involved improving the framework and running various
+              benchmarking tests to compare the performance of the techniques
+              in this framework versus Indiana University's <a target="_blank"
+                 href="https://botometer.iuni.iu.edu/#!/">Botometer
+              </a>.
+            </div>
+          </div>
+        </div>
+        <div className='projectTemplate'>
+          <div>
             <img src={AdvLearningLogo}/>
           </div>
           <div>
@@ -89,6 +118,8 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
+        <b>Past Projects</b>
+        <br />
         <div className='projectTemplate'>
           <div>
             <img src={FourcasterLogo}/>
@@ -109,8 +140,6 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <b>Past Projects</b>
-        <br />
         <div className='projectTemplate'>
           <div>
             <img src={HoaxyLogo}/>
