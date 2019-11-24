@@ -30,6 +30,20 @@ class PublicationsPage extends Component {
           </div>
           <div className="publication">
             <b>
+              <i>Curbing the Spread of Misinformation (Response Essay)
+              </i>
+            </b>
+            <br></br>
+            Mihai Avram and Maria D. Molina
+            <br></br>
+            <i>Journal - RTI Press (2018)</i>
+            <br></br>
+            <a target="_blank"
+               href="https://www.rti.org/sites/default/files/resources/rti-publication-file-4295b53c-cb10-4510-a3db-50fa6ea79ea6.pdf#page=34">
+               (Download as PDF)</a>
+          </div>
+          <div className="publication">
+            <b>
               <i>HarpLDA+: Optimizing Latent Dirichlet Allocation for
                  Parallel Efficiency
               </i>
@@ -108,8 +122,6 @@ class PublicationsPage extends Component {
       </div>
     )
   }
-
-
 }
 
 export default PublicationsPage;
