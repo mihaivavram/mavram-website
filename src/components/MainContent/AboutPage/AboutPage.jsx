@@ -21,7 +21,8 @@ class AboutPage extends Component {
         My interests span creating tools for social good using technology.
         I am the creator of <a target="_blank"
         href="https://fakey.iuni.iu.edu/">Fakey</a> (a news literacy game)
-        and Welsome (a platform for self-improvement and social impact).
+        and <a target="_blank" href="http://welsome.org">
+            Welsome</a> (a platform for self-improvement and social impact).
         In the past, I have worked on many projects spanning software/web
         development and machine learning/prediction. You may check out my CV,
         projects, and publications for more information.
@@ -29,8 +30,11 @@ class AboutPage extends Component {
       <b>What am I up to nowadays?</b>
       <ol>
         <li>Working as a full stack freelancer</li>
-        <li>Working on expanding and launching Welsome,
-        a platform for self-improvement and social impact</li>
+        <li>Working on expanding and
+            launching <a target="_blank" href="http://welsome.org">
+                        Welsome
+                      </a>
+        </li>
         <li>Supporting and expanding <a target="_blank"
              href="https://fakey.iuni.iu.edu/">Fakey</a>
           <br /></li>
