@@ -27,7 +27,11 @@ class ProjectsPage extends Component {
           </div>
           <div>
             <div>
-            <b>Welsome</b>
+            <b>Welsome
+            (<a target="_blank" href="http://welsome.org">
+              Web
+            </a>)
+            </b>
             </div>
             <div>
               Welsome is a platform for self improvement and social impact.
