@@ -11,6 +11,8 @@ import EchoGlobalLogo from '../../../static-contents/images/EchoGlobalLogistics.
 import FHLBCLogo from '../../../static-contents/images/FHLBCDevOps.png';
 import RadiativeTransportLogo from '../../../static-contents/images/RadiativeTransport.jpeg';
 import CivIraqWarLogo from '../../../static-contents/images/IraqWar.jpg';
+import PrivacyBrainLogo from '../../../static-contents/images/PrivacyBrainLogo.png';
+
 
 class ProjectsPage extends Component {
   constructor(props) {
@@ -97,6 +99,31 @@ class ProjectsPage extends Component {
               in this framework versus Indiana University's <a target="_blank"
                  href="https://botometer.iuni.iu.edu/#!/">Botometer
               </a>.
+            </div>
+          </div>
+        </div>
+        <div className='projectTemplate'>
+          <div>
+            <img src={PrivacyBrainLogo}/>
+          </div>
+          <div>
+            <div>
+            <b>PrivacyBrain
+              (<a target="_blank"
+                 href="http://privacybrain.com/">Web</a>)
+            </b>
+            </div>
+            <div>
+              On this project, I am collaborating with PrivacyBrain
+              founder <a target="_blank"
+                 href="https://www.linkedin.com/in/elliottadams">
+                 Elliott Adams</a> en route to creating a platform that can
+              automate the removal of compromising and sensitive employee data
+              found on the web at scale.
+              We are currently working on the automation process which
+              involves various components such as web automation via Puppeteer,
+              Cheerio, and other automation software mainly written in Node.js
+              Postgres, and Apify.
             </div>
           </div>
         </div>
