@@ -54,10 +54,12 @@ class ProjectsPage extends Component {
           <div>
             <div>
             <b>Fakey - The News Feed Literacy Game
-              (<a target="_blank" href="https:/fakey.iuni.iu.edu">Web</a>, <a target="_blank"
-                 href="https://play.google.com/store/apps/details?id=com.cnets.fakey">Android
-              </a>, <a target="_blank"
-                 href="https://itunes.apple.com/us/app/fakey-news/id1386410642?mt=8">iOS</a>)
+              (<a target="_blank"
+                  href="https:/fakey.iuni.iu.edu">Web</a>, <a target="_blank"
+               href="https://play.google.com/store/apps/details?id=com.cnets.fakey">
+               Android</a>, <a target="_blank"
+               href="https://itunes.apple.com/us/app/fakey-news/id1386410642?mt=8">
+               iOS</a>)
             </b>
             </div>
             <div>
@@ -81,7 +83,8 @@ class ProjectsPage extends Component {
           <div>
             <div>
             <b>Identifying Automated Accounts on Twitter
-              (<a target="_blank" href="https://github.com/mihaivavram/twitterbots">
+              (<a target="_blank"
+                  href="https://github.com/mihaivavram/twitterbots">
                 Code
               </a>)
             </b>
@@ -135,7 +138,7 @@ class ProjectsPage extends Component {
             <div>
             <b>Adversarial Learning on Social Networks
               (<a target="_blank"
-                 href="https://github.com/uiuc-ischool-scanr/social-network-adversarial-perturbations">Code</a>)
+               href="https://github.com/uiuc-ischool-scanr/social-network-adversarial-perturbations">Code</a>)
             </b>
             </div>
             <div>
@@ -239,8 +242,8 @@ class ProjectsPage extends Component {
           <div>
             <div>
             <b>Echo Global Logistics Job Board
-              (<a  target="_blank"
-                 href="https://www.echo.com/careers/open-positions.html">Web</a>)
+              (<a target="_blank"
+               href="https://www.echo.com/careers/open-positions.html">Web</a>)
             </b>
             </div>
             <div>
