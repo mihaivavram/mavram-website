@@ -35,6 +35,11 @@ class ProjectsPage extends Component {
             </a>)
             </b>
             </div>
+            <div class="small-text">
+              <u>Tags:</u> Frontend Dev, Backend Dev, Postgres, Vue.js, Quasar,
+              Docker, AWS Cloud, Python, Django, Freshchat, Mailchimp, Gunicorn,
+              Nginx
+            </div>
             <div>
               Welsome is a platform for self improvement and social impact.
               We all want to improve at something, whether it is our health,
@@ -61,6 +66,10 @@ class ProjectsPage extends Component {
                href="https://itunes.apple.com/us/app/fakey-news/id1386410642?mt=8">
                iOS</a>)
             </b>
+            </div>
+            <div class="small-text">
+              <u>Tags:</u> Frontend Dev, Backend Dev, MySQL, Vue.js, Quasar,
+              Android Dev, iOS Dev, Python, Django, Apache, Gunicorn
             </div>
             <div>
               Fakey is a game with a purpose where players are
@@ -89,6 +98,10 @@ class ProjectsPage extends Component {
               </a>)
             </b>
             </div>
+            <div class="small-text">
+              <u>Tags:</u> Machine Learning, Python, Scala, Spark, R,
+              Data Mining, Social Media Mining
+            </div>
             <div>
               This project involves working with the <a target="_blank"
                  href="https://github.com/duo-labs/twitterbots">duo-labs
@@ -116,6 +129,10 @@ class ProjectsPage extends Component {
                  href="http://privacybrain.com/">Web</a>)
             </b>
             </div>
+            <div class="small-text">
+              <u>Tags:</u> Backend Dev, Frontend Dev, Web Automation, Node.js,
+              Puppeteer, Cheerio, Apify, Postgres, AWS Cloud
+            </div>
             <div>
               On this project, I am collaborating with PrivacyBrain
               founder <a target="_blank"
@@ -140,6 +157,10 @@ class ProjectsPage extends Component {
               (<a target="_blank"
                href="https://github.com/uiuc-ischool-scanr/social-network-adversarial-perturbations">Code</a>)
             </b>
+            </div>
+            <div class="small-text">
+              <u>Tags:</u> Network Analysis, Python, Pipelining, Test Driven
+              Development
             </div>
             <div>
               In this project we are aiming to find the optimal adversarial

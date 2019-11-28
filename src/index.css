@@ -97,6 +97,10 @@
     color:#505739;
 }
 
+.small-text {
+  font-size: 0.9rem;
+}
+
 .projectTemplate
 {
   display: flex;
