@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './ConnectPage.css';
+
 class ConnectPage extends Component {
   constructor(props) {
     super(props)

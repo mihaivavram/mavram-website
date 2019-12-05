@@ -1,146 +1,7 @@
 /*
-    Created on : 08/19/2017
-    Author     : Mihai Avram
+    Author: Mihai Avram
     E-Mail: mihai.v.avram@gmail.com
 */
-
-#echoGlobalLogistics
-{
-  width: 150px;
-  height: 50px;
-}
-
-#connect
-{
-  font-size: 30px;
-}
-
-#headerName
-{
-  margin-top: 0.5rem;
-  text-align: center;
-}
-
-#myHeadshot
-{
-  margin: 5%;
-  display: inline-block;
-}
-
-#myHeadshot img
-{
-  border: 5px solid gray;
-}
-
-@media screen and (max-width: 1250px) {
-    #myHeadshot {
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      display: block;
-      margin: 0%;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    #myHeadshot img {
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      display: block;
-    }
-}
-
-
-#headerText
-{
-  float: middle;
-  vertical-align: top;
-  display: inline-block;
-}
-
-
-#siteContents button
-{
-  display: none;
-}
-
-#headerContents
-{
-  display: inline-block;
-  color: black;
-}
-
-@media screen and (max-width: 1250px) {
-    #headerContents {
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      display: block
-    }
-}
-
-#navButtons
-{
-  margin-top: 5%;
-  vertical-align: top;
-  display: inline-block;
-}
-
-@media screen and (max-width: 1250px) {
-    #navButtons {
-      margin-top: 0%;
-    }
-}
-
-.selected {
-    color:#505739;
-}
-
-.small-text {
-  font-size: 0.9rem;
-}
-
-.projectTemplate
-{
-  display: flex;
-  border: 2px solid black;
-  margin: 1%;
-}
-
-@media screen and (max-width: 1000px) {
-    .projectTemplate {
-        display: inline-block;
-    }
-}
-
-.projectTemplate div
-{
-  display: inline-block;
-  margin: 1%;
-}
-
-.publication
-{
-  margin-top: 2rem;
-}
-
-.projectTemplate img
-{
-  width: 150px;
-  height: 150px;
-  border: 2px solid black;
-}
-
-.myResume
-{
-    height: 1000px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    display: block
-}
 
 .centerContents {
   border-radius: 25px;
@@ -156,12 +17,6 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-}
-
-.myButtons
-{
-  display: inline;
-  font-size: 22px;
 }
 
 html
@@ -198,17 +53,6 @@ header
     border-bottom-color: rgb(192,192,192);
 }
 
-
-ul.connectContents
-{
-  list-style-type: none;
-}
-
-ul.connectContents li
-{
-  margin: 1%
-}
-
 nav div
 {
     height: 50px;
@@ -227,22 +71,6 @@ nav button
     font-size: 15px;
     display: block;
     justify-content: center;
-}
-
-section
-{
-    border-radius: 25px;
-    padding: 10px;
-    width: 90%;
-    background-color: rgb(192,192,192);
-    float: middle;
-    font-size: 20px;
-    height: auto;
-    display: block;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
 }
 
 button:focus {
@@ -289,20 +117,4 @@ footer {
 
 footer span {
     text-align: center;
-}
-
-#topmost-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-#main-content {
-  padding-bottom: 3rem;
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
 }

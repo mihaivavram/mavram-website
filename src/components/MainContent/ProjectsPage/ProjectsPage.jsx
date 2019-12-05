@@ -13,6 +13,7 @@ import RadiativeTransportLogo from '../../../static-contents/images/RadiativeTra
 import CivIraqWarLogo from '../../../static-contents/images/IraqWar.jpg';
 import PrivacyBrainLogo from '../../../static-contents/images/PrivacyBrainLogo.png';
 
+import './ProjectsPage.css';
 
 class ProjectsPage extends Component {
   constructor(props) {

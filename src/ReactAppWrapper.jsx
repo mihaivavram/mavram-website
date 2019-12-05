@@ -7,7 +7,7 @@ import PublicationsPage from './components/MainContent/PublicationsPage/Publicat
 import ProjectsPage from './components/MainContent/ProjectsPage/ProjectsPage.jsx'
 import TimeLapsePage from './components/MainContent/TimeLapsePage/TimeLapsePage.jsx'
 import ConnectPage from './components/MainContent/ConnectPage/ConnectPage.jsx'
-import Footer from './components/Footer.jsx'
+import Footer from './components/Footer/Footer.jsx'
 import './ReactAppWrapper.css';
 
 class ReactAppWrapper extends Component {

@@ -1,0 +1,36 @@
+
+#echoGlobalLogistics
+{
+  width: 150px;
+  height: 50px;
+}
+
+.small-text {
+  font-size: 0.9rem;
+}
+
+.projectTemplate
+{
+  display: flex;
+  border: 2px solid black;
+  margin: 1%;
+}
+
+@media screen and (max-width: 1000px) {
+    .projectTemplate {
+        display: inline-block;
+    }
+}
+
+.projectTemplate div
+{
+  display: inline-block;
+  margin: 1%;
+}
+
+.projectTemplate img
+{
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+}

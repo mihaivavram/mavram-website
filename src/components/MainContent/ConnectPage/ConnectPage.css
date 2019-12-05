@@ -1,0 +1,15 @@
+
+#connect
+{
+  font-size: 30px;
+}
+
+ul.connectContents
+{
+  list-style-type: none;
+}
+
+ul.connectContents li
+{
+  margin: 1%
+}

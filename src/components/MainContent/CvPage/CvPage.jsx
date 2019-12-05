@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ResumeFile from '../../../static-contents/pdfs/MihaiAvram_CV.pdf'
 
+import './CvPage.css';
+
 class CvPage extends Component {
   constructor(props) {
     super(props)
