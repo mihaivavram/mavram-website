@@ -41,21 +41,21 @@ class TopNav extends Component {
 
   render() {
     return (
-        <div id='headerContents'>
-            <div id='myHeadshot'>
+        <div className='header-contents'>
+            <div className='my-headshot'>
               <img src={ MihaiHeadshot }
                    alt='Headshot of Mihai Avram'
                    width="180"
                    height="150"/>
-              <div id='headerName'><b>Mihai Avram</b></div>
+              <div className='header-name'><b>Mihai Avram</b></div>
             </div>
           {/* Nabar design inspired by: https://codepen.io/jstn/pen/zuDst */}
-          <div className="navButtons">
+          <div className="nav-buttons">
             <ul>
               <li>
                 <a className={ (this.props.currentState === 'aboutPage'
-                                ? 'selectedNavButton'
-                                : 'nonSelectedNavButton') }
+                                ? 'selected-nav-button'
+                                : 'non-selected-nav-button') }
                    href="#"
                    onClick={ this.aboutPageClick }>
                    About
@@ -63,8 +63,8 @@ class TopNav extends Component {
               </li>
               <li>
               <a className={ (this.props.currentState === 'cvPage'
-                              ? 'selectedNavButton'
-                              : 'nonSelectedNavButton') }
+                              ? 'selected-nav-button'
+                              : 'non-selected-nav-button') }
                    href="#"
                    onClick={ this.cvPageClick }>
                    CV
@@ -72,8 +72,8 @@ class TopNav extends Component {
               </li>
               <li>
               <a className={ (this.props.currentState === 'projectsPage'
-                              ? 'selectedNavButton'
-                              : 'nonSelectedNavButton') }
+                              ? 'selected-nav-button'
+                              : 'non-selected-nav-button') }
                    href="#"
                    onClick={ this.projectsPageClick }>
                    Projects
@@ -81,8 +81,8 @@ class TopNav extends Component {
               </li>
               <li>
               <a className={ (this.props.currentState === 'publicationsPage'
-                              ? 'selectedNavButton'
-                              : 'nonSelectedNavButton') }
+                              ? 'selected-nav-button'
+                              : 'non-selected-nav-button') }
                    href="#"
                    onClick={ this.publicationsPageClick }>
                    Publications
@@ -90,8 +90,8 @@ class TopNav extends Component {
               </li>
               <li>
               <a className={ (this.props.currentState === 'timeLapsePage'
-                              ? 'selectedNavButton'
-                              : 'nonSelectedNavButton') }
+                              ? 'selected-nav-button'
+                              : 'non-selected-nav-button') }
                    href="#"
                    onClick={ this.timeLapsePageClick }>
                    TimeLapse
@@ -99,8 +99,8 @@ class TopNav extends Component {
               </li>
               <li>
               <a className={ (this.props.currentState === 'connectPage'
-                              ? 'selectedNavButton'
-                              : 'nonSelectedNavButton') }
+                              ? 'selected-nav-button'
+                              : 'non-selected-nav-button') }
                    href="#"
                    onClick={ this.connectPageClick }>
                    Connect

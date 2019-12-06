@@ -7,7 +7,7 @@ class AboutPage extends Component {
 
   render() {
     return(
-      <div className='centerContents' id='about'>
+      <div className='primary-content'>
       <div style={{ textAlign: "center" }}>
         <h3>
           Full Stack Developer / Freelancer / Social Entrepreneur

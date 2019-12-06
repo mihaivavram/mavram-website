@@ -10,12 +10,12 @@ class CvPage extends Component {
 
   render() {
     return(
-      <div className='centerContents' id='cv'>
+      <div className='primary-content'>
           <b>Resume:</b> <a href={ResumeFile}
             target='_blank'>
             Download As PDF
           </a>
-          <iframe className='myResume' src={ResumeFile} >
+          <iframe className='my-resume' src={ResumeFile} >
           </iframe>
       </div>
     )

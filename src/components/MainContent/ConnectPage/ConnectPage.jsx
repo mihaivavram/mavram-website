@@ -9,9 +9,9 @@ class ConnectPage extends Component {
 
   render() {
     return(
-      <div className='centerContents' id='connect'>
+      <div className='primary-content large-text'>
         <b>Connect with me via:</b>
-        <ul className="connectContents">
+        <ul className="connect-contents">
           <li><i className="far fa-envelope"></i> <b> E-Mail: </b>mihai (dot)
           v (dot) avram (at) gmail (dot) com
           </li>

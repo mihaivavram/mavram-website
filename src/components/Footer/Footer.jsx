@@ -4,7 +4,7 @@ import './Footer.css'
 class Footer extends Component {
   render() {
     return (
-      <footer id="footer">
+      <footer className="footer">
          Copyright © 2019 | Mihai Avram
       </footer>
     );

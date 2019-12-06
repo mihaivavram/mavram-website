@@ -1,15 +1,15 @@
 
-#connect
+.large-text
 {
   font-size: 30px;
 }
 
-ul.connectContents
+ul.connect-contents
 {
   list-style-type: none;
 }
 
-ul.connectContents li
+u.connect-contents li
 {
   margin: 1%
 }

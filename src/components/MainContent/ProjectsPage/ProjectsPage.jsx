@@ -22,9 +22,9 @@ class ProjectsPage extends Component {
 
   render() {
     return(
-      <div className='centerContents' id='projects'>
+      <div className='primary-content'>
         <b>Current Projects</b>
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
             <img src={WelsomeLogo}/>
           </div>
@@ -53,7 +53,7 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
             <img src={FakeyLogo}/>
           </div>
@@ -86,7 +86,7 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
             <img src={SocialBotLogo}/>
           </div>
@@ -119,7 +119,7 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
             <img src={PrivacyBrainLogo}/>
           </div>
@@ -148,7 +148,7 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
             <img src={AdvLearningLogo}/>
           </div>
@@ -176,7 +176,7 @@ class ProjectsPage extends Component {
         </div>
         <b>Past Projects</b>
         <br />
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
             <img src={FourcasterLogo}/>
           </div>
@@ -196,7 +196,7 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
             <img src={HoaxyLogo}/>
           </div>
@@ -217,7 +217,7 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
             <img src={GraphCountingLogo}/>
           </div>
@@ -239,7 +239,7 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
             <img src={KnowledgeLinkerLogo}/>
           </div>
@@ -257,9 +257,9 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
-            <img id='echoGlobalLogistics' src={EchoGlobalLogo}/>
+            <img className='wide-logo' src={EchoGlobalLogo}/>
           </div>
           <div>
             <div>
@@ -275,7 +275,7 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
             <img src={FHLBCLogo}/>
           </div>
@@ -296,7 +296,7 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
             <img src={RadiativeTransportLogo}/>
           </div>
@@ -320,7 +320,7 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className='projectTemplate'>
+        <div className='project-template'>
           <div>
             <img src={CivIraqWarLogo}/>
           </div>

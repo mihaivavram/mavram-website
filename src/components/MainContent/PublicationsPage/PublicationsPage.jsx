@@ -10,7 +10,7 @@ class PublicationsPage extends Component {
 
   render() {
     return(
-      <div className='centerContents' id='publications'>
+      <div className='primary-content'>
           <b>Publications:</b>
           <div className="publication">
             <b>

@@ -1,15 +1,9 @@
 
-#echoGlobalLogistics
-{
-  width: 150px;
-  height: 50px;
-}
-
 .small-text {
   font-size: 0.9rem;
 }
 
-.projectTemplate
+.project-template
 {
   display: flex;
   border: 2px solid black;
@@ -17,20 +11,26 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .projectTemplate {
+    .project-template {
         display: inline-block;
     }
 }
 
-.projectTemplate div
+.project-template div
 {
   display: inline-block;
   margin: 1%;
 }
 
-.projectTemplate img
+.project-template img
 {
   width: 150px;
   height: 150px;
   border: 2px solid black;
+}
+
+.wide-logo
+{
+  width: 150px !important;
+  height: 50px !important;
 }
