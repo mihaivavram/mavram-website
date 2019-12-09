@@ -1,8 +1,8 @@
 # Mihai Avram's Website
 
-This is a repository for my website which is written in React.
+This is a repository for Mihai Avram's website which is written in React.
 
-## Configure
+## Configure (should only be done once)
 
 1. Clone this repository
 `git clone https://github.com/mihaivavram/mavram-website.git`
@@ -14,5 +14,6 @@ This is a repository for my website which is written in React.
 ## Run
 1. Ensure all the steps under the Configure section have been performed
 1. Browse to the root location of the repository `mavram-website/`
+1. Run `npm install` to update the dependencies/packages for the project
 1. Run `npm run start`
 1. The site should launch in your browser, or you may look for the output of the previous command and see which location you may need to search in your browser e.g. `http://localhost:3000/` where the site has launched
