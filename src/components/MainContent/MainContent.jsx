@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import AboutPage from './AboutPage/AboutPage.jsx'
 import CvPage from './CvPage/CvPage.jsx'
 import PublicationsPage from './PublicationsPage/PublicationsPage.jsx'

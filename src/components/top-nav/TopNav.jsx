@@ -53,6 +53,7 @@ class TopNav extends Component {
           <div className="nav-buttons">
             <ul>
               <li>
+                {/* eslint-disable-next-line */}
                 <a className={ (this.props.currentState === 'aboutPage'
                                 ? 'selected-nav-button'
                                 : 'non-selected-nav-button') }
@@ -62,6 +63,7 @@ class TopNav extends Component {
                 </a>
               </li>
               <li>
+              {/* eslint-disable-next-line */}
               <a className={ (this.props.currentState === 'cvPage'
                               ? 'selected-nav-button'
                               : 'non-selected-nav-button') }
@@ -71,6 +73,7 @@ class TopNav extends Component {
                 </a>
               </li>
               <li>
+              {/* eslint-disable-next-line */}
               <a className={ (this.props.currentState === 'projectsPage'
                               ? 'selected-nav-button'
                               : 'non-selected-nav-button') }
@@ -80,6 +83,7 @@ class TopNav extends Component {
                 </a>
               </li>
               <li>
+              {/* eslint-disable-next-line */}
               <a className={ (this.props.currentState === 'publicationsPage'
                               ? 'selected-nav-button'
                               : 'non-selected-nav-button') }
@@ -89,6 +93,7 @@ class TopNav extends Component {
                 </a>
               </li>
               <li>
+              {/* eslint-disable-next-line */}
               <a className={ (this.props.currentState === 'timeLapsePage'
                               ? 'selected-nav-button'
                               : 'non-selected-nav-button') }
@@ -98,6 +103,7 @@ class TopNav extends Component {
                 </a>
               </li>
               <li>
+              {/* eslint-disable-next-line */}
               <a className={ (this.props.currentState === 'connectPage'
                               ? 'selected-nav-button'
                               : 'non-selected-nav-button') }

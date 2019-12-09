@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class AboutPage extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return(
       <div className='primary-content'>
@@ -19,9 +15,13 @@ class AboutPage extends Component {
         I am a full stack developer specializing in back-end and front-end
         development, DevOps, as well as Machine Learning and Network Analysis.
         My interests span creating tools for social good using technology.
-        I am the creator of <a target="_blank"
-        href="https://fakey.iuni.iu.edu/">Fakey</a> (a news literacy game)
-        and <a target="_blank" href="http://welsome.org">
+        I am the creator of <a
+          target="_blank"
+          href="https://fakey.iuni.iu.edu/"
+          rel="noopener noreferrer">Fakey</a> (a news literacy game)
+        and <a target="_blank"
+               href="http://welsome.org"
+               rel="noopener noreferrer">
             Welsome</a> (a platform for self-improvement and social impact).
         In the past, I have worked on many projects spanning software/web
         development and machine learning/prediction. You may check out my CV,
@@ -31,12 +31,15 @@ class AboutPage extends Component {
       <ol>
         <li>Working as a full stack freelancer</li>
         <li>Working on expanding and
-            launching <a target="_blank" href="http://welsome.org">
+            launching <a target="_blank"
+                         href="http://welsome.org"
+                         rel="noopener noreferrer">
                         Welsome
                       </a>
         </li>
         <li>Supporting and expanding <a target="_blank"
-             href="https://fakey.iuni.iu.edu/">Fakey</a>
+             href="https://fakey.iuni.iu.edu/"
+             rel="noopener noreferrer">Fakey</a>
           <br /></li>
       </ol>
       </div>

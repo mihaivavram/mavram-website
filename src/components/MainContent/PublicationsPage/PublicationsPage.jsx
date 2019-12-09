@@ -4,10 +4,6 @@ import AsonamPaper from '../../../static-contents/pdfs/CRV-asonam_2019_paper_191
 import './PublicationsPage.css';
 
 class PublicationsPage extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return(
       <div className='primary-content'>
@@ -27,7 +23,8 @@ class PublicationsPage extends Component {
             </i>
             <br></br>
             <a target="_blank"
-               href={AsonamPaper}>
+               href={AsonamPaper}
+               rel="noopener noreferrer">
                (Download as PDF)</a>
           </div>
           <div className="publication">
@@ -41,6 +38,7 @@ class PublicationsPage extends Component {
             <i>Journal - RTI Press (2018)</i>
             <br></br>
             <a target="_blank"
+               rel="noopener noreferrer"
                href="https://www.rti.org/sites/default/files/resources/rti-publication-file-4295b53c-cb10-4510-a3db-50fa6ea79ea6.pdf#page=34">
                (Download as PDF)</a>
           </div>
@@ -57,6 +55,7 @@ class PublicationsPage extends Component {
             <br></br>
             <i>Conference - IEEE Big Data 2017</i><br></br>
             <a target="_blank"
+               rel="noopener noreferrer"
                href="http://dsc.soic.indiana.edu/publications/HarpLDA%2B%20Optimizing%20Latent%20Dirichlet%20Allocation%20for%20Parallel%20Efficiency.pdf">
                (Download as PDF)</a>
           </div>
@@ -74,6 +73,7 @@ class PublicationsPage extends Component {
             </i>
             <br></br>
             <a target="_blank"
+               rel="noopener noreferrer"
                href="http://dsc.soic.indiana.edu/publications/tmscssi_2017_harp_sahad.pdf">
                (Download as PDF)</a>
           </div>
@@ -89,6 +89,7 @@ class PublicationsPage extends Component {
             <i>Conference - WSDM Cup 2017</i>
             <br></br>
             <a target="_blank"
+               rel="noopener noreferrer"
                href="http://www.uni-weimar.de/medien/webis/events/wsdm-cup-17/wsdmcup17-papers-final/wsdmcup17-triple-scoring/shiralkar17-notebook.pdf">
                (Download as PDF)</a>
           </div>
@@ -104,6 +105,7 @@ class PublicationsPage extends Component {
             <i>Report - 2013</i>
             <br></br>
             <a target="_blank"
+               rel="noopener noreferrer"
                href="http://www.mmachida.com/ezrte/RTEReport.pdf">
                (Download as PDF)</a>
           </div>
@@ -118,6 +120,7 @@ class PublicationsPage extends Component {
             <i>Journal - Journal of Purdue Undergraduate Research 2013</i>
             <br></br>
             <a target="_blank"
+               rel="noopener noreferrer"
                href="https://docs.lib.purdue.edu/jpur/vol3/iss1/2/">
                (Download as PDF)</a>
           </div>

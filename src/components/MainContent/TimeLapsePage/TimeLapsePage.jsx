@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class TimeLapsePage extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return(
       <div className='primary-content'>
@@ -16,6 +12,7 @@ class TimeLapsePage extends Component {
             very soon this coming fall. I also continued to learn the ropes
             about freelancing and entrepreneurship and attended the <a
                target="_blank"
+               rel="noopener noreferrer"
                href="https://medium.com/social-enterprise-alliance/hundreds-of-social-entrepreneurs-gathered-in-one-place-for-three-days-heres-what-happened-c5414241e2d1">
                Social Enterprise Alliance 2019 Summit
              </a> where learned a lot about social entrepreneurship and made
@@ -40,12 +37,15 @@ class TimeLapsePage extends Component {
             mornings about important decisions or optimizations I should make
             in my life. I have also subscribed to many learning and meta-learning
             blogs such as <a target="_blank"
+                             rel="noopener noreferrer"
                              href="https://seths.blog//">
                              Seth Godin's Blog
             </a>, Shane Parrish's <a target="_blank"
+                             rel="noopener noreferrer"
                              href="https://fs.blog/the-knowledge-project/">
                              Knowledge Project
             </a>, and the <a target="_blank"
+                             rel="noopener noreferrer"
                              href="https://fullstackbulletin.com/">
                              Fullstack Bulletin
             </a> for example.
@@ -55,7 +55,8 @@ class TimeLapsePage extends Component {
             <b>Accomplished:</b>
             <br></br>
             Started working at <a target="_blank"
-               href="https://4castersports.com/">4Castersports</a> as a full-stack
+               href="https://4castersports.com/"
+               rel="noopener noreferrer">4Castersports</a> as a full-stack
             developer and freelancer.  4Castersports is a decentralized sports betting and
             prediction market startup using blockchain technologiesCompleted a
             Python framework to enable all kinds of experimental
@@ -85,7 +86,7 @@ class TimeLapsePage extends Component {
             Social Networks using any desired graphs, node positions, budgets,
             functions, and evaluation metrics. Presented the project at a
             local Information Science School Conference at Universiy of Illinois.
-            Applied for the <a target="_blank"
+            Applied for the <a target="_blank" rel="noopener noreferrer"
                href="https://aiethicsinitiative.org/news/2018/12/3/meet-the-66-finalists-in-the-ai-and-the-news-open-challenge?fbclid=IwAR2aOxOlG4-xhdcL0JBqGDvJKmJPT9iKnGv8e_5Y7d2UXMfFzAbrOYNRUQE">AI and the News Open Challenge</a> using
             an extension proposition to Fakey and got to the second round
             of applications. We will hear back whether or not we
@@ -112,12 +113,15 @@ class TimeLapsePage extends Component {
             <b>Accomplished:</b>
             <br></br>
             Took the <a target="_blank"
-               href="https://www.protruthpledge.org/">
+                        rel="noopener noreferrer"
+                        href="https://www.protruthpledge.org/">
                Pro-Truth Pledge</a>.
             Visited my beautiful homeland <a target="_blank"
+               rel="noopener noreferrer"
                href="https://en.wikipedia.org/wiki/Romania">
                Romania</a>.
             Started rotating with the new <a target="_blank"
+               rel="noopener noreferrer"
                href="http://jdiesnerlab.ischool.illinois.edu/">
                lab</a>,
             I will be part of at UIUC where I will start my Ph.D. in the
@@ -138,7 +142,8 @@ class TimeLapsePage extends Component {
             it our responsability to give back and leave the world a little
             better off when we die.  This is related to the concept
             of <a target="_blank"
-               href="https://www.effectivealtruism.org/">
+                  href="https://www.effectivealtruism.org/"
+                  rel="noopener noreferrer">
                Effective Altruism</a>.
             Hence, I am constantly thinking about the optimal way to do this
             whether it is through academia, entrepreneurship, both, or some
@@ -151,13 +156,18 @@ class TimeLapsePage extends Component {
             Completed my Masters thesis titled
             "Hoaxy and Fakey: Tools to Analyze and Mitigate the Spread of Misinformation in Social Media"
             and launched <a target="_blank"
-               href="http://fakey.iuni.iu.edu">Fakey</a> for <a target="_blank"
+               href="http://fakey.iuni.iu.edu"
+               rel="noopener noreferrer">Fakey</a> for <a target="_blank"
+               rel="noopener noreferrer"
                href="https://play.google.com/store/apps/details?id=com.cnets.fakey">
                Android</a> and <a target="_blank"
+               rel="noopener noreferrer"
                href="https://itunes.apple.com/us/app/fakey-news/id1386410642?mt=8">
                iOS</a>.
             Also assisted in the launch of a new version
-            of <a target="_blank" href="http://hoaxy.iuni.iu.edu/">Hoaxy</a>.
+            of <a target="_blank"
+                  rel="noopener noreferrer"
+                  href="http://hoaxy.iuni.iu.edu/">Hoaxy</a>.
             <br></br>
             <br></br>
             <b>Lessons Learned:</b>
@@ -178,6 +188,7 @@ class TimeLapsePage extends Component {
             <br></br>
             Learned about Natural Language Processing
             and lauched an alpha version of <a target="_blank"
+               rel="noopener noreferrer"
                href="https://fakey.iuni.iu.edu">Fakey</a>
             , a media literacy game.
             <br></br>

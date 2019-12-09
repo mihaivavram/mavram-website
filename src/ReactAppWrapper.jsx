@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import TopNav from './components/top-nav/TopNav.jsx'
-import MainContent from './components/MainContent/MainContent.jsx'
 import AboutPage from './components/MainContent/AboutPage/AboutPage.jsx'
 import CvPage from './components/MainContent/CvPage/CvPage.jsx'
 import PublicationsPage from './components/MainContent/PublicationsPage/PublicationsPage.jsx'

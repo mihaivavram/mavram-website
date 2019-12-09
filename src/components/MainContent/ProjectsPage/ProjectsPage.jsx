@@ -4,11 +4,11 @@ import FakeyLogo from '../../../static-contents/images/FakeyLogo.png';
 import WelsomeLogo from '../../../static-contents/images/WelsomeLogo.png';
 import AdvLearningLogo from '../../../static-contents/images/AdversarialLearningSocialNetworks.jpg';
 import FourcasterLogo from '../../../static-contents/images/4CasterLogo.png';
-import HoaxyLogo from '../../../static-contents/images/HoaxySocialNetwork.png';
+import HoaxyLogo from '../../../static-contents/images/HoaxyLogo.png';
 import GraphCountingLogo from '../../../static-contents/images/GraphCounting.png';
 import KnowledgeLinkerLogo from '../../../static-contents/images/KnowledgeLinker.png';
 import EchoGlobalLogo from '../../../static-contents/images/EchoGlobalLogistics.png';
-import FHLBCLogo from '../../../static-contents/images/FHLBCDevOps.png';
+import FHLBCLogo from '../../../static-contents/images/FHLBCLogo.jpeg';
 import RadiativeTransportLogo from '../../../static-contents/images/RadiativeTransport.jpeg';
 import CivIraqWarLogo from '../../../static-contents/images/IraqWar.jpg';
 import PrivacyBrainLogo from '../../../static-contents/images/PrivacyBrainLogo.png';
@@ -16,22 +16,20 @@ import PrivacyBrainLogo from '../../../static-contents/images/PrivacyBrainLogo.p
 import './ProjectsPage.css';
 
 class ProjectsPage extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return(
       <div className='primary-content'>
         <b>Current Projects</b>
         <div className='project-template'>
           <div>
-            <img src={WelsomeLogo}/>
+            <img src={WelsomeLogo} alt='Mountains and a sun'/>
           </div>
           <div>
             <div>
             <b>Welsome
-            (<a target="_blank" href="http://welsome.org">
+            (<a target="_blank"
+                href="http://welsome.org"
+                rel="noopener noreferrer">
               Web
             </a>)
             </b>
@@ -55,16 +53,20 @@ class ProjectsPage extends Component {
         </div>
         <div className='project-template'>
           <div>
-            <img src={FakeyLogo}/>
+            <img src={FakeyLogo}
+                 alt="A newspaper with the word Fakey in the front page"/>
           </div>
           <div>
             <div>
             <b>Fakey - The News Feed Literacy Game
               (<a target="_blank"
-                  href="https:/fakey.iuni.iu.edu">Web</a>, <a target="_blank"
-               href="https://play.google.com/store/apps/details?id=com.cnets.fakey">
+                  href="https:/fakey.iuni.iu.edu"
+                  rel="noopener noreferrer">Web</a>, <a target="_blank"
+               href="https://play.google.com/store/apps/details?id=com.cnets.fakey"
+               rel="noopener noreferrer">
                Android</a>, <a target="_blank"
-               href="https://itunes.apple.com/us/app/fakey-news/id1386410642?mt=8">
+               href="https://itunes.apple.com/us/app/fakey-news/id1386410642?mt=8"
+               rel="noopener noreferrer">
                iOS</a>)
             </b>
             </div>
@@ -88,13 +90,15 @@ class ProjectsPage extends Component {
         </div>
         <div className='project-template'>
           <div>
-            <img src={SocialBotLogo}/>
+            <img src={SocialBotLogo}
+                 alt="A social bot"/>
           </div>
           <div>
             <div>
             <b>Identifying Automated Accounts on Twitter
               (<a target="_blank"
-                  href="https://github.com/mihaivavram/twitterbots">
+                  href="https://github.com/mihaivavram/twitterbots"
+                  rel="noopener noreferrer">
                 Code
               </a>)
             </b>
@@ -105,7 +109,8 @@ class ProjectsPage extends Component {
             </div>
             <div>
               This project involves working with the <a target="_blank"
-                 href="https://github.com/duo-labs/twitterbots">duo-labs
+                 href="https://github.com/duo-labs/twitterbots"
+                 rel="noopener noreferrer">duo-labs
               </a> framework to classify and identify Twitter bots using
               Machine Learning classifiers such as Logistic Regression, Naive
               Bayes, Decision Trees, AdaBoost, and Random Forest. These
@@ -114,20 +119,22 @@ class ProjectsPage extends Component {
               project involved improving the framework and running various
               benchmarking tests to compare the performance of the techniques
               in this framework versus Indiana University's <a target="_blank"
-                 href="https://botometer.iuni.iu.edu/#!/">Botometer
+                 href="https://botometer.iuni.iu.edu/#!/"
+                 rel="noopener noreferrer">Botometer
               </a>.
             </div>
           </div>
         </div>
         <div className='project-template'>
           <div>
-            <img src={PrivacyBrainLogo}/>
+            <img src={PrivacyBrainLogo} alt="Logo of PrivacyBrain"/>
           </div>
           <div>
             <div>
             <b>PrivacyBrain
               (<a target="_blank"
-                 href="http://privacybrain.com/">Web</a>)
+                 href="http://privacybrain.com/"
+                 rel="noopener noreferrer">Web</a>)
             </b>
             </div>
             <div class="small-text">
@@ -137,7 +144,8 @@ class ProjectsPage extends Component {
             <div>
               On this project, I am collaborating with PrivacyBrain
               founder <a target="_blank"
-                 href="https://www.linkedin.com/in/elliottadams">
+                 href="https://www.linkedin.com/in/elliottadams"
+                 rel="noopener noreferrer">
                  Elliott Adams</a> en route to creating a platform that can
               automate the removal of compromising and sensitive employee data
               found on the web at scale.
@@ -150,13 +158,15 @@ class ProjectsPage extends Component {
         </div>
         <div className='project-template'>
           <div>
-            <img src={AdvLearningLogo}/>
+            <img src={AdvLearningLogo}
+                 alt="People connected in a network"/>
           </div>
           <div>
             <div>
             <b>Adversarial Learning on Social Networks
               (<a target="_blank"
-               href="https://github.com/uiuc-ischool-scanr/social-network-adversarial-perturbations">Code</a>)
+               href="https://github.com/uiuc-ischool-scanr/social-network-adversarial-perturbations"
+               rel="noopener noreferrer">Code</a>)
             </b>
             </div>
             <div class="small-text">
@@ -178,13 +188,15 @@ class ProjectsPage extends Component {
         <br />
         <div className='project-template'>
           <div>
-            <img src={FourcasterLogo}/>
+            <img src={FourcasterLogo}
+                 alt="Logo of 4caster - a 4 and F combined"/>
           </div>
           <div>
             <div>
             <b>4Castersports
             (<a target="_blank"
-               href="https://4castersports.com/">Web</a>)
+               href="https://4castersports.com/"
+               rel="noopener noreferrer">Web</a>)
             </b>
             </div>
             <div>
@@ -198,13 +210,15 @@ class ProjectsPage extends Component {
         </div>
         <div className='project-template'>
           <div>
-            <img src={HoaxyLogo}/>
+            <img src={HoaxyLogo}
+                 alt="The logo for Hoaxy - two arrows forming a square"/>
           </div>
           <div>
             <div>
             <b>Hoaxy - The Social Media Information/Misinformation Diffusion Tool
               (<a target="_blank"
-                 href="https://hoaxy.iuni.iu.edu/">Web</a>)
+                  href="https://hoaxy.iuni.iu.edu/"
+                  rel="noopener noreferrer">Web</a>)
             </b>
             </div>
             <div>
@@ -219,7 +233,8 @@ class ProjectsPage extends Component {
         </div>
         <div className='project-template'>
           <div>
-            <img src={GraphCountingLogo}/>
+            <img src={GraphCountingLogo}
+                 alt="A graph containing various shapes"/>
           </div>
           <div>
             <div>
@@ -232,7 +247,8 @@ class ProjectsPage extends Component {
               or number of single-child families).  In order to perform
               such a feat, we used an HPC Machine Learning framework
               called <a target="_blank"
-                 href="https://dsc-spidal.github.io/harp/">Harp</a>,
+                        href="https://dsc-spidal.github.io/harp/"
+                        rel="noopener noreferrer">Harp</a>,
               and implemented various algorithms that could scale to
               many nodes and edges using a high-performance computing
               setup with many nodes, cores, threads, and shared memory.
@@ -241,7 +257,7 @@ class ProjectsPage extends Component {
         </div>
         <div className='project-template'>
           <div>
-            <img src={KnowledgeLinkerLogo}/>
+            <img src={KnowledgeLinkerLogo} alt="A graph with colored nodes"/>
           </div>
           <div>
             <div>
@@ -259,13 +275,16 @@ class ProjectsPage extends Component {
         </div>
         <div className='project-template'>
           <div>
-            <img className='wide-logo' src={EchoGlobalLogo}/>
+            <img class='wide-logo'
+                 src={EchoGlobalLogo}
+                 alt="Logo ECHO - the words ECHO"/>
           </div>
           <div>
             <div>
             <b>Echo Global Logistics Job Board
               (<a target="_blank"
-               href="https://www.echo.com/careers/open-positions.html">Web</a>)
+                  href="https://www.echo.com/careers/open-positions.html"
+                  rel="noopener noreferrer">Web</a>)
             </b>
             </div>
             <div>
@@ -277,13 +296,15 @@ class ProjectsPage extends Component {
         </div>
         <div className='project-template'>
           <div>
-            <img src={FHLBCLogo}/>
+            <img src={FHLBCLogo}
+                 alt="FHLBC Logo - Three houses above the words FHLBC Chicago"/>
           </div>
           <div>
             <div>
             <b>Federal Home Loan Bank of Chicago (Dev-Ops Role)
               (<a  target="_blank"
-                 href="https://www.fhlbc.com/">Web</a>)
+                   href="https://www.fhlbc.com/"
+                   rel="noopener noreferrer">Web</a>)
             </b>
             </div>
             <div>
@@ -298,7 +319,8 @@ class ProjectsPage extends Component {
         </div>
         <div className='project-template'>
           <div>
-            <img src={RadiativeTransportLogo}/>
+            <img src={RadiativeTransportLogo}
+                 alt="A simulation graphic modeled by a computer"/>
           </div>
           <div>
             <div>
@@ -315,14 +337,16 @@ class ProjectsPage extends Component {
               the intensity of light based on the constants of absorption
               and scattering as light protrudes random media. The applet
               was created in Java and can be found <a target="_blank"
-                 href="https://sites.google.com/site/ezrte13/">
+                 href="https://sites.google.com/site/ezrte13/"
+                 rel="noopener noreferrer">
                  here</a>.
             </div>
           </div>
         </div>
         <div className='project-template'>
           <div>
-            <img src={CivIraqWarLogo}/>
+            <img src={CivIraqWarLogo}
+                 alt="Logo of the project regarding the Iraq Civil War"/>
           </div>
           <div>
             <div>
