@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import TopNav from './components/top-nav/TopNav.jsx'
 import AboutPage from './components/MainContent/AboutPage/AboutPage.jsx'
 import CvPage from './components/MainContent/CvPage/CvPage.jsx'
@@ -58,11 +63,32 @@ class ReactAppWrapper extends Component {
   render() {
     return (
       <div className="topmost-container">
-        <div className="main-content">
+        <Router>
           <TopNav currentState={ this.state.mainContentState }
                   stateHandler={ this.stateHandler }/>
-          { this.state.mainContentComponent }
-        </div>
+          <div className="main-content">
+              <Switch>
+                <Route path="/cv">
+                  <CvPage />
+                </Route>
+                <Route path="/projects">
+                  <ProjectsPage />
+                </Route>
+                <Route path="/publications">
+                  <PublicationsPage />
+                </Route>
+                <Route path="/timelapse">
+                  <TimeLapsePage />
+                </Route>
+                <Route path="/connect">
+                  <ConnectPage />
+                </Route>
+                <Route path="/">
+                  <AboutPage />
+                </Route>
+              </Switch>
+          </div>
+        </Router>
         <Footer />
       </div>
     );

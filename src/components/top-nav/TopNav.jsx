@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './TopNav.css';
 import MihaiHeadshot from '../../static-contents/images/mihai-headshot.jpg'
 
@@ -53,64 +54,52 @@ class TopNav extends Component {
           <div className="nav-buttons">
             <ul>
               <li>
-                {/* eslint-disable-next-line */}
-                <a className={ (this.props.currentState === 'aboutPage'
+                <Link to="/"
+                      className={ (this.props.currentState === 'aboutPage'
                                 ? 'selected-nav-button'
                                 : 'non-selected-nav-button') }
-                   href="#"
-                   onClick={ this.aboutPageClick }>
-                   About
-                </a>
+                      onClick={ this.aboutPageClick }>About
+                </Link>
               </li>
               <li>
-              {/* eslint-disable-next-line */}
-              <a className={ (this.props.currentState === 'cvPage'
-                              ? 'selected-nav-button'
-                              : 'non-selected-nav-button') }
-                   href="#"
-                   onClick={ this.cvPageClick }>
-                   CV
-                </a>
+                <Link to="/cv"
+                      className={ (this.props.currentState === 'cvPage'
+                                ? 'selected-nav-button'
+                                : 'non-selected-nav-button') }
+                      onClick={ this.cvPageClick }>CV
+                </Link>
               </li>
               <li>
-              {/* eslint-disable-next-line */}
-              <a className={ (this.props.currentState === 'projectsPage'
-                              ? 'selected-nav-button'
-                              : 'non-selected-nav-button') }
-                   href="#"
-                   onClick={ this.projectsPageClick }>
-                   Projects
-                </a>
+                <Link to="/projects"
+                      className={ (this.props.currentState === 'projectsPage'
+                                ? 'selected-nav-button'
+                                : 'non-selected-nav-button') }
+                      onClick={ this.projectsPageClick }>Projects
+                </Link>
               </li>
               <li>
-              {/* eslint-disable-next-line */}
-              <a className={ (this.props.currentState === 'publicationsPage'
-                              ? 'selected-nav-button'
-                              : 'non-selected-nav-button') }
-                   href="#"
-                   onClick={ this.publicationsPageClick }>
-                   Publications
-                </a>
+                <Link to="/publications"
+                      className={ (this.props.currentState === 'publicationsPage'
+                                ? 'selected-nav-button'
+                                : 'non-selected-nav-button') }
+                      onClick={ this.publicationsPageClick }>Publications
+                </Link>
               </li>
               <li>
-              {/* eslint-disable-next-line */}
-              <a className={ (this.props.currentState === 'timeLapsePage'
-                              ? 'selected-nav-button'
-                              : 'non-selected-nav-button') }
-                   href="#"
-                   onClick={ this.timeLapsePageClick }>
-                   TimeLapse
-                </a>
+                <Link to="/timelapse"
+                      className={ (this.props.currentState === 'timeLapsePage'
+                                ? 'selected-nav-button'
+                                : 'non-selected-nav-button') }
+                      onClick={ this.timeLapsePageClick }>TimeLapse
+                </Link>
               </li>
               <li>
-              {/* eslint-disable-next-line */}
-              <a className={ (this.props.currentState === 'connectPage'
-                              ? 'selected-nav-button'
-                              : 'non-selected-nav-button') }
-                   href="#"
-                   onClick={ this.connectPageClick }>
-                   Connect
-                </a>
+                <Link to="/connect"
+                      className={ (this.props.currentState === 'connectPage'
+                                ? 'selected-nav-button'
+                                : 'non-selected-nav-button') }
+                      onClick={ this.connectPageClick }>Connect
+                </Link>
               </li>
             </ul>
           </div>
