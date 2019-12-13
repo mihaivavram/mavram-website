@@ -28,7 +28,7 @@ class ProjectsPage extends Component {
             <div>
             <b>Welsome
             (<a target="_blank"
-                href="http://welsome.org"
+                href="https://welsome.org"
                 rel="noopener noreferrer">
               Web
             </a>)

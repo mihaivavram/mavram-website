@@ -20,7 +20,7 @@ class AboutPage extends Component {
           href="https://fakey.iuni.iu.edu/"
           rel="noopener noreferrer">Fakey</a> (a news literacy game)
         and <a target="_blank"
-               href="http://welsome.org"
+               href="https://welsome.org"
                rel="noopener noreferrer">
             Welsome</a> (a platform for self-improvement and social impact).
         In the past, I have worked on many projects spanning software/web
@@ -32,7 +32,7 @@ class AboutPage extends Component {
         <li>Working as a full stack freelancer</li>
         <li>Working on expanding and
             launching <a target="_blank"
-                         href="http://welsome.org"
+                         href="https://welsome.org"
                          rel="noopener noreferrer">
                         Welsome
                       </a>
