@@ -34,7 +34,7 @@ class ProjectsPage extends Component {
             </a>)
             </b>
             </div>
-            <div class="small-text">
+            <div className="small-text">
               <u>Tags:</u> Frontend Dev, Backend Dev, Postgres, Vue.js, Quasar,
               Docker, AWS Cloud, Python, Django, Freshchat, Mailchimp, Gunicorn,
               Nginx
@@ -70,7 +70,7 @@ class ProjectsPage extends Component {
                iOS</a>)
             </b>
             </div>
-            <div class="small-text">
+            <div className="small-text">
               <u>Tags:</u> Frontend Dev, Backend Dev, MySQL, Vue.js, Quasar,
               Android Dev, iOS Dev, Python, Django, Apache, Gunicorn
             </div>
@@ -103,7 +103,7 @@ class ProjectsPage extends Component {
               </a>)
             </b>
             </div>
-            <div class="small-text">
+            <div className="small-text">
               <u>Tags:</u> Machine Learning, Python, Scala, Spark, R,
               Data Mining, Social Media Mining
             </div>
@@ -137,7 +137,7 @@ class ProjectsPage extends Component {
                  rel="noopener noreferrer">Web</a>)
             </b>
             </div>
-            <div class="small-text">
+            <div className="small-text">
               <u>Tags:</u> Backend Dev, Frontend Dev, Web Automation, Node.js,
               Puppeteer, Cheerio, Apify, Postgres, AWS Cloud
             </div>
@@ -169,7 +169,7 @@ class ProjectsPage extends Component {
                rel="noopener noreferrer">Code</a>)
             </b>
             </div>
-            <div class="small-text">
+            <div className="small-text">
               <u>Tags:</u> Network Analysis, Python, Pipelining, Test Driven
               Development
             </div>
@@ -275,7 +275,7 @@ class ProjectsPage extends Component {
         </div>
         <div className='project-template'>
           <div>
-            <img class='wide-logo'
+            <img className='wide-logo'
                  src={EchoGlobalLogo}
                  alt="Logo ECHO - the words ECHO"/>
           </div>

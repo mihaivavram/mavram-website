@@ -18,12 +18,11 @@ class ReactAppWrapper extends Component {
   constructor(props) {
     super(props)
 
-    // Setting up state
     this.state = {
-      // All possible states of pages
-      // aboutPage - cvPage - publicationsPage - projectsPage
-      // timeLapsePage - connectPage
-      mainContentState: "aboutPage",
+      /**
+       * All possible states of pages: aboutPage - cvPage - publicationsPage -
+       * projectsPage - timeLapsePage - connectPage
+       */
       mainContentComponent: <AboutPage />
     }
 
@@ -34,7 +33,6 @@ class ReactAppWrapper extends Component {
   stateHandler(currentState) {
     const mainContent = this.discernMainContent(currentState);
     this.setState({
-      mainContentState: currentState,
       mainContentComponent: mainContent
     })
   }
@@ -64,8 +62,7 @@ class ReactAppWrapper extends Component {
     return (
       <div className="topmost-container">
         <Router>
-          <TopNav currentState={ this.state.mainContentState }
-                  stateHandler={ this.stateHandler }/>
+          <TopNav stateHandler={ this.stateHandler }/>
           <div className="main-content">
               <Switch>
                 <Route path="/cv">
