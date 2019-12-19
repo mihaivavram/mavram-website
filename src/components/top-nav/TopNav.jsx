@@ -40,7 +40,7 @@ class TopNav extends Component {
   }
 
   render() {
-    const routeLocation = window.location.pathname;
+    const routeLocation = window.location.hash;
 
     return (
         <div className='header-contents'>
@@ -56,7 +56,7 @@ class TopNav extends Component {
             <ul>
               <li>
                 <Link to="/"
-                      className={ (routeLocation === '/'
+                      className={ (routeLocation === '#/'
                                 ? 'selected-nav-button'
                                 : 'non-selected-nav-button') }
                       onClick={ this.aboutPageClick }>About
@@ -64,7 +64,7 @@ class TopNav extends Component {
               </li>
               <li>
                 <Link to="/cv"
-                      className={ (routeLocation === '/cv'
+                      className={ (routeLocation === '#/cv'
                                 ? 'selected-nav-button'
                                 : 'non-selected-nav-button') }
                       onClick={ this.cvPageClick }>CV
@@ -72,7 +72,7 @@ class TopNav extends Component {
               </li>
               <li>
                 <Link to="/projects"
-                      className={ (routeLocation === '/projects'
+                      className={ (routeLocation === '#/projects'
                                 ? 'selected-nav-button'
                                 : 'non-selected-nav-button') }
                       onClick={ this.projectsPageClick }>Projects
@@ -80,7 +80,7 @@ class TopNav extends Component {
               </li>
               <li>
                 <Link to="/publications"
-                      className={ (routeLocation === '/publications'
+                      className={ (routeLocation === '#/publications'
                                 ? 'selected-nav-button'
                                 : 'non-selected-nav-button') }
                       onClick={ this.publicationsPageClick }>Publications
@@ -88,7 +88,7 @@ class TopNav extends Component {
               </li>
               <li>
                 <Link to="/timelapse"
-                      className={ (routeLocation === '/timelapse'
+                      className={ (routeLocation === '#/timelapse'
                                 ? 'selected-nav-button'
                                 : 'non-selected-nav-button') }
                       onClick={ this.timeLapsePageClick }>TimeLapse
@@ -96,7 +96,7 @@ class TopNav extends Component {
               </li>
               <li>
                 <Link to="/connect"
-                      className={ (routeLocation === '/connect'
+                      className={ (routeLocation === '#/connect'
                                 ? 'selected-nav-button'
                                 : 'non-selected-nav-button') }
                       onClick={ this.connectPageClick }>Connect
