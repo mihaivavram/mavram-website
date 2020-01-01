@@ -9,8 +9,9 @@ class TopNav extends Component {
 
     this.aboutPageClick = this.aboutPageClick.bind(this)
     this.cvPageClick = this.cvPageClick.bind(this)
-    this.publicationsPageClick = this.publicationsPageClick.bind(this)
     this.projectsPageClick = this.projectsPageClick.bind(this)
+    this.blogPageClick = this.blogPageClick.bind(this)
+    this.publicationsPageClick = this.publicationsPageClick.bind(this)
     this.timeLapsePageClick = this.timeLapsePageClick.bind(this)
     this.connectPageClick = this.connectPageClick.bind(this)
   }
@@ -23,12 +24,16 @@ class TopNav extends Component {
     this.props.stateHandler("cvPage");
   }
 
-  publicationsPageClick() {
-    this.props.stateHandler("publicationsPage");
-  }
-
   projectsPageClick() {
     this.props.stateHandler("projectsPage");
+  }
+
+  blogPageClick() {
+    this.props.stateHandler("blogPage");
+  }
+
+  publicationsPageClick() {
+    this.props.stateHandler("publicationsPage");
   }
 
   timeLapsePageClick() {
@@ -76,6 +81,14 @@ class TopNav extends Component {
                                 ? 'selected-nav-button'
                                 : 'non-selected-nav-button') }
                       onClick={ this.projectsPageClick }>Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog"
+                      className={ (routeLocation === '#/blog'
+                                ? 'selected-nav-button'
+                                : 'non-selected-nav-button') }
+                      onClick={ this.blogPageClick }>Blog
                 </Link>
               </li>
               <li>

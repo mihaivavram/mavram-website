@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import TopNav from './components/top-nav/TopNav.jsx'
 import AboutPage from './components/MainContent/AboutPage/AboutPage.jsx'
+import BlogPage from './components/MainContent/BlogPage/BlogPage.jsx'
 import CvPage from './components/MainContent/CvPage/CvPage.jsx'
 import PublicationsPage from './components/MainContent/PublicationsPage/PublicationsPage.jsx'
 import ProjectsPage from './components/MainContent/ProjectsPage/ProjectsPage.jsx'
@@ -20,8 +21,8 @@ class ReactAppWrapper extends Component {
 
     this.state = {
       /**
-       * All possible states of pages: aboutPage - cvPage - publicationsPage -
-       * projectsPage - timeLapsePage - connectPage
+       * All possible states of pages: aboutPage - cvPage - blogPage -
+       * projectsPage - publicationsPage - timeLapsePage - connectPage
        */
       mainContentComponent: <AboutPage />
     }
@@ -44,11 +45,14 @@ class ReactAppWrapper extends Component {
     else if (currentState === 'cvPage') {
       return <CvPage />;
     }
-    else if (currentState === 'publicationsPage') {
-      return <PublicationsPage />;
+    else if (currentState === 'blogPage') {
+      return <BlogPage />;
     }
     else if (currentState === 'projectsPage') {
       return <ProjectsPage />;
+    }
+    else if (currentState === 'publicationsPage') {
+      return <PublicationsPage />;
     }
     else if (currentState === 'timeLapsePage') {
       return <TimeLapsePage />;
@@ -70,6 +74,9 @@ class ReactAppWrapper extends Component {
                   </Route>
                   <Route path="/projects">
                     <ProjectsPage />
+                  </Route>
+                  <Route path="/blog">
+                    <BlogPage />
                   </Route>
                   <Route path="/publications">
                     <PublicationsPage />

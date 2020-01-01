@@ -1,0 +1,42 @@
+
+.small-text {
+  font-size: 0.9rem;
+}
+
+.blog-top-title
+{
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.blog-template
+{
+  display: flex;
+  border: 2px solid black;
+  margin: 1%;
+}
+
+@media screen and (max-width: 1000px) {
+    .blog-template {
+        display: inline-block;
+    }
+}
+
+.blog-template div
+{
+  display: inline-block;
+  margin: 1%;
+}
+
+.blog-template img
+{
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+}
+
+.wide-logo
+{
+  width: 150px !important;
+  height: 50px !important;
+}
