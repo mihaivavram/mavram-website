@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './BlogPage.css';
 
-class ProjectsPage extends Component {
+class BlogPage extends Component {
   render() {
     return(
       <div className='primary-content'>
@@ -13,20 +14,18 @@ class ProjectsPage extends Component {
           <div>
             <div>
             <b>
-            <a target="_blank"
-                href="https://welsome.org"
-                rel="noopener noreferrer">
-              Post Title
-            </a>
+            <Link
+              to="/blog/the-case-for-speed-and-quality-when-programming">
+              The Case for Speed and Quality When Programming
+            </Link>
             </b>
             </div>
             <div className="small-text">
-              <i>01/01/2039</i>
+              <i>01/13/2020</i>
             </div>
             <div className="small-text">
-              <u>Tags:</u> Frontend Dev, Backend Dev, Postgres, Vue.js, Quasar,
-              Docker, AWS Cloud, Python, Django, Freshchat, Mailchimp, Gunicorn,
-              Nginx
+              <u>Tags:</u> Full Stack Dev, Programming Speed,
+                Programming Quality, Programming Philosophy
             </div>
           </div>
         </div>
@@ -37,4 +36,4 @@ class ProjectsPage extends Component {
 
 }
 
-export default ProjectsPage;
+export default BlogPage;

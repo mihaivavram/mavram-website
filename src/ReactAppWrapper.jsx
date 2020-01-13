@@ -7,6 +7,7 @@ import {
 import TopNav from './components/top-nav/TopNav.jsx'
 import AboutPage from './components/MainContent/AboutPage/AboutPage.jsx'
 import BlogPage from './components/MainContent/BlogPage/BlogPage.jsx'
+import BlogContent from './components/MainContent/BlogContent/BlogContent.jsx'
 import CvPage from './components/MainContent/CvPage/CvPage.jsx'
 import PublicationsPage from './components/MainContent/PublicationsPage/PublicationsPage.jsx'
 import ProjectsPage from './components/MainContent/ProjectsPage/ProjectsPage.jsx'
@@ -75,10 +76,13 @@ class ReactAppWrapper extends Component {
                   <Route path="/projects">
                     <ProjectsPage />
                   </Route>
+                  <Route path="/blog/*">
+                    <BlogContent />
+                  </Route>
                   <Route path="/blog">
                     <BlogPage />
                   </Route>
-                  <Route path="/publications">
+                    <Route path="/publications">
                     <PublicationsPage />
                   </Route>
                   <Route path="/timelapse">
