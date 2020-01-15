@@ -16,6 +16,7 @@ class BlogContent extends Component {
           </h3>
         </div>
         <div class='blog-content'>
+          Author: Mihai Avram | Date: 1/15/2020
           <ReactMarkdown source={articleContent}></ReactMarkdown>
         </div>
 
