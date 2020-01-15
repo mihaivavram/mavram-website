@@ -21,7 +21,7 @@ class BlogPage extends Component {
             </b>
             </div>
             <div className="small-text">
-              <i>01/13/2020</i>
+              <i>1/15/2020</i>
             </div>
             <div className="small-text">
               <u>Tags:</u> Full Stack Dev, Programming Speed,
