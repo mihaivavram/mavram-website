@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 import './BlogPage.css';
 
@@ -14,14 +13,16 @@ class BlogPage extends Component {
           <div>
             <div>
             <b>
-            <Link
-              to="/blog/the-case-for-speed-and-quality-when-programming">
+            <a
+              target="_blanks"
+              href="https://mihaisplace.blog/2020/01/30/the-case-for-speed-and-quality-when-programming/"
+              rel="noopener noreferrer">
               The Case for Speed and Quality When Programming
-            </Link>
+            </a>
             </b>
             </div>
             <div className="small-text">
-              <i>1/15/2020</i>
+              <i>1/30/2020</i>
             </div>
             <div className="small-text">
               <u>Tags:</u> Full Stack Dev, Programming Speed,
