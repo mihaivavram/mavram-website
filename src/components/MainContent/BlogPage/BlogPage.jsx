@@ -15,6 +15,27 @@ class BlogPage extends Component {
             <b>
             <a
               target="_blanks"
+              href="https://mihaisplace.blog/2020/02/17/tools-and-techniques-to-help-you-code-and-work-faster/"
+              rel="noopener noreferrer">
+              Tools and Techniques to Help You Code and Work Faster
+            </a>
+            </b>
+            </div>
+            <div className="small-text">
+              <i>2/16/2020</i>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Programming Speed, Working Speed, IDEs,
+                Code Scaffolding Tools, Code Searching Tools
+            </div>
+          </div>
+        </div>
+        <div className='blog-template'>
+          <div>
+            <div>
+            <b>
+            <a
+              target="_blanks"
               href="https://mihaisplace.blog/2020/01/30/the-case-for-speed-and-quality-when-programming/"
               rel="noopener noreferrer">
               The Case for Speed and Quality When Programming

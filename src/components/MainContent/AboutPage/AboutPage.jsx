@@ -22,7 +22,8 @@ class AboutPage extends Component {
         and <a target="_blank"
                href="https://welsome.org"
                rel="noopener noreferrer">
-            Welsome</a> (a platform for self-improvement and social impact).
+            Welsome</a> (an action driven social media to help us achieve our
+        goals).
         In the past, I have worked on many projects spanning software/web
         development and machine learning/prediction. You may check out my CV,
         projects, and publications for more information.

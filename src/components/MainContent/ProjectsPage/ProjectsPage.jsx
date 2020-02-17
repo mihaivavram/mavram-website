@@ -40,14 +40,15 @@ class ProjectsPage extends Component {
               Nginx
             </div>
             <div>
-              Welsome is a platform for self improvement and social impact.
+              Welsome is a social media platform that focuses on actions we
+              can take to achieve our goals.
               We all want to improve at something, whether it is our health,
               happiness, finances, relationships, or removing our carbon
               footprint, you name it. Welsome provides resources, actionable
               insights, and a socially gamified community for us to improve in
-              all areas of life with a focus on impact. The gloal behind Welsome
-              is to create a platform that holds us accountable for improving
-              our lives, and the planet.
+              all areas of life and partake in the latest trends.
+              The goal behind Welsome is to create a platform that holds us
+              accountable for improving our lives, and the planet.
             </div>
           </div>
         </div>
