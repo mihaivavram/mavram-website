@@ -5,6 +5,62 @@ class TimeLapsePage extends Component {
     return(
       <div className='primary-content'>
           <div>
+            <h1>Fall 2019</h1>
+            <b>Accomplished:</b>
+            <br></br>
+            I finally launched <a target="_blank"
+                             rel="noopener noreferrer"
+                             href="https://welsome.org">
+                             Welsome
+            </a>, a social platform for self-improvement, achieving goals,
+            and tracking impact with our actions. This also came with other
+            responsibilities such as publishing social media channels,
+            gathering a sizeable user base to get
+            feedback from, publishing a weekly newsletter, and starting to
+            conduct numerous user interviews in order to improve Welsome.
+            I also started working with Elliott Adams who is the founder
+            of <a target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://privacybrain.com">
+                  PrivacyBrain
+            </a> and whom I consider to be a very dear friend. Together we have
+            started to build a framework to clean up people's PII from the
+            internet, particularly from data broker sites. These sites often
+            hold people's private information and sell that data to interested
+            3rd parties such as law enforcement, employers, and even
+            cybercriminals. Elliott and I hope that this service can hopefully
+            mitigate the deleterious usage of people's private data online.
+            <br></br>
+            <br></br>
+            <b>Lessons Learned:</b>
+            <br></br>
+            The more I freelance, code, learn, and build things, the more I am
+            realizing that I really love to do this. Hence, I have started to
+            form my own entrepreneurial philosophy so to speak. I think every
+            person should do this because it allows one to live
+            on their own terms. This way it becomes clearer which opportunities
+            to say yes to, and which can take a back seat for now. As of now,
+            my entrepreneurial mentality is mostly a bootstrap-first mentality.
+            Although I do believe that external funding such as Angel Investors
+            or VCs have their role in empowering scalability and massive growth,
+            there's a time and a place for that. At the very beginning of a
+            company's growth, I think it is paramount for the founders to try
+            to keep things as lean as possible, without much external investors
+            as they think about what artifacts of the company they are willing
+            to compromise and which ones to retain full control over.
+            The founders should allso figure out
+            what they love to do when it comes to building companies
+            (e.g. coding, marketing, interviewing, ideating, etc.). The moment
+            external funding comes in, all of these questions get suspended
+            in flux, and the founders have limited control in some decisions
+            of how to run the company, and what they do day to day. I plan to
+            not give away this control if possible, and the day that I do
+            decide that I am ready for it, hopefully, I will have figured out
+            my uncompromising aspirations for the company I am building, and
+            how I would like to work. As of now, I plan to spend at least half
+            my time coding and building since it brings me a lot of joy.
+          </div>
+          <div>
             <h1>Summer 2019</h1>
             <b>Accomplished:</b>
             <br></br>
