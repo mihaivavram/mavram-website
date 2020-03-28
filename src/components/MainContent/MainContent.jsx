@@ -2,7 +2,6 @@ import React from 'react';
 
 import AboutPage from './AboutPage/AboutPage.jsx'
 import BlogPage from './BlogPage/BlogPage.jsx'
-import ConnectPage from './ConnectPage/ConnectPage.jsx'
 import CvPage from './CvPage/CvPage.jsx'
 import ProjectsPage from './ProjectsPage/ProjectsPage.jsx'
 import PublicationsPage from './PublicationsPage/PublicationsPage.jsx'
@@ -27,9 +26,6 @@ function MainContent(props) {
   }
   else if (props.mainContentState === 'timeLapsePage') {
     return <TimeLapsePage />;
-  }
-  else if (props.mainContentState === 'connectPage') {
-    return <ConnectPage />;
   }
 }
 

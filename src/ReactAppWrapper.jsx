@@ -10,8 +10,8 @@ import BlogPage from './components/MainContent/BlogPage/BlogPage.jsx'
 import CvPage from './components/MainContent/CvPage/CvPage.jsx'
 import PublicationsPage from './components/MainContent/PublicationsPage/PublicationsPage.jsx'
 import ProjectsPage from './components/MainContent/ProjectsPage/ProjectsPage.jsx'
+import PressPage from './components/MainContent/PressPage/PressPage.jsx'
 import TimeLapsePage from './components/MainContent/TimeLapsePage/TimeLapsePage.jsx'
-import ConnectPage from './components/MainContent/ConnectPage/ConnectPage.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import './ReactAppWrapper.css';
 
@@ -54,11 +54,11 @@ class ReactAppWrapper extends Component {
     else if (currentState === 'publicationsPage') {
       return <PublicationsPage />;
     }
+    else if (currentState === 'pressPage') {
+      return <PressPage />;
+    }
     else if (currentState === 'timeLapsePage') {
       return <TimeLapsePage />;
-    }
-    else if (currentState === 'connectPage') {
-      return <ConnectPage />;
     }
   }
 
@@ -78,14 +78,14 @@ class ReactAppWrapper extends Component {
                   <Route path="/blog">
                     <BlogPage />
                   </Route>
-                    <Route path="/publications">
+                  <Route path="/publications">
                     <PublicationsPage />
+                  </Route>
+                  <Route path="/press">
+                    <PressPage />
                   </Route>
                   <Route path="/timelapse">
                     <TimeLapsePage />
-                  </Route>
-                  <Route path="/connect">
-                    <ConnectPage />
                   </Route>
                   <Route path="/">
                     <AboutPage />

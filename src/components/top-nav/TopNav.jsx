@@ -12,8 +12,8 @@ class TopNav extends Component {
     this.projectsPageClick = this.projectsPageClick.bind(this)
     this.blogPageClick = this.blogPageClick.bind(this)
     this.publicationsPageClick = this.publicationsPageClick.bind(this)
+    this.pressPageClick = this.pressPageClick.bind(this)
     this.timeLapsePageClick = this.timeLapsePageClick.bind(this)
-    this.connectPageClick = this.connectPageClick.bind(this)
   }
 
   aboutPageClick() {
@@ -36,12 +36,12 @@ class TopNav extends Component {
     this.props.stateHandler("publicationsPage");
   }
 
-  timeLapsePageClick() {
-    this.props.stateHandler("timeLapsePage");
+  pressPageClick() {
+    this.props.stateHandler("pressPage");
   }
 
-  connectPageClick() {
-    this.props.stateHandler("connectPage");
+  timeLapsePageClick() {
+    this.props.stateHandler("timeLapsePage");
   }
 
   render() {
@@ -100,19 +100,19 @@ class TopNav extends Component {
                 </Link>
               </li>
               <li>
+                <Link to="/press"
+                      className={ (routeLocation === '#/press'
+                                ? 'selected-nav-button'
+                                : 'non-selected-nav-button') }
+                      onClick={ this.pressPageClick }>Press
+                </Link>
+              </li>
+              <li>
                 <Link to="/timelapse"
                       className={ (routeLocation === '#/timelapse'
                                 ? 'selected-nav-button'
                                 : 'non-selected-nav-button') }
                       onClick={ this.timeLapsePageClick }>TimeLapse
-                </Link>
-              </li>
-              <li>
-                <Link to="/connect"
-                      className={ (routeLocation === '#/connect'
-                                ? 'selected-nav-button'
-                                : 'non-selected-nav-button') }
-                      onClick={ this.connectPageClick }>Connect
                 </Link>
               </li>
             </ul>

@@ -1,0 +1,37 @@
+
+.small-text {
+  font-size: 0.9rem;
+}
+
+.top-title
+{
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.post-template
+{
+  display: flex;
+  width: 95%;
+  border: 2px solid black;
+  margin: 1%;
+}
+
+@media screen and (max-width: 1000px) {
+    .post-template {
+        display: inline-block;
+    }
+}
+
+.post-template div
+{
+  display: inline-block;
+  margin: 1%;
+}
+
+.post-template img
+{
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+}
