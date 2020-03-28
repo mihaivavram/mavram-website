@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class TimeLapsePage extends Component {
   render() {
     return(

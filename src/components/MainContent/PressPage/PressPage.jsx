@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './PressPage.css';
 
+
 class PressPage extends Component {
   render() {
     return(

@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './TopNav.css';
+
 import MihaiHeadshot from '../../static-contents/images/mihai-headshot.jpg'
+
+import './TopNav.css';
+
 
 class TopNav extends Component {
   constructor(props) {

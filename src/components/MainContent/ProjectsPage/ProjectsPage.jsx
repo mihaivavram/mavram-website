@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
-import SocialBotLogo from '../../../static-contents/images/SocialBotLogo.jpg';
-import FakeyLogo from '../../../static-contents/images/FakeyLogo.png';
-import WelsomeLogo from '../../../static-contents/images/WelsomeLogo.png';
+
 import AdvLearningLogo from '../../../static-contents/images/AdversarialLearningSocialNetworks.jpg';
-import FourcasterLogo from '../../../static-contents/images/4CasterLogo.png';
-import HoaxyLogo from '../../../static-contents/images/HoaxyLogo.png';
-import GraphCountingLogo from '../../../static-contents/images/GraphCounting.png';
-import KnowledgeLinkerLogo from '../../../static-contents/images/KnowledgeLinker.png';
-import EchoGlobalLogo from '../../../static-contents/images/EchoGlobalLogistics.png';
-import FHLBCLogo from '../../../static-contents/images/FHLBCLogo.jpeg';
-import RadiativeTransportLogo from '../../../static-contents/images/RadiativeTransport.jpeg';
 import CivIraqWarLogo from '../../../static-contents/images/IraqWar.jpg';
+import EchoGlobalLogo from '../../../static-contents/images/EchoGlobalLogistics.png';
+import FakeyLogo from '../../../static-contents/images/FakeyLogo.png';
+import FHLBCLogo from '../../../static-contents/images/FHLBCLogo.jpeg';
+import FourcasterLogo from '../../../static-contents/images/4CasterLogo.png';
+import GraphCountingLogo from '../../../static-contents/images/GraphCounting.png';
+import HoaxyLogo from '../../../static-contents/images/HoaxyLogo.png';
+import KnowledgeLinkerLogo from '../../../static-contents/images/KnowledgeLinker.png';
 import PrivacyBrainLogo from '../../../static-contents/images/PrivacyBrainLogo.png';
+import RadiativeTransportLogo from '../../../static-contents/images/RadiativeTransport.jpeg';
+import SocialBotLogo from '../../../static-contents/images/SocialBotLogo.jpg';
+import WelsomeLogo from '../../../static-contents/images/WelsomeLogo.png';
 
 import './ProjectsPage.css';
+
 
 class ProjectsPage extends Component {
   render() {

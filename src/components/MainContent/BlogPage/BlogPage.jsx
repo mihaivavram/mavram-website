@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './BlogPage.css';
 
+
 class BlogPage extends Component {
   render() {
     return(

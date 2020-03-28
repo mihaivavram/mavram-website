@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+
 import AsonamPaper from '../../../static-contents/pdfs/CRV-asonam_2019_paper_191.pdf';
 
 import './PublicationsPage.css';
+
 
 class PublicationsPage extends Component {
   render() {
