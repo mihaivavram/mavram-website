@@ -26,7 +26,8 @@ class BlogPage extends Component {
               <i>4/9/2020</i>
             </div>
             <div className="small-text">
-              <u>Tags:</u> NoCode, LowCode, Code Faster, Build Faster, Agile
+              <u>Tags:</u> No Code, Low Code, Startups, Code Faster,
+                           Build Faster, Agile
             </div>
           </div>
         </div>
