@@ -15,16 +15,18 @@ class AboutPage extends Component {
         <p>
           I am a full stack developer specializing in back-end and front-end
           development, DevOps, as well as Machine Learning and Network Analysis.
-          My interests span creating tools for social good using technology.
+          My interests span creating tools for social good using the latest
+          trends in technology.
           I am the creator of <a
             target="_blank"
             href="https://fakey.iuni.iu.edu/"
-            rel="noopener noreferrer">Fakey</a> (a news literacy game)
+            rel="noopener noreferrer">Fakey</a> (a news literacy tool for Web,
+              Android, and iOS)
           and <a target="_blank"
                  href="https://welsome.org"
                  rel="noopener noreferrer">
-              Welsome</a> (an action driven social media to help us achieve our
-          goals).
+              Welsome</a> (an accountability and self-improvement platform to
+              help us achieve our goals as individuals and as a society).
           In the past, I have worked on many projects spanning software/web
           development and machine learning/prediction. You may check out my CV,
           projects, and publications for more information.

@@ -16,6 +16,28 @@ class BlogPage extends Component {
             <b>
             <a
               target="_blanks"
+              href="https://mihaisplace.blog/2020/05/17/why-use-machine-learning-pipelines-and-what-frameworks-exist-for-them/"
+              rel="noopener noreferrer">
+              Why Use Machine Learning Pipelines and What Frameworks Exist for Them?
+            </a>
+            </b>
+            </div>
+            <div className="small-text">
+              <i>5/17/2020</i>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Machine Learning, Machine Learning Pipelines, DAGs,
+                           AutoML, scikit-learn, Python, TensorFlow Extended,
+                           Microsoft Azure Machine Learning Pipelines
+            </div>
+          </div>
+        </div>
+        <div className='blog-template'>
+          <div>
+            <div>
+            <b>
+            <a
+              target="_blanks"
               href="https://mihaisplace.blog/2020/04/09/a-brief-summary-of-no-code-and-the-main-players-in-the-space/"
               rel="noopener noreferrer">
               A Brief Summary of "No Code" and the Main Players in the Space
