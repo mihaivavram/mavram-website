@@ -10,6 +10,23 @@ class PublicationsPage extends Component {
     return(
       <div className='primary-content'>
           <b>Publications:</b>
+            <div className="publication">
+              <b>
+                <i>Exposure to Social Engagement Metrics
+                   Increases Vulnerability to Misinformation
+                </i>
+              </b>
+              <br></br>
+                Mihai Avram, Nicholas Micallef, Sameer Patil, Filippo Menczer
+              <br></br>
+              <i>Conference/Journal - TBD (Currently in arXiv)
+              </i>
+              <br></br>
+              <a target="_blank"
+                 rel="noopener noreferrer"
+                 href="https://arxiv.org/pdf/2005.04682.pdf">
+                 (Download as PDF)</a>
+            </div>
           <div className="publication">
             <b>
               <i>Adversarial perturbations to manipulate the
