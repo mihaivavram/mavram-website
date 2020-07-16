@@ -19,18 +19,9 @@ class TimeLapsePage extends Component {
             gathering a sizeable user base to get
             feedback from, publishing a weekly newsletter, and starting to
             conduct numerous user interviews in order to improve Welsome.
-            I also started working with Elliott Adams who is the founder
-            of <a target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://privacybrain.com">
-                  PrivacyBrain
-            </a> and whom I consider to be a very dear friend. Together we have
-            started to build a framework to clean up people's PII from the
-            internet, particularly from data broker sites. These sites often
-            hold people's private information and sell that data to interested
-            3rd parties such as law enforcement, employers, and even
-            cybercriminals. Elliott and I hope that this service can hopefully
-            mitigate the deleterious usage of people's private data online.
+            I also started working with Elliott Adams on his security startup
+            as well as other freelance clients which needed AI Bot Detection,
+            web scraping/automation, and back-end/front-end work done.
             <br></br>
             <br></br>
             <b>Lessons Learned:</b>

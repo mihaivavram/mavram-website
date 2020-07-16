@@ -9,7 +9,6 @@ import FourcasterLogo from '../../../static-contents/images/4CasterLogo.png';
 import GraphCountingLogo from '../../../static-contents/images/GraphCounting.png';
 import HoaxyLogo from '../../../static-contents/images/HoaxyLogo.png';
 import KnowledgeLinkerLogo from '../../../static-contents/images/KnowledgeLinker.png';
-import PrivacyBrainLogo from '../../../static-contents/images/PrivacyBrainLogo.png';
 import RadiativeTransportLogo from '../../../static-contents/images/RadiativeTransport.jpeg';
 import SocialBotLogo from '../../../static-contents/images/SocialBotLogo.jpg';
 import WelsomeLogo from '../../../static-contents/images/WelsomeLogo.png';
@@ -126,37 +125,6 @@ class ProjectsPage extends Component {
                  href="https://botometer.iuni.iu.edu/#!/"
                  rel="noopener noreferrer">Botometer
               </a>.
-            </div>
-          </div>
-        </div>
-        <div className='project-template'>
-          <div>
-            <img src={PrivacyBrainLogo} alt="Logo of PrivacyBrain"/>
-          </div>
-          <div>
-            <div>
-            <b>PrivacyBrain
-              (<a target="_blank"
-                 href="http://privacybrain.com/"
-                 rel="noopener noreferrer">Web</a>)
-            </b>
-            </div>
-            <div className="small-text">
-              <u>Tags:</u> Backend Dev, Frontend Dev, Web Automation, Node.js,
-              Puppeteer, Cheerio, Apify, Postgres, AWS Cloud
-            </div>
-            <div>
-              On this project, I am collaborating with PrivacyBrain
-              founder <a target="_blank"
-                 href="https://www.linkedin.com/in/elliottadams"
-                 rel="noopener noreferrer">
-                 Elliott Adams</a> en route to creating a platform that can
-              automate the removal of compromising and sensitive employee data
-              found on the web at scale.
-              We are currently working on the automation process which
-              involves various components such as web automation via Puppeteer,
-              Cheerio, and other automation software mainly written in Node.js
-              Postgres, and Apify.
             </div>
           </div>
         </div>

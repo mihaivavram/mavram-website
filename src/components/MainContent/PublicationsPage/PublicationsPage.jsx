@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import AsonamPaper from '../../../static-contents/pdfs/CRV-asonam_2019_paper_191.pdf';
+import MDPIPaper from '../../../static-contents/pdfs/MDPI-InformationPublication.pdf';
 
 import './PublicationsPage.css';
 
@@ -10,23 +11,41 @@ class PublicationsPage extends Component {
     return(
       <div className='primary-content'>
           <b>Publications:</b>
-            <div className="publication">
-              <b>
-                <i>Exposure to Social Engagement Metrics
-                   Increases Vulnerability to Misinformation
-                </i>
-              </b>
-              <br></br>
-                Mihai Avram, Nicholas Micallef, Sameer Patil, Filippo Menczer
-              <br></br>
-              <i>Conference/Journal - TBD (Currently in arXiv)
+          <div className="publication">
+            <b>
+              <i>Exposure to Social Engagement Metrics
+                 Increases Vulnerability to Misinformation
               </i>
-              <br></br>
-              <a target="_blank"
-                 rel="noopener noreferrer"
-                 href="https://arxiv.org/pdf/2005.04682.pdf">
-                 (Download as PDF)</a>
-            </div>
+            </b>
+            <br></br>
+              Mihai Avram, Nicholas Micallef, Sameer Patil, Filippo Menczer
+            <br></br>
+            <i>Journal - Misinformation Review (Harvard Kennedy School 2020)
+            </i>
+            <br></br>
+            <a target="_blank"
+               rel="noopener noreferrer"
+               href="https://arxiv.org/pdf/2005.04682.pdf">
+               (Download as PDF)</a>
+          </div>
+          <div className="publication">
+            <b>
+              <i>Effectiveness of the Execution and Prevention of Metric-Based
+                 Adversarial Attacks on Social Network Data
+              </i>
+            </b>
+            <br></br>
+               Nikolaus Nova Parulian, Tiffany Lu, Shubhanshu Mishra,
+               Mihai Avram, Jana Diesner
+            <br></br>
+            <i>Journal - Multidisciplinary Digital Publishing Institute 2020
+            </i>
+            <br></br>
+            <a target="_blank"
+              href={MDPIPaper}
+              rel="noopener noreferrer">
+               (Download as PDF)</a>
+          </div>
           <div className="publication">
             <b>
               <i>Adversarial perturbations to manipulate the
