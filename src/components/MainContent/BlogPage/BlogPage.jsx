@@ -16,6 +16,28 @@ class BlogPage extends Component {
             <b>
             <a
               target="_blanks"
+              href="https://mihaisplace.blog/2020/08/07/the-state-of-full-stack-tech-in-2020/"
+              rel="noopener noreferrer">
+              The State of Full Stack Tech in 2020
+            </a>
+            </b>
+            </div>
+            <div className="small-text">
+              <i>08/07/2020</i>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Back End Frameworks, Front End Frameworks, Databases,
+                           Full Stack Development, Machine Learning Frameworks,
+                           Mobile Frameworks
+            </div>
+          </div>
+        </div>
+        <div className='blog-template'>
+          <div>
+            <div>
+            <b>
+            <a
+              target="_blanks"
               href="https://mihaisplace.blog/2020/05/17/why-use-machine-learning-pipelines-and-what-frameworks-exist-for-them/"
               rel="noopener noreferrer">
               Why Use Machine Learning Pipelines and What Frameworks Exist for Them?
