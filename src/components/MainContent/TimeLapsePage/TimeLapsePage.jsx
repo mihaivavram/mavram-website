@@ -6,6 +6,51 @@ class TimeLapsePage extends Component {
     return(
       <div className='primary-content'>
           <div>
+            <h1>Spring 2020</h1>
+            <b>Accomplished:</b>
+            <br></br>
+            I released a weekly newsletter for <a target="_blank"
+                             rel="noopener noreferrer"
+                             href="https://welsome.org">
+                             Welsome
+            </a> and also joined the <a target="_blank"
+                             rel="noopener noreferrer"
+                             href="https://builders.mozilla.community/">
+                             Mozilla Fix-The-Internet Incubator
+            </a>, <a target="_blank"
+                             rel="noopener noreferrer"
+                             href="https://www.startupschool.org/">
+                             YC Startup School
+            </a>, and <a target="_blank"
+                             rel="noopener noreferrer"
+                             href="https://helpwithcovid.com/projects/243-welsome-a-social-activity-tracking-and-recommendation-platform-to-stop-the-spread-of-covid-19">
+                             HelpWithCovid
+            </a> to learn more about what it takes to launch and grow
+            a successful startup. I have also been fortunate to start working
+            with <a target="_blank"
+                             rel="noopener noreferrer"
+                             href="https://www.startupschool.org/">
+                             ghSmart
+            </a> as a software architect.
+            <br></br>
+            <br></br>
+            <b>Lessons Learned:</b>
+            <br></br>
+            When referring to startups, just because you built it, it doesn't
+            mean they will come! Often it takes a lot of <a target="_blank"
+                             rel="noopener noreferrer"
+                             href="https://www.startupschool.org/">
+                             doing things that don't scale
+            </a> to get those first users and that first community. Also,
+            waking up earlier is a surefire way to get more work done during
+            the day because for morning-people like myself, we have the most
+            energy then so we can get more work done without other distractions
+            like calls, meetings, or important emails that happen later in the
+            day. Finally, I am realizing that I love to build useful things.
+            I think this should better help me navigate life and my career by
+            using that as my one true north.
+          </div>
+          <div>
             <h1>Fall 2019</h1>
             <b>Accomplished:</b>
             <br></br>
