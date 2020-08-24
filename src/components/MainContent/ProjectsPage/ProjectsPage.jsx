@@ -6,6 +6,7 @@ import EchoGlobalLogo from '../../../static-contents/images/EchoGlobalLogistics.
 import FakeyLogo from '../../../static-contents/images/FakeyLogo.png';
 import FHLBCLogo from '../../../static-contents/images/FHLBCLogo.jpeg';
 import FourcasterLogo from '../../../static-contents/images/4CasterLogo.png';
+import GhSmartLogo from '../../../static-contents/images/ghSmartLogo.png';
 import GraphCountingLogo from '../../../static-contents/images/GraphCounting.png';
 import HoaxyLogo from '../../../static-contents/images/HoaxyLogo.png';
 import KnowledgeLinkerLogo from '../../../static-contents/images/KnowledgeLinker.png';
@@ -88,6 +89,37 @@ class ProjectsPage extends Component {
               is fact-checked. We created this game for media literacy
               as well as for research in uncovering patterns in
               the way people interact with social media news feeds.
+            </div>
+          </div>
+        </div>
+        <div className='project-template'>
+          <div>
+            <img src={GhSmartLogo}
+                 alt="The logo of ghSMART which is just the word itself."/>
+          </div>
+          <div>
+            <div>
+            <b>ghSmart - Management Consulting
+              (<a target="_blank"
+                  href="https://ghsmart.com/"
+                  rel="noopener noreferrer">Site</a>)
+            </b>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Backend Dev, Python, Data Mining, ETL, Natural
+              Language Processing, Machine Learning, Analytics
+            </div>
+            <div>
+              I have been hired as a software architect for ghSmart where I
+              have been doing the following along with a colleague.
+              Leading the development effort for text extraction, ETL,
+              Data Mining, and Natural Language Processing. Conducting
+              market research for enterprise-level Big Data and Machine
+              Learning tools. Creating text extraction pipelines, text
+              analytics, machine learning, and visualizations for our
+              project. Finishing and showcasing an MVP of the project to
+              upper management. Continuing to iterate on improving various
+              digital processes at ghSmart.
             </div>
           </div>
         </div>
