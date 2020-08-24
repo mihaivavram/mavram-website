@@ -10,13 +10,26 @@ class AboutPage extends Component {
             Full Stack Developer / Freelancer / Social Entrepreneur
           </h3>
         </div>
-        <b>Hello,</b>
+        <b>Hello friends,</b>
         <br />
         <p>
           I am a full stack developer specializing in back-end and front-end
-          development, DevOps, as well as Machine Learning and Network Analysis.
-          My interests span creating tools for social good using the latest
-          trends in technology.
+          development, DevOps, as well as Machine Learning.
+          <br />
+          <br />
+          <b>My specialization
+          lies in the ability to envision, plan, and craft the intersectional
+          pieces of a whole technology project from end to end.</b> I do this
+          by maintaining best practices as a software engineer, always keeping
+          up to date on the latest technology trends in all areas of software
+          infrastructure, and building software with a bird's eye view.
+          <br />
+          <br />
+          <b>My interests span creating useful software using the latest
+          trends in technology, and ideally software that makes the world
+          a better place.</b>
+          <br />
+          <br />
           I am the creator of <a
             target="_blank"
             href="https://fakey.iuni.iu.edu/"
@@ -25,8 +38,8 @@ class AboutPage extends Component {
           and <a target="_blank"
                  href="https://welsome.org"
                  rel="noopener noreferrer">
-              Welsome</a> (an accountability and self-improvement platform to
-              help us achieve our goals as individuals and as a society).
+              Welsome</a> (an all-inclusive self-improvement platform that
+              can help us be better humans).
           In the past, I have worked on many projects spanning software/web
           development and machine learning/prediction. You may check out my CV,
           projects, and publications for more information.
