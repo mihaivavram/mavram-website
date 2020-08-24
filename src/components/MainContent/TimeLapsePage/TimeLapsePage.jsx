@@ -31,7 +31,15 @@ class TimeLapsePage extends Component {
                              rel="noopener noreferrer"
                              href="https://www.startupschool.org/">
                              ghSmart
-            </a> as a software architect.
+            </a> as a software architect. Oh, and I also finished <a
+                             target="_blank"
+                             rel="noopener noreferrer"
+                             href="https://www.udemy.com/course/seth-godin-freelancer-course/">
+                             Seth Godin's Freelancer Course
+            </a> where my main takeaways were to find opportunities that
+            allow me to do the best work that I can, to specialize
+            and do one thing very well, as well as find clients and
+            opportunities that value good and high-quality work.
             <br></br>
             <br></br>
             <b>Lessons Learned:</b>
