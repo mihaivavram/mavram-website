@@ -7,7 +7,7 @@ class AboutPage extends Component {
       <div className='primary-content'>
         <div style={{ textAlign: "center" }}>
           <h3>
-            Full Stack Developer / Freelancer / Social Entrepreneur
+            Full Stack Developer / Entrepreneur / Builder
           </h3>
         </div>
         <b>Hello friends,</b>
@@ -18,16 +18,18 @@ class AboutPage extends Component {
           <br />
           <br />
           <b>My specialization
-          lies in the ability to envision, plan, and craft the intersectional
-          pieces of a whole technology project from end to end.</b> I do this
-          by maintaining best practices as a software engineer, always keeping
-          up to date on the latest technology trends in all areas of software
-          infrastructure, and building software with a bird's eye view.
+          lies in the ability to envision, architect, and create the 
+          intersectional pieces of a whole technology project from end to end.
+          </b> I do this
+          by maintaining best practices of software engineering, agile 
+          development, and team leadership. I am also always keeping
+          up to date on the latest successful technology trends in all areas of software
+          infrastructure and running efficient software teams.
           <br />
           <br />
-          <b>My interests span creating useful software using the latest
-          trends in technology, and ideally software that makes the world
-          a better place.</b>
+          <b>My interests span creating useful and innovative software using 
+          the latest trends in technology, and ideally software that makes the 
+          world a better place.</b>
           <br />
           <br />
           I am the creator of <a
@@ -40,15 +42,24 @@ class AboutPage extends Component {
                  rel="noopener noreferrer">
               Welsome</a> (an all-inclusive self-improvement platform that
               can help us be better humans).
-          In the past, I have worked on many projects spanning software/web
-          development and machine learning/prediction. You may check out my CV,
-          projects, and publications for more information.
+          I also feel very grateful for winning the <a target="_blank"
+                 href="https://cnets.indiana.edu/blog/2020/11/01/distinguished-masters-thesis-award/"
+                 rel="noopener noreferrer">
+              IU Distinguished Master's Thesis Award</a> through my work with 
+          Fakey and Hoaxy. In the past, I have worked on many projects spanning 
+          software/web development and machine learning/prediction. 
+          You may check out my CV, projects, and publications for more 
+          information.
         </p>
         <b>What am I up to nowadays?</b>
         <ol>
-          <li>Working as a full stack freelancer</li>
-          <li>Working on expanding and
-              launching <a target="_blank"
+          <li>Launching an intraprenurial tech startup within <a target="_blank"
+                                    href="https://ghsmart.com/"
+                                    rel="noopener noreferrer">
+                                    ghSmart
+                                  </a>
+          </li>
+          <li>Building and expanding <a target="_blank"
                            href="https://welsome.org"
                            rel="noopener noreferrer">
                           Welsome

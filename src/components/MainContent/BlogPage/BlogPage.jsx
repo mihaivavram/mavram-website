@@ -16,6 +16,50 @@ class BlogPage extends Component {
             <b>
             <a
               target="_blanks"
+              href="https://mihaisplace.blog/2020/12/09/understanding-the-blockchain-ecosystem-from-the-ground-up/"
+              rel="noopener noreferrer">
+              Understanding The Blockchain Ecosystem From The Ground Up
+            </a>
+            </b>
+            </div>
+            <div className="small-text">
+              <i>12/09/2020</i>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Blockchainbuildingblocks, Buildingblockchain, C++, 
+                           Code, Java, Javascript, Learn, Python, Solidity
+            </div>
+          </div>
+        </div>
+        <div className='blog-template'>
+          <div>
+            <div>
+            <b>
+            <a
+              target="_blanks"
+              href="https://mihaisplace.blog/2020/10/11/why-i-built-a-first-of-its-kind-social-impact-and-self-improvement-tracking-app/"
+              rel="noopener noreferrer">
+              Why I Built a First of its Kind Social Impact and Self 
+              Improvement Tracking App?
+            </a>
+            </b>
+            </div>
+            <div className="small-text">
+              <i>10/11/2020</i>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Apps For Social Good, Full Stack Development, 
+                           Mobile Development, Self Improvement, Social Impact, 
+                           Tracking App, UI/UX
+            </div>
+          </div>
+        </div>
+        <div className='blog-template'>
+          <div>
+            <div>
+            <b>
+            <a
+              target="_blanks"
               href="https://mihaisplace.blog/2020/08/07/the-state-of-full-stack-tech-in-2020/"
               rel="noopener noreferrer">
               The State of Full Stack Tech in 2020

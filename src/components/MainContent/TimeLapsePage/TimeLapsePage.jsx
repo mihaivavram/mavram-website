@@ -6,6 +6,30 @@ class TimeLapsePage extends Component {
     return(
       <div className='primary-content'>
           <div>
+            <h1>Fall 2020</h1>
+            <b>Accomplished:</b>
+            <br></br>
+            I am fortunate to have received the <a target="_blank"
+                               rel="noopener noreferrer"
+            href="https://cnets.indiana.edu/blog/2020/11/01/distinguished-masters-thesis-award/">
+            2020 Indiana University 
+            Master's Thesis award</a> for my work on "Hoaxy and Fakey: Tools to 
+            Analyze and Mitigate the Spread of Misinformation in Social Media". 
+
+            <br></br>
+            <br></br>
+            <b>Lessons Learned:</b>
+            <br></br>
+            For those of us lucky enough to be living in a developed nation, 
+            the most scarce resource we have is time, not money. I have also
+            realized that the way I like to work is by taking the approach of 
+            a software architect and leader. I love to understand and plan 
+            all the components of how a tech product is made, from the back-end,
+            the front-end, and everything in between. This also includes agile
+            and lean methodology such as successfully following processes to
+            lead a software team into success.
+          </div>
+          <div>
             <h1>Spring 2020</h1>
             <b>Accomplished:</b>
             <br></br>

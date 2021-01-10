@@ -55,7 +55,7 @@ class TopNav extends Component {
             <div className='my-headshot'>
               <img src={ MihaiHeadshot }
                    alt='Headshot of Mihai Avram'
-                   width="180"
+                   width="150"
                    height="150"/>
               <div className='header-name'><b>Mihai Avram</b></div>
             </div>

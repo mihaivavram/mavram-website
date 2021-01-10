@@ -33,7 +33,13 @@ class ProjectsPage extends Component {
                 href="https://welsome.org"
                 rel="noopener noreferrer">
               Web
-            </a>)
+            </a>, <a target="_blank"
+               href="https://play.google.com/store/apps/details?id=com.welsome.app"
+               rel="noopener noreferrer">
+               Android</a>, <a target="_blank"
+               href="https://testflight.apple.com/join/gM9XZX1V"
+               rel="noopener noreferrer">
+               iOS</a>)
             </b>
             </div>
             <div className="small-text">

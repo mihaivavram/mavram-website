@@ -16,6 +16,23 @@ class PressPage extends Component {
             <b>
             <a
               target="_blanks"
+              href="https://cnets.indiana.edu/blog/2020/11/01/distinguished-masters-thesis-award/"
+              rel="noopener noreferrer">
+              Distinguished Master’s Thesis Award
+            </a>
+            </b>
+            </div>
+            <div className="small-text">
+              <i>CNetS - 11/01/2020</i>
+            </div>
+          </div>
+        </div>
+        <div className='post-template'>
+          <div>
+            <div>
+            <b>
+            <a
+              target="_blanks"
               href="https://www.poynter.org/fact-checking/2019/can-media-literacy-be-gamified-a-qa-with-one-of-fakeys-developers/"
               rel="noopener noreferrer">
               Can media literacy be gamified? A Q&A with one of Fakey’s developers

@@ -7,7 +7,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer">
-         Copyright © 2020 | Mihai Avram
+         Copyright © 2021 | Mihai Avram
       </footer>
     );
   }
