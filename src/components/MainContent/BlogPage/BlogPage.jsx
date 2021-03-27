@@ -16,6 +16,30 @@ class BlogPage extends Component {
             <b>
             <a
               target="_blanks"
+              href="https://mihaisplace.blog/2021/03/21/the-essentialist-testing-guide-in-2021/"
+              rel="noopener noreferrer">
+              The Essentialist Testing Guide In 2021
+            </a>
+            </b>
+            </div>
+            <div className="small-text">
+              <i>03/21/2021</i>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Acceptance Test Driven Development, 
+              Acceptance Testing, Behavior Driven Development, 
+              End To End Testing, Integration Testing, Jest, Junit, Pytest, 
+              Test Coverage, Test Driven Development, Testing, Types Of Tests, 
+              Unit Testing
+            </div>
+          </div>
+        </div>
+        <div className='blog-template'>
+          <div>
+            <div>
+            <b>
+            <a
+              target="_blanks"
               href="https://mihaisplace.blog/2020/12/09/understanding-the-blockchain-ecosystem-from-the-ground-up/"
               rel="noopener noreferrer">
               Understanding The Blockchain Ecosystem From The Ground Up

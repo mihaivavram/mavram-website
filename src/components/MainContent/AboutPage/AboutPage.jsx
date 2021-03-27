@@ -7,7 +7,7 @@ class AboutPage extends Component {
       <div className='primary-content'>
         <div style={{ textAlign: "center" }}>
           <h3>
-            Full Stack Developer / Entrepreneur / Builder
+            Full Stack Developer / Social Entrepreneur / Builder
           </h3>
         </div>
         <b>Hello friends,</b>
