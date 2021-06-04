@@ -13,6 +13,23 @@ class PublicationsPage extends Component {
           <b>Publications:</b>
           <div className="publication">
             <b>
+              <i>Fakey: A Game Intervention to Improve News Literacy on 
+                 Social Media
+              </i>
+            </b>
+            <br></br>
+              Nicholas Micallef, Mihai Avram, Filippo Menczer, and Sameer Patil
+            <br></br>
+            <i>Conference - (CSCW 2021) - Human-Computer Interaction
+            </i>
+            <br></br>
+            <a target="_blank"
+               rel="noopener noreferrer"
+               href="https://dl.acm.org/doi/pdf/10.1145/3449080">
+               (Download as PDF)</a>
+          </div>
+          <div className="publication">
+            <b>
               <i>Exposure to Social Engagement Metrics
                  Increases Vulnerability to Misinformation
               </i>

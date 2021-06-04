@@ -6,6 +6,44 @@ class TimeLapsePage extends Component {
     return(
       <div className='primary-content'>
           <div>
+            <h1>Spring 2021</h1>
+            <b>Accomplished:</b>
+            <br></br>
+            First and foremost, I got vaccinated! While I may be fairly young
+            and low-risk, I wanted to protect others around me who are less
+            fortunate to get the vaccine as well as be able to travel in the
+            summer. This spring I also built state-of-the-art NLP algorithms 
+            for an innovation project at ghSmart which we hope to spin off into
+            a startup soon. I started to mentor and work with junior 
+            developers. Also proud of reaching dozens of followers and a 
+            handful of users for Welsome. To get to this, it took a lot of 
+            quality Twitter posts every single day. Oh, and I also picked up
+            electric guitar. While I am no Jimi Hendrix, I take the pleasure
+            of getting a little better every week.
+            <br></br>
+            <br></br>
+            <b>Lessons Learned:</b>
+            <br></br>
+            One of the best books I have read so far was 
+            "The Formula: The Universal Laws of Success" by 
+            Albert-László Barabási. Some of the golden nuggets from the book 
+            are: the notion that in order to make an impact and change the world
+            we must start small, get small wins as well as build our network.
+            The better we get at our craft, and the more wins we have, the
+            more wins we will get. When our personal network is matured, our
+            future wins will be even more amplified. I want to focus more on 
+            the craft however; as that truly gives me joy and flow. Not the 
+            vanity metrics, paycheck, or titles. It is hard to do this, 
+            but in my mind if we chase the craft instead of the fame, it 
+            becomes a much happier human experience. Once you are famous or
+            very successful and end up playing that game, and there will always
+            be someone more famous or successful than you, and the chase never
+            ends. Being happy with the craft/output and detached from such 
+            vanity metrics is a good practice of humility in my mind. I highly
+            recommend "The Formula" to anybody who wants to understand the
+            science behind success!
+          </div>
+          <div>
             <h1>Fall 2020</h1>
             <b>Accomplished:</b>
             <br></br>

@@ -16,6 +16,30 @@ class BlogPage extends Component {
             <b>
             <a
               target="_blanks"
+              href="https://mihaisplace.blog/2021/06/02/nil-to-nlp/"
+              rel="noopener noreferrer">
+              Nil to NLP
+            </a>
+            </b>
+            </div>
+            <div className="small-text">
+              <i>06/02/2021</i>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Natural Language Processing, AUC, CNNs, 
+              Computational Linguistics, Confusion Matrix, F1, 
+              Few Shot Learning, K-Means, LDA, Lemmatization, Precision, RNNs, 
+              ROC Curve, Stemming, Supervised Learning, TF-IDF, Tokenization, 
+              Transformers, Unsupervised Learning, Word Embeddings, Word2vec
+            </div>
+          </div>
+        </div>
+        <div className='blog-template'>
+          <div>
+            <div>
+            <b>
+            <a
+              target="_blanks"
               href="https://mihaisplace.blog/2021/03/21/the-essentialist-testing-guide-in-2021/"
               rel="noopener noreferrer">
               The Essentialist Testing Guide In 2021
