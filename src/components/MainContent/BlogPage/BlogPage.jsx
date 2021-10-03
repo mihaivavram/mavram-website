@@ -16,6 +16,29 @@ class BlogPage extends Component {
             <b>
             <a
               target="_blanks"
+              href="https://mihaisplace.blog/2021/10/03/the-state-of-web-scraping-in-2021/"
+              rel="noopener noreferrer">
+              The State Of Web Scraping in 2021
+            </a>
+            </b>
+            </div>
+            <div className="small-text">
+              <i>10/02/2021</i>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Web Scraping, Apify, Beautiful Soup, Bots, Cheerio, 
+                           Diffbot, Goutte, Jaunt, JavaScript, Jsoup, 
+                           Mechanical Soup, Node.js, Octoparse, Parsehub, 
+                           Puppeteer, Python, Robots.txt, Scraper Api, Scrapy
+            </div>
+          </div>
+        </div>
+        <div className='blog-template'>
+          <div>
+            <div>
+            <b>
+            <a
+              target="_blanks"
               href="https://mihaisplace.blog/2021/06/02/nil-to-nlp/"
               rel="noopener noreferrer">
               Nil to NLP
