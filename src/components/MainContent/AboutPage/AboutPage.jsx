@@ -53,11 +53,17 @@ class AboutPage extends Component {
         </p>
         <b>What am I up to nowadays?</b>
         <ol>
-          <li>Launching an intraprenurial tech startup within <a target="_blank"
+          <li>Innovating on hiring automation tech within <a target="_blank"
                                     href="https://ghsmart.com/"
                                     rel="noopener noreferrer">
                                     ghSmart
                                   </a>
+          </li>
+          <li>Building and expanding <a target="_blank"
+                           href="https://dailystartuptips.io"
+                           rel="noopener noreferrer">
+                          Daily Startup Tips
+                        </a>
           </li>
           <li>Building and expanding <a target="_blank"
                            href="https://welsome.org"

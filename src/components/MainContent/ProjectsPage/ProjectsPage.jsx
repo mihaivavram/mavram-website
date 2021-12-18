@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import AdvLearningLogo from '../../../static-contents/images/AdversarialLearningSocialNetworks.jpg';
 import CivIraqWarLogo from '../../../static-contents/images/IraqWar.jpg';
+import DailyStartupTipsLogo from '../../../static-contents/images/DailyStartupTipsLogo.png';
 import EchoGlobalLogo from '../../../static-contents/images/EchoGlobalLogistics.png';
 import FakeyLogo from '../../../static-contents/images/FakeyLogo.png';
 import FHLBCLogo from '../../../static-contents/images/FHLBCLogo.jpeg';
@@ -22,6 +23,36 @@ class ProjectsPage extends Component {
     return(
       <div className='primary-content'>
         <b>Current Projects</b>
+        <div className='project-template'>
+          <div>
+            <img src={DailyStartupTipsLogo} alt='A gold ore over a black background'/>
+          </div>
+          <div>
+            <div>
+            <b>Daily Startup Tips
+            (<a target="_blank"
+                href="https://dailystartuptips.io"
+                rel="noopener noreferrer">
+              Web
+            </a>)
+            </b>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Startups, AI Summarization using NLP, Front-End
+            </div>
+            <div>
+              Daily Startup Tips is a newsletter and eventually a platform/app
+              to provide early and mid-stage founders with essential startup
+              advice in byte-sized chunks. Something 
+              like <a target="_blank"
+                href="https://www.blinkist.com/"
+                rel="noopener noreferrer">  
+                Blinkist</a> for Startups
+              covering many topics (e.g. User Acquisition, MVPs, Marketing,
+              Monetization, Business Models, Scaling, etc.).
+            </div>
+          </div>
+        </div>
         <div className='project-template'>
           <div>
             <img src={WelsomeLogo} alt='Mountains and a sun'/>

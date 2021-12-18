@@ -16,6 +16,30 @@ class BlogPage extends Component {
             <b>
             <a
               target="_blanks"
+              href="https://mihaisplace.blog/2021/12/18/the-only-bootstrapper-startup-guide-you-will-ever-need/"
+              rel="noopener noreferrer">
+              A Step-By-Step Startup Guide For Bootstrappers
+            </a>
+            </b>
+            </div>
+            <div className="small-text">
+              <i>12/18/2021</i>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Bootstrapping, Business, Business Plans, Customers, 
+              Entrepreneurship, Feedback Loops, Launching, Lean Canvas, Market 
+              Research, Monetization, MVPs, Product Market Fit, Running Lean, 
+              Startups, Tracking Analytics, User Acquisition, User Feedback,
+              Startup Guide
+            </div>
+          </div>
+        </div>
+        <div className='blog-template'>
+          <div>
+            <div>
+            <b>
+            <a
+              target="_blanks"
               href="https://mihaisplace.blog/2021/10/03/the-state-of-web-scraping-in-2021/"
               rel="noopener noreferrer">
               The State Of Web Scraping in 2021
