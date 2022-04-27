@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import AdvLearningLogo from '../../../static-contents/images/AdversarialLearningSocialNetworks.jpg';
 import CivIraqWarLogo from '../../../static-contents/images/IraqWar.jpg';
-import DailyStartupTipsLogo from '../../../static-contents/images/DailyStartupTipsLogo.png';
+import EssentialStartupBytesLogo from '../../../static-contents/images/EssentialStartupBytesLogo.png';
 import EchoGlobalLogo from '../../../static-contents/images/EchoGlobalLogistics.png';
 import FakeyLogo from '../../../static-contents/images/FakeyLogo.png';
 import FHLBCLogo from '../../../static-contents/images/FHLBCLogo.jpeg';
@@ -25,13 +25,13 @@ class ProjectsPage extends Component {
         <b>Current Projects</b>
         <div className='project-template'>
           <div>
-            <img src={DailyStartupTipsLogo} alt='A gold ore over a black background'/>
+            <img src={EssentialStartupBytesLogo} alt='A gold ore over a black background'/>
           </div>
           <div>
             <div>
-            <b>Daily Startup Tips
+            <b>Essential Startup Bytes
             (<a target="_blank"
-                href="https://dailystartuptips.io"
+                href="https://www.essentialstartupbytes.com/"
                 rel="noopener noreferrer">
               Web
             </a>)
@@ -41,7 +41,7 @@ class ProjectsPage extends Component {
               <u>Tags:</u> Startups, AI Summarization using NLP, Front-End
             </div>
             <div>
-              Daily Startup Tips is a newsletter and eventually a platform/app
+              Essential Startup Bytes is a platform and newsletter
               to provide early and mid-stage founders with essential startup
               advice in byte-sized chunks. Something 
               like <a target="_blank"
@@ -50,45 +50,6 @@ class ProjectsPage extends Component {
                 Blinkist</a> for Startups
               covering many topics (e.g. User Acquisition, MVPs, Marketing,
               Monetization, Business Models, Scaling, etc.).
-            </div>
-          </div>
-        </div>
-        <div className='project-template'>
-          <div>
-            <img src={WelsomeLogo} alt='Mountains and a sun'/>
-          </div>
-          <div>
-            <div>
-            <b>Welsome
-            (<a target="_blank"
-                href="https://welsome.org"
-                rel="noopener noreferrer">
-              Web
-            </a>, <a target="_blank"
-               href="https://play.google.com/store/apps/details?id=com.welsome.app"
-               rel="noopener noreferrer">
-               Android</a>, <a target="_blank"
-               href="https://testflight.apple.com/join/gM9XZX1V"
-               rel="noopener noreferrer">
-               iOS</a>)
-            </b>
-            </div>
-            <div className="small-text">
-              <u>Tags:</u> Frontend Dev, Backend Dev, Postgres, Vue.js, Quasar,
-              Docker, AWS Cloud, Python, Django, Freshchat, Mailchimp, Gunicorn,
-              Nginx
-            </div>
-            <div>
-              Welsome is a self-improvement and social impact platform
-              that focuses on actions we can take to improve ourselves and
-              the planet.
-              We all want to improve at something, whether it is our health,
-              happiness, finances, relationships, or removing our carbon
-              footprint, you name it. Welsome provides resources, actionable
-              insights, and a socially gamified community for us to improve in
-              all areas of life and partake in the latest trends.
-              The goal behind Welsome is to create a platform that holds us
-              accountable for improving our lives, and the planet.
             </div>
           </div>
         </div>
@@ -157,6 +118,34 @@ class ProjectsPage extends Component {
               project. Finishing and showcasing an MVP of the project to
               upper management. Continuing to iterate on improving various
               digital processes at ghSmart.
+            </div>
+          </div>
+        </div>
+        <div className='project-template'>
+          <div>
+            <img src={WelsomeLogo} alt='Mountains and a sun'/>
+          </div>
+          <div>
+            <div>
+            <b>Welsome (Web, Android, iOS)
+            </b>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Frontend Dev, Backend Dev, Postgres, Vue.js, Quasar,
+              Docker, AWS Cloud, Python, Django, Freshchat, Mailchimp, Gunicorn,
+              Nginx
+            </div>
+            <div>
+              Welsome is a self-improvement and social impact platform
+              that focuses on actions we can take to improve ourselves and
+              the planet.
+              We all want to improve at something, whether it is our health,
+              happiness, finances, relationships, or removing our carbon
+              footprint, you name it. Welsome provides resources, actionable
+              insights, and a socially gamified community for us to improve in
+              all areas of life and partake in the latest trends.
+              The goal behind Welsome is to create a platform that holds us
+              accountable for improving our lives, and the planet.
             </div>
           </div>
         </div>

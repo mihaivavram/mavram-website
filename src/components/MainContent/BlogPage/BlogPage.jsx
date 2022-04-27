@@ -16,6 +16,28 @@ class BlogPage extends Component {
             <b>
             <a
               target="_blanks"
+              href="https://mihaisplace.blog/2022/04/25/a-comprehensive-guide-to-web3-for-beginners/"
+              rel="noopener noreferrer">
+              A Comprehensive Guide to Web3 for Beginners
+            </a>
+            </b>
+            </div>
+            <div className="small-text">
+              <i>04/25/2022</i>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Blockchain, Coinbase, Crypto, Crypto Wallets, 
+              Cryptocurrency, DAOs, Dapps, DeFI, Ledger Nano X, Metamask, 
+              Metaverse, NFTs, Nodes, Stablecoins, Web3
+            </div>
+          </div>
+        </div>
+        <div className='blog-template'>
+          <div>
+            <div>
+            <b>
+            <a
+              target="_blanks"
               href="https://mihaisplace.blog/2021/12/18/the-only-bootstrapper-startup-guide-you-will-ever-need/"
               rel="noopener noreferrer">
               A Step-By-Step Startup Guide For Bootstrappers

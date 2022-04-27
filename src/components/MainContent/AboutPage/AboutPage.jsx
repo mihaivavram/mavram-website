@@ -38,10 +38,10 @@ class AboutPage extends Component {
             rel="noopener noreferrer">Fakey</a> (a news literacy tool for Web,
               Android, and iOS)
           and <a target="_blank"
-                 href="https://welsome.org"
+                 href="https://www.essentialstartupbytes.com/"
                  rel="noopener noreferrer">
-              Welsome</a> (an all-inclusive self-improvement platform that
-              can help us be better humans).
+              Essential Startup Bytes</a> (a newsletter to help other founders
+              learn startup knowledge in byte-sized chunks).
           I also feel very grateful for winning the <a target="_blank"
                  href="https://cnets.indiana.edu/blog/2020/11/01/distinguished-masters-thesis-award/"
                  rel="noopener noreferrer">
@@ -60,15 +60,9 @@ class AboutPage extends Component {
                                   </a>
           </li>
           <li>Building and expanding <a target="_blank"
-                           href="https://dailystartuptips.io"
+                           href="https://www.essentialstartupbytes.com/"
                            rel="noopener noreferrer">
-                          Daily Startup Tips
-                        </a>
-          </li>
-          <li>Building and expanding <a target="_blank"
-                           href="https://welsome.org"
-                           rel="noopener noreferrer">
-                          Welsome
+                          Essential Startup Bytes
                         </a>
           </li>
           <li>Supporting and expanding <a target="_blank"
