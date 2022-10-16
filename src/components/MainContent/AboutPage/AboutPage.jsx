@@ -65,10 +65,7 @@ class AboutPage extends Component {
                           Essential Startup Bytes
                         </a>
           </li>
-          <li>Supporting and expanding <a target="_blank"
-               href="https://fakey.iuni.iu.edu/"
-               rel="noopener noreferrer">Fakey</a>
-            <br /></li>
+          <li>Working on some of the recent projects on the projects page</li>
         </ol>
         <b>Connect with me via:</b>
         <ul className="connect-contents">
