@@ -65,6 +65,12 @@ class AboutPage extends Component {
                           Essential Startup Bytes
                         </a>
           </li>
+          <li>Building the community behind <a target="_blank"
+                           href="https://gamepasspicker.com/"
+                           rel="noopener noreferrer">
+                          Gamepass Game Picker
+                        </a>
+          </li>
           <li>Working on some of the recent projects on the projects page</li>
         </ol>
         <b>Connect with me via:</b>

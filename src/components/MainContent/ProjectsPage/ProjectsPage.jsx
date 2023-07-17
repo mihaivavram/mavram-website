@@ -8,6 +8,7 @@ import EchoGlobalLogo from '../../../static-contents/images/EchoGlobalLogistics.
 import FakeyLogo from '../../../static-contents/images/FakeyLogo.png';
 import FHLBCLogo from '../../../static-contents/images/FHLBCLogo.jpeg';
 import FourcasterLogo from '../../../static-contents/images/4CasterLogo.png';
+import GamepassPickerLogo from '../../../static-contents/images/GamepassPickerLogo.png';
 import GhSmartLogo from '../../../static-contents/images/ghSmartLogo.png';
 import GraphCountingLogo from '../../../static-contents/images/GraphCounting.png';
 import HoaxyLogo from '../../../static-contents/images/HoaxyLogo.png';
@@ -24,30 +25,6 @@ class ProjectsPage extends Component {
     return(
       <div className='primary-content'>
         <b>Current Projects</b>
-        <div className='project-template'>
-          <div>
-            <img src={AutoSaveItLogo} alt='A bookmark with the word A on it.'/>
-          </div>
-          <div>
-            <div>
-            <b>Autosave It
-            (<a target="_blank"
-                href="https://www.autosaveit.com/"
-                rel="noopener noreferrer">
-              Web
-            </a>)
-            </b>
-            </div>
-            <div className="small-text">
-              <u>Tags:</u> News, Information Curation, RSS Feeds, Web Automation, Web Scraping
-            </div>
-            <div>
-              Autosave It is a service that saves all of your favorite newsletters
-              to a daily digest so that you can do more reading and less searching.
-              And definitely no more reading newsletters in your e-mail inbox!
-            </div>
-          </div>
-        </div>
         <div className='project-template'>
           <div>
             <img src={EssentialStartupBytesLogo} alt='A gold ore over a black background'/>
@@ -75,6 +52,33 @@ class ProjectsPage extends Component {
                 Blinkist</a> for Startups
               covering many topics (e.g. User Acquisition, MVPs, Marketing,
               Monetization, Business Models, Scaling, etc.).
+            </div>
+          </div>
+        </div>
+        <div className='project-template'>
+          <div>
+              <img src={GamepassPickerLogo}
+                  alt="A cube with sides of different colored shades of white, and green."/>
+            </div>
+            <div>
+              <div>
+            <b>Gamepass Game Picker
+            (<a target="_blank"
+                href="https://gamepasspicker.com/"
+                rel="noopener noreferrer">
+              Web
+            </a>)
+            </b>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Gaming, Front-End, Back-End, DevOps, Web Automations
+            </div>
+            <div>
+              The Gamepass Game Picker is a service to help gamers find the
+              next game to play on Xbox/PC Gamepass service based on their preferences.
+              Eventually, my goal is to turn this project into a platform
+              to help gamers manage their play time, preferences, achievements,
+              and impact with gaming.
             </div>
           </div>
         </div>
@@ -171,6 +175,26 @@ class ProjectsPage extends Component {
               all areas of life and partake in the latest trends.
               The goal behind Welsome is to create a platform that holds us
               accountable for improving our lives, and the planet.
+            </div>
+          </div>
+        </div>
+        <div className='project-template'>
+          <div>
+            <img src={AutoSaveItLogo} alt='A bookmark with the word A on it.'/>
+          </div>
+          <div>
+            <div>
+            <b>Autosave It
+            (Web)
+            </b>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> News, Information Curation, RSS Feeds, Web Automation, Web Scraping
+            </div>
+            <div>
+              Autosave It is a service that saves all of your favorite newsletters
+              to a daily digest so that you can do more reading and less searching.
+              And definitely no more reading newsletters in your e-mail inbox!
             </div>
           </div>
         </div>
