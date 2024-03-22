@@ -7,32 +7,15 @@ class AboutPage extends Component {
       <div className='primary-content'>
         <div style={{ textAlign: "center" }}>
           <h3>
-            Full Stack Developer / Social Entrepreneur / Builder
+            Founder / CTO / Full Stack Developer
           </h3>
         </div>
-        <b>Hello friends,</b>
-        <br />
+        <div>Hey <span role="img" aria-label="waving hand">👋</span>,</div>
         <p>
-          I am a full stack developer specializing in back-end and front-end
-          development, DevOps, as well as Machine Learning.
+          I'm a distinguished developer and startup founder dedicated to leveraging technology for positive impact. Specializing in full-spectrum tech project development, I bring ideas to life through rigorous software engineering practices and team leadership, always staying abreast of the latest tech trends.
           <br />
           <br />
-          <b>My specialization
-          lies in the ability to envision, architect, and create the 
-          intersectional pieces of a whole technology project from end to end.
-          </b> I do this
-          by maintaining best practices of software engineering, agile 
-          development, and team leadership. I am also always keeping
-          up to date on the latest successful technology trends in all areas of software
-          infrastructure and running efficient software teams.
-          <br />
-          <br />
-          <b>My interests span creating useful and innovative software using 
-          the latest trends in technology, and ideally software that makes the 
-          world a better place.</b>
-          <br />
-          <br />
-          I am the creator of <a
+          I am also the creator of <a
             target="_blank"
             href="https://fakey.iuni.iu.edu/"
             rel="noopener noreferrer">Fakey</a> (a news literacy tool for Web,
@@ -46,33 +29,30 @@ class AboutPage extends Component {
                  href="https://cnets.indiana.edu/blog/2020/11/01/distinguished-masters-thesis-award/"
                  rel="noopener noreferrer">
               IU Distinguished Master's Thesis Award</a> through my work with 
-          Fakey and Hoaxy. In the past, I have worked on many projects spanning 
-          software/web development and machine learning/prediction. 
-          You may check out my CV, projects, and publications for more 
-          information.
+          Fakey and Hoaxy. With experience in software/web development and 
+          machine learning, my portfolio spans a variety of impactful projects.
         </p>
-        <b>What am I up to nowadays?</b>
+        <b>Currently, I'm:</b>
         <ol>
-          <li>Innovating on hiring automation tech within <a target="_blank"
-                                    href="https://ghsmart.com/"
-                                    rel="noopener noreferrer">
-                                    ghSmart
-                                  </a>
+          <li>Launching my next venture, <a target="_blank"
+              href="https://gamepasspicker.com/"
+              rel="noopener noreferrer">
+              GamePass Picker
+            </a>
           </li>
-          <li>Building and expanding <a target="_blank"
+          <li>Regularly updating my blog, <a target="_blank"
                            href="https://www.essentialstartupbytes.com/"
                            rel="noopener noreferrer">
                           Essential Startup Bytes
                         </a>
           </li>
-          <li>Building the community behind <a target="_blank"
-                           href="https://gamepasspicker.com/"
-                           rel="noopener noreferrer">
-                          Gamepass Game Picker
-                        </a>
-          </li>
-          <li>Working on some of the recent projects on the projects page</li>
+          <li>Helping other startups and founders as a part-time software/full-stack dev</li>
+          <li>Embracing the new adventure of fatherhood</li>
         </ol>
+        <p>For a deeper dive into my projects and experiences, feel free to 
+          check out my CV, projects, and publications. Let's connect if you're 
+          interested in creating meaningful tech together!
+        </p>
         <b>Connect with me via:</b>
         <ul className="connect-contents">
           <li><i className="far fa-envelope"></i> <b> E-Mail: </b>mihai (dot)

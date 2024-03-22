@@ -62,7 +62,7 @@ class ProjectsPage extends Component {
             </div>
             <div>
               <div>
-            <b>Gamepass Game Picker
+            <b>GamePass Picker
             (<a target="_blank"
                 href="https://gamepasspicker.com/"
                 rel="noopener noreferrer">
@@ -71,11 +71,15 @@ class ProjectsPage extends Component {
             </b>
             </div>
             <div className="small-text">
-              <u>Tags:</u> Gaming, Front-End, Back-End, DevOps, Web Automations
+              <u>Tags:</u> Gaming Media, AI, Front-End, Back-End, DevOps, Web Automation
             </div>
             <div>
-              The Gamepass Game Picker is a service to help gamers find the
-              next game to play on Xbox/PC Gamepass service based on their preferences.
+              Inspired by <a target="_blank"
+                href="https://www.rottentomatoes.com/"
+                rel="noopener noreferrer">Rotten Tomatoes</a> and purposed for 
+              gaming - The GamePass Picker is a service to help gamers 
+              find their next favorite game to play on the Microsoft GamePass service 
+              based on their past gaming behaviors and preferences.
               Eventually, my goal is to turn this project into a platform
               to help gamers manage their play time, preferences, achievements,
               and impact with gaming.
