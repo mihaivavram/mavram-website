@@ -34,19 +34,8 @@ class AboutPage extends Component {
         </p>
         <b>Currently, I'm:</b>
         <ol>
-          <li>Launching my next venture, <a target="_blank"
-              href="https://gamepasspicker.com/"
-              rel="noopener noreferrer">
-              GamePass Picker
-            </a>
-          </li>
-          <li>Regularly updating my blog, <a target="_blank"
-                           href="https://www.essentialstartupbytes.com/"
-                           rel="noopener noreferrer">
-                          Essential Startup Bytes
-                        </a>
-          </li>
-          <li>Helping other startups and founders as a part-time software/full-stack dev</li>
+          <li>Helping ambitious founders turn ideas into high-impact products</li>
+          <li>Exploring new opportunities to make a positive impact</li>
           <li>Embracing the new adventure of fatherhood</li>
         </ol>
         <p>For a deeper dive into my projects and experiences, feel free to 
