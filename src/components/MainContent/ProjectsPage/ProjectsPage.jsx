@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 import AdvLearningLogo from '../../../static-contents/images/AdversarialLearningSocialNetworks.jpg';
 import AutoSaveItLogo from '../../../static-contents/images/AutoSaveItLogo.png';
+import CingoResearchLogo from '../../../static-contents/images/CingoResearchLogo.png';
 import CivIraqWarLogo from '../../../static-contents/images/IraqWar.jpg';
+import ElebaseLogo from '../../../static-contents/images/ElebaseLogo.png';
 import EssentialStartupBytesLogo from '../../../static-contents/images/EssentialStartupBytesLogo.png';
 import EchoGlobalLogo from '../../../static-contents/images/EchoGlobalLogistics.png';
 import FakeyLogo from '../../../static-contents/images/FakeyLogo.png';
@@ -25,6 +27,66 @@ class ProjectsPage extends Component {
     return(
       <div className='primary-content'>
         <b>Current Projects</b>
+        <div className='project-template'>
+          <div>
+            <img src={CingoResearchLogo} alt='A yellow sun over a black background'/>
+          </div>
+          <div>
+            <div>
+            <b>Cingo Research
+            (<a target="_blank"
+                href="https://www.colorado.edu/lab/raddlab/"
+                rel="noopener noreferrer">
+              Link
+            </a>)
+            </b>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> Research Lab, Startups, HIPAA, Mobile Development, 
+              iOS, Front-End, Back-End, DevOps, AWS, React, Ionic, TypeScript, 
+              Django, Postgres
+            </div>
+            <div>
+              Cingo Research is an app that uses mobile sensor data—such as 
+              activity levels, location patterns, and device usage—to better 
+              understand the daily experiences of young adults. By combining 
+              this real-world context with quick, science-based mood 
+              check-ins, the app can help identify patterns, predict 
+              emotional shifts, and suggest strategies for improving wellbeing.
+            </div>
+          </div>
+        </div>
+        <div className='project-template'>
+          <div>
+            <img src={ElebaseLogo} alt='A purple elephant over a white background'/>
+          </div>
+          <div>
+            <div>
+            <b>Elebase
+            (<a target="_blank"
+                href="https://elebase.io/"
+                rel="noopener noreferrer">
+              Web
+            </a>)
+            </b>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> CTO, Startups, GIS, Geospatial, DevOps, 
+              Front-End, Back-End, JavaScript, Vue.js, 
+              PostgreSQL, PHP, Heroku, GeoJSON, Tilesets
+            </div>
+            <div>
+              Elebase is a streamlined content and geospatial data management 
+              platform designed for creating interactive mapping applications 
+              quickly and affordably. It enables users to build no‑code 
+              interactive maps, publish GeoJSON and tilesets, and integrate 
+              geodata enriched with media—all via an intuitive interface or 
+              its API. With Elebase, you can easily define your data, invite 
+              non‑technical contributors, and visualize it seamlessly through 
+              template apps, geo files, or the API. 
+            </div>
+          </div>
+        </div>
         <div className='project-template'>
           <div>
             <img src={EssentialStartupBytesLogo} alt='A gold ore over a black background'/>
