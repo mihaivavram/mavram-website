@@ -110,14 +110,6 @@ class TopNav extends Component {
                       onClick={ this.pressPageClick }>Press
                 </Link>
               </li>
-              <li>
-                <Link to="/timelapse"
-                      className={ (routeLocation === '#/timelapse'
-                                ? 'selected-nav-button'
-                                : 'non-selected-nav-button') }
-                      onClick={ this.timeLapsePageClick }>TimeLapse
-                </Link>
-              </li>
             </ul>
           </div>
       </div>
