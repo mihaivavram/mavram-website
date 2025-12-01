@@ -11,6 +11,7 @@ import CvPage from './components/MainContent/CvPage/CvPage.jsx'
 import PublicationsPage from './components/MainContent/PublicationsPage/PublicationsPage.jsx'
 import ProjectsPage from './components/MainContent/ProjectsPage/ProjectsPage.jsx'
 import PressPage from './components/MainContent/PressPage/PressPage.jsx'
+import TestimonialsPage from './components/MainContent/TestimonialsPage/TestimonialsPage.jsx'
 import TimeLapsePage from './components/MainContent/TimeLapsePage/TimeLapsePage.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import './ReactAppWrapper.css';
@@ -22,7 +23,8 @@ class ReactAppWrapper extends Component {
     this.state = {
       /**
        * All possible states of pages: aboutPage - cvPage - blogPage -
-       * projectsPage - publicationsPage - timeLapsePage - connectPage
+       * projectsPage - publicationsPage - pressPage - testimonialsPage -
+       * timeLapsePage
        */
       mainContentComponent: <AboutPage />
     }
@@ -57,6 +59,9 @@ class ReactAppWrapper extends Component {
     else if (currentState === 'pressPage') {
       return <PressPage />;
     }
+    else if (currentState === 'testimonialsPage') {
+      return <TestimonialsPage />;
+    }
     else if (currentState === 'timeLapsePage') {
       return <TimeLapsePage />;
     }
@@ -83,6 +88,9 @@ class ReactAppWrapper extends Component {
                   </Route>
                   <Route path="/press">
                     <PressPage />
+                  </Route>
+                  <Route path="/testimonials">
+                    <TestimonialsPage />
                   </Route>
                   <Route path="/timelapse">
                     <TimeLapsePage />

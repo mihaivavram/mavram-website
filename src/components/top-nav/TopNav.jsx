@@ -16,6 +16,7 @@ class TopNav extends Component {
     this.blogPageClick = this.blogPageClick.bind(this)
     this.publicationsPageClick = this.publicationsPageClick.bind(this)
     this.pressPageClick = this.pressPageClick.bind(this)
+    this.testimonialsPageClick = this.testimonialsPageClick.bind(this)
     this.timeLapsePageClick = this.timeLapsePageClick.bind(this)
   }
 
@@ -41,6 +42,10 @@ class TopNav extends Component {
 
   pressPageClick() {
     this.props.stateHandler("pressPage");
+  }
+
+  testimonialsPageClick() {
+    this.props.stateHandler("testimonialsPage");
   }
 
   timeLapsePageClick() {
@@ -108,6 +113,14 @@ class TopNav extends Component {
                                 ? 'selected-nav-button'
                                 : 'non-selected-nav-button') }
                       onClick={ this.pressPageClick }>Press
+                </Link>
+              </li>
+              <li>
+                <Link to="/testimonials"
+                      className={ (routeLocation === '#/testimonials'
+                                ? 'selected-nav-button'
+                                : 'non-selected-nav-button') }
+                      onClick={ this.testimonialsPageClick }>Testimonials
                 </Link>
               </li>
             </ul>
