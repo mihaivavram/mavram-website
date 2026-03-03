@@ -15,6 +15,7 @@ import GhSmartLogo from '../../../static-contents/images/ghSmartLogo.png';
 import GraphCountingLogo from '../../../static-contents/images/GraphCounting.png';
 import HoaxyLogo from '../../../static-contents/images/HoaxyLogo.png';
 import KnowledgeLinkerLogo from '../../../static-contents/images/KnowledgeLinker.png';
+import LACRMQuickBooksSyncLogo from '../../../static-contents/images/LACRMQuickBooksLogo.png';
 import RadiativeTransportLogo from '../../../static-contents/images/RadiativeTransport.jpeg';
 import SocialBotLogo from '../../../static-contents/images/SocialBotLogo.jpg';
 import WelsomeLogo from '../../../static-contents/images/WelsomeLogo.png';
@@ -27,6 +28,28 @@ class ProjectsPage extends Component {
     return(
       <div className='primary-content'>
         <b>Current Projects</b>
+        <div className='project-template'>
+          <div>
+            <img src={LACRMQuickBooksSyncLogo} alt='A yellow sun over a black background'/>
+          </div>
+          <div>
+            <div>
+            <b>LACRM QuickBooks Sync
+            (<a target="_blank"
+                href="https://www.lacrmquicksync.com/"
+                rel="noopener noreferrer">
+              Link
+            </a>)
+            </b>
+            </div>
+            <div className="small-text">
+              <u>Tags:</u> SaaS, CRM, Accounting, Small Business, Automation, Integrations, QuickBooks Online, Less Annoying CRM, Node.js, TypeScript, AWS
+            </div>
+            <div>
+              LACRM QuickBooks Sync is a lightweight integration that automatically syncs customers and invoices between QuickBooks Online and Less Annoying CRM. It eliminates duplicate data entry, keeps contact records up to date with real-time invoice context, and ensures sales and accounting stay aligned. Built specifically for small businesses, the integration focuses on simplicity, control over what syncs, and reliable two-way data flow.
+            </div>
+          </div>
+        </div>
         <div className='project-template'>
           <div>
             <img src={CingoResearchLogo} alt='A yellow sun over a black background'/>

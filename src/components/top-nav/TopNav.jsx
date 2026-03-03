@@ -115,14 +115,14 @@ class TopNav extends Component {
                       onClick={ this.pressPageClick }>Press
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/testimonials"
                       className={ (routeLocation === '#/testimonials'
                                 ? 'selected-nav-button'
                                 : 'non-selected-nav-button') }
                       onClick={ this.testimonialsPageClick }>Testimonials
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
       </div>

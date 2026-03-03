@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class AboutPage extends Component {
   render() {
@@ -59,10 +60,10 @@ class AboutPage extends Component {
         <ol>
           <li>
             Helping ambitious founders turn bold ideas into high-impact digital
-            products
+            products (see Cingo Research under <Link to="/projects">Projects Page</Link>)
           </li>
           <li>
-            Developing an invoicing integration that simplifies accounting
+            Growing LACRM QuickBooks Sync, an invoicing integration that simplifies accounting
             workflows for Less Annoying CRM users
           </li>
           <li>
