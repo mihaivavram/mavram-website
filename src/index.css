@@ -1,9 +1,8 @@
-
 .primary-content {
   border-radius: 25px;
   padding: 10px;
   width: 90%;
-  background-color: rgb(192,192,192);
+  background-color: rgb(192, 192, 192);
   float: middle;
   font-size: 20px;
   height: auto;
@@ -15,102 +14,97 @@
   position: relative;
 }
 
-html
-{
+html {
   height: auto;
   width: auto;
   border: 5px solid #ededed;
   margin: 0;
 }
 
-body
-{
-    height: auto;
-    width: auto;
-    float: center;
-    border: 10px solid white;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: black;
-    left: 0;
-    margin: 0;
+body {
+  height: auto;
+  width: auto;
+  float: center;
+  border: 10px solid white;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: black;
+  left: 0;
+  margin: 0;
 }
 
-header
-{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(192,192,192);
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(192, 192, 192);
 }
 
-nav div
-{
-    height: 50px;
-    list-style-type: none;
-    margin-top: 50px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
-    background-color: rgb(88, 88, 88);
+nav div {
+  height: 50px;
+  list-style-type: none;
+  margin-top: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  background-color: rgb(88, 88, 88);
 }
 
-nav button
-{
-    height: 100%;
-    width: 150px;
-    font-size: 15px;
-    display: block;
-    justify-content: center;
+nav button {
+  height: 100%;
+  width: 150px;
+  font-size: 15px;
+  display: block;
+  justify-content: center;
 }
 
 button:focus {
-    color:#505739;
+  color: #505739;
 }
 
 button:hover {
-    color:#505739;
+  color: #505739;
 }
 
 @media screen and (max-width: 1000px) {
-    button {
-      margin: 10px;
-    }
+  button {
+    margin: 10px;
+  }
 }
 
 section div {
-    display: none;
+  display: none;
 }
 
 a {
-    text-decoration: none;
-    font-weight: bold
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a:link {
-    text-decoration: underline;
-    color: black;
+  text-decoration: underline;
+  color: black;
 }
 
 a:visited {
-    color: black;
+  color: black;
 }
 
 a:hover {
-    color: rgb(255,248,220);
+  color: rgb(255, 248, 220);
 }
 
 footer {
-    position: relative;
-    text-align: center;
-    vertical-align: baseline;
+  position: relative;
+  text-align: center;
+  vertical-align: baseline;
 }
 
 footer span {
-    text-align: center;
+  text-align: center;
 }

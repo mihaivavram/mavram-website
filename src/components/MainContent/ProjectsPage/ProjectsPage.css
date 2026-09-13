@@ -1,36 +1,31 @@
-
 .small-text {
   font-size: 0.9rem;
 }
 
-.project-template
-{
+.project-template {
   display: flex;
   border: 2px solid black;
   margin: 1%;
 }
 
 @media screen and (max-width: 1000px) {
-    .project-template {
-        display: inline-block;
-    }
+  .project-template {
+    display: inline-block;
+  }
 }
 
-.project-template div
-{
+.project-template div {
   display: inline-block;
   margin: 1%;
 }
 
-.project-template img
-{
+.project-template img {
   width: 150px;
   height: 150px;
   border: 2px solid black;
 }
 
-.wide-logo
-{
+.wide-logo {
   width: 150px !important;
   height: 50px !important;
 }

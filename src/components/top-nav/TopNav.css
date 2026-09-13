@@ -1,59 +1,54 @@
-
-.header-contents
-{
+.header-contents {
   display: flex;
   align-items: center;
   color: black;
 }
 
 @media screen and (max-width: 1250px) {
-    .header-contents {
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      display: block
-    }
+  .header-contents {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+  }
 }
 
-.my-headshot
-{
+.my-headshot {
   margin: 1%;
   display: block;
 }
 
-.my-headshot img
-{
+.my-headshot img {
   border-radius: 5%;
   border: 2px solid gray;
 }
 
 @media screen and (max-width: 1250px) {
-    .my-headshot {
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      display: block;
-      margin: 0%;
-    }
+  .my-headshot {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    margin: 0%;
+  }
 }
 
 @media screen and (max-width: 1250px) {
-    .my-headshot img {
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      display: block;
-    }
+  .my-headshot img {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+  }
 }
 
-.header-name
-{
+.header-name {
   margin-top: 0.5rem;
   text-align: center;
 }
 
 .nav-buttons {
-  display: block
+  display: block;
 }
 
 .nav-buttons ul {
@@ -81,13 +76,15 @@
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   bottom: -3px;
-  content: "";
+  content: '';
   display: block;
   height: 3px;
   left: 50%;
   position: absolute;
   background: black;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition:
+    width 0.3s ease 0s,
+    left 0.3s ease 0s;
   width: 0;
 }
 .nav-buttons a:hover:after {
@@ -104,7 +101,7 @@
 }
 
 @media screen and (max-height: 300px) {
-	ul {
-		margin-top: 40px;
-	}
+  ul {
+    margin-top: 40px;
+  }
 }
