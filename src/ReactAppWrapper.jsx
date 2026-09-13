@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
   HashRouter as Router,
-  Switch,
+  Routes,
   Route,
 } from "react-router-dom";
 import TopNav from './components/top-nav/TopNav.jsx'
@@ -73,32 +73,16 @@ class ReactAppWrapper extends Component {
         <div className="topmost-container">
             <TopNav stateHandler={ this.stateHandler }/>
             <div className="main-content">
-                <Switch>
-                  <Route path="/cv">
-                    <CvPage />
-                  </Route>
-                  <Route path="/projects">
-                    <ProjectsPage />
-                  </Route>
-                  <Route path="/blog">
-                    <BlogPage />
-                  </Route>
-                  <Route path="/publications">
-                    <PublicationsPage />
-                  </Route>
-                  <Route path="/press">
-                    <PressPage />
-                  </Route>
-                  <Route path="/testimonials">
-                    <TestimonialsPage />
-                  </Route>
-                  <Route path="/timelapse">
-                    <TimeLapsePage />
-                  </Route>
-                  <Route path="/">
-                    <AboutPage />
-                  </Route>
-                </Switch>
+                <Routes>
+                  <Route path="/cv" element={ <CvPage /> } />
+                  <Route path="/projects" element={ <ProjectsPage /> } />
+                  <Route path="/blog" element={ <BlogPage /> } />
+                  <Route path="/publications" element={ <PublicationsPage /> } />
+                  <Route path="/press" element={ <PressPage /> } />
+                  <Route path="/testimonials" element={ <TestimonialsPage /> } />
+                  <Route path="/timelapse" element={ <TimeLapsePage /> } />
+                  <Route path="*" element={ <AboutPage /> } />
+                </Routes>
             </div>
           <Footer />
         </div>

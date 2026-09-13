@@ -4,11 +4,13 @@
   "description": "A repository for my website.",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.js src/**/*.jsx"
+    "lint": "eslint 'src/**/*.{js,jsx}'",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src"
   },
   "repository": {
     "type": "git",
@@ -25,15 +27,12 @@
   },
   "homepage": "https://mihaisplace.com",
   "dependencies": {
-    "bootstrap": "^4.5.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-markdown": "^4.3.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.1"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "bootstrap": "^5.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.18.3",
+    "react-scripts": "^5.0.1"
   },
   "browserslist": [
     ">0.2%",
@@ -42,6 +41,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint-plugin-react": "^7.20.5"
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.20.5",
+    "prettier": "^3.9.6"
   }
 }

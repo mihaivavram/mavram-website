@@ -317,7 +317,7 @@ class ProjectsPage extends Component {
               methods written in Python, Scala, and Spark. The specifics of the
               project involved improving the framework and running various
               benchmarking tests to compare the performance of the techniques
-              in this framework versus Indiana University's <a target="_blank"
+              in this framework versus Indiana University&apos;s <a target="_blank"
                  href="https://botometer.iuni.iu.edu/#!/"
                  rel="noopener noreferrer">Botometer
               </a>.

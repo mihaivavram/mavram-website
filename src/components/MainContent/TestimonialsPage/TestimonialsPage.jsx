@@ -18,7 +18,7 @@ class TestimonialsPage extends Component {
         <div className="testimonials-header">
           <h3>What People Say</h3>
           <p className="testimonials-subtitle">
-            Feedback from clients and collaborators I've had the pleasure of working with.
+            Feedback from clients and collaborators I&apos;ve had the pleasure of working with.
           </p>
         </div>
 

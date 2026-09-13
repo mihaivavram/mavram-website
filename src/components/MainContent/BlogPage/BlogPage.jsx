@@ -7,7 +7,7 @@ class BlogPage extends Component {
   render() {
     return(
       <div className='primary-content'>
-        <div class='blog-top-title'>
+        <div className='blog-top-title'>
           <b>Recent Posts</b>
         </div>
         <div className='blog-template'>
@@ -223,7 +223,7 @@ class BlogPage extends Component {
               target="_blanks"
               href="https://mihaisplace.blog/2020/04/09/a-brief-summary-of-no-code-and-the-main-players-in-the-space/"
               rel="noopener noreferrer">
-              A Brief Summary of "No Code" and the Main Players in the Space
+              A Brief Summary of &quot;No Code&quot; and the Main Players in the Space
             </a>
             </b>
             </div>

@@ -31,7 +31,7 @@ class AboutPage extends Component {
           >
             <b>Wholesome Future Labs</b>
           </a>
-          , I'm passionate about building meaningful technology that addresses
+          , I&apos;m passionate about building meaningful technology that addresses
           real-world challenges through modern applications and responsible AI
           practices.
           <br />
@@ -50,13 +50,13 @@ class AboutPage extends Component {
             href="https://cnets.indiana.edu/blog/2020/11/01/distinguished-masters-thesis-award/"
             rel="noopener noreferrer"
           >
-            IU Distinguished Master's Thesis Award
+            IU Distinguished Master&apos;s Thesis Award
           </a>{" "}
           through my work with Fakey and Hoaxy. With experience in software/web
           development and machine learning, my portfolio spans a variety of
           impactful projects.
         </p>
-        <b>Currently, I'm:</b>
+        <b>Currently, I&apos;m:</b>
         <ol>
           <li>
             Helping ambitious founders turn bold ideas into high-impact digital
@@ -73,7 +73,7 @@ class AboutPage extends Component {
         </ol>
         <p>
           For a deeper dive into my projects and experiences, feel free to check
-          out my CV, projects, and publications. Let's connect if you're
+          out my CV, projects, and publications. Let&apos;s connect if you&apos;re
           interested in creating meaningful tech together!
         </p>
         <b>Connect with me via:</b>

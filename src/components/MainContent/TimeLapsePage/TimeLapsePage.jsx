@@ -25,7 +25,7 @@ class TimeLapsePage extends Component {
             <b>Lessons Learned:</b>
             <br></br>
             One of the best books I have read so far was 
-            "The Formula: The Universal Laws of Success" by 
+            &quot;The Formula: The Universal Laws of Success&quot; by 
             Albert-László Barabási. Some of the golden nuggets from the book 
             are: the notion that in order to make an impact and change the world
             we must start small, get small wins as well as build our network.
@@ -40,7 +40,7 @@ class TimeLapsePage extends Component {
             be someone more famous or successful than you, and the chase never
             ends. Being happy with the craft/output and detached from such 
             vanity metrics is a good practice of humility in my mind. I highly
-            recommend "The Formula" to anybody who wants to understand the
+            recommend &quot;The Formula&quot; to anybody who wants to understand the
             science behind success!
           </div>
           <div>
@@ -51,8 +51,8 @@ class TimeLapsePage extends Component {
                                rel="noopener noreferrer"
             href="https://cnets.indiana.edu/blog/2020/11/01/distinguished-masters-thesis-award/">
             2020 Indiana University 
-            Master's Thesis award</a> for my work on "Hoaxy and Fakey: Tools to 
-            Analyze and Mitigate the Spread of Misinformation in Social Media". 
+            Master&apos;s Thesis award</a> for my work on &quot;Hoaxy and Fakey: Tools to 
+            Analyze and Mitigate the Spread of Misinformation in Social Media&quot;. 
 
             <br></br>
             <br></br>
@@ -97,7 +97,7 @@ class TimeLapsePage extends Component {
                              target="_blank"
                              rel="noopener noreferrer"
                              href="https://www.udemy.com/course/seth-godin-freelancer-course/">
-                             Seth Godin's Freelancer Course
+                             Seth Godin&apos;s Freelancer Course
             </a> where my main takeaways were to find opportunities that
             allow me to do the best work that I can, to specialize
             and do one thing very well, as well as find clients and
@@ -106,11 +106,11 @@ class TimeLapsePage extends Component {
             <br></br>
             <b>Lessons Learned:</b>
             <br></br>
-            When referring to startups, just because you built it, it doesn't
+            When referring to startups, just because you built it, it doesn&apos;t
             mean they will come! Often it takes a lot of <a target="_blank"
                              rel="noopener noreferrer"
                              href="https://www.startupschool.org/">
-                             doing things that don't scale
+                             doing things that don&apos;t scale
             </a> to get those first users and that first community. Also,
             waking up earlier is a surefire way to get more work done during
             the day because for morning-people like myself, we have the most
@@ -150,8 +150,8 @@ class TimeLapsePage extends Component {
             my entrepreneurial mentality is mostly a bootstrap-first mentality.
             Although I do believe that external funding such as Angel Investors
             or VCs have their role in empowering scalability and massive growth,
-            there's a time and a place for that. At the very beginning of a
-            company's growth, I think it is paramount for the founders to try
+            there&apos;s a time and a place for that. At the very beginning of a
+            company&apos;s growth, I think it is paramount for the founders to try
             to keep things as lean as possible, without much external investors
             as they think about what artifacts of the company they are willing
             to compromise and which ones to retain full control over.
@@ -194,7 +194,7 @@ class TimeLapsePage extends Component {
             <br></br>
             One of the most important investments we can make is in ourselves
             through learning or thinking about how we can improve our lives.
-            In the past, I haven't made enough time to learn or think about
+            In the past, I haven&apos;t made enough time to learn or think about
             life optimizations; however, I have pledged to try to learn at least
             two hours per day while taking the time to journal and think in the
             mornings about important decisions or optimizations I should make
@@ -202,8 +202,8 @@ class TimeLapsePage extends Component {
             blogs such as <a target="_blank"
                              rel="noopener noreferrer"
                              href="https://seths.blog//">
-                             Seth Godin's Blog
-            </a>, Shane Parrish's <a target="_blank"
+                             Seth Godin&apos;s Blog
+            </a>, Shane Parrish&apos;s <a target="_blank"
                              rel="noopener noreferrer"
                              href="https://fs.blog/the-knowledge-project/">
                              Knowledge Project
@@ -317,7 +317,7 @@ class TimeLapsePage extends Component {
             <b>Accomplished:</b>
             <br></br>
             Completed my Masters thesis titled
-            "Hoaxy and Fakey: Tools to Analyze and Mitigate the Spread of Misinformation in Social Media"
+            &quot;Hoaxy and Fakey: Tools to Analyze and Mitigate the Spread of Misinformation in Social Media&quot;
             and launched <a target="_blank"
                href="http://fakey.iuni.iu.edu"
                rel="noopener noreferrer">Fakey</a> for <a target="_blank"
@@ -386,7 +386,7 @@ class TimeLapsePage extends Component {
             <br></br>
             Completed a Cloud Computing course and Data Mining Course
             as well as started formally working with professor Filippo
-            Menczer who turned out to be my Master's research advisor.
+            Menczer who turned out to be my Master&apos;s research advisor.
             <br></br>
             <br></br>
             <b>Lessons Learned:</b>
@@ -399,7 +399,7 @@ class TimeLapsePage extends Component {
             <h1>Fall 2016</h1>
             <b>Accomplished:</b>
             <br></br>
-            Started my Master's in Computer Science
+            Started my Master&apos;s in Computer Science
             and completed the following courses: Algorithms Design and
             Analysis, Advanced Operating Systems, and Machine Learning.
             Also started working with Dr. Filippo Menczer on Fact Checking,
@@ -428,7 +428,7 @@ class TimeLapsePage extends Component {
             Working in industry is good money, but if one wants to make
             a difference in the world then a career in research, nonprofit,
             or entrepreneurship would be a better fit. This is when I
-            chose to pursue a research-oriented Master's degree in Computer
+            chose to pursue a research-oriented Master&apos;s degree in Computer
             Science.
           </div>
           <div>
@@ -444,9 +444,9 @@ class TimeLapsePage extends Component {
             <br></br>
             <b>Lessons Learned:</b>
             <br></br>
-            The meaning of giving back through Purdue's EPICS program.
+            The meaning of giving back through Purdue&apos;s EPICS program.
             NOT to procrastinate. Critical thinking is the key to a
-            bachelor's degree, everything else can be forgotten.
+            bachelor&apos;s degree, everything else can be forgotten.
           </div>
       </div>
     )
