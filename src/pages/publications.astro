@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { pageTitle } from '../lib/site';
+
+const publications = (await getCollection('publications')).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<BaseLayout title={pageTitle('Publications')}>
+  <h1>Publications</h1>
+  {publications.map(({ data }) => (
+    <article>
+      <h2>
+        <i>{data.title}</i>
+      </h2>
+      <p>{data.authors}</p>
+      <p>
+        <i>{data.venue}</i>
+      </p>
+      <p>
+        <a href={data.url} target="_blank" rel="noopener noreferrer">
+          (Download as PDF)
+        </a>
+      </p>
+    </article>
+  ))}
+</BaseLayout>

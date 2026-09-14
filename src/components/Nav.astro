@@ -1,0 +1,17 @@
+---
+import { NAV_ITEMS, isActive } from '../lib/nav';
+
+const { pathname } = Astro.url;
+---
+
+<nav aria-label="Main">
+  <ul>
+    {NAV_ITEMS.map(({ href, label }) => (
+      <li>
+        <a href={href} aria-current={isActive(href, pathname) ? 'page' : undefined}>
+          {label}
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>

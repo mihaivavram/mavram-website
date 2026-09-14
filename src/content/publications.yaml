@@ -1,0 +1,69 @@
+- id: fakey-cscw-2021
+  order: 1
+  title: 'Fakey: A Game Intervention to Improve News Literacy on Social Media'
+  authors: 'Nicholas Micallef, Mihai Avram, Filippo Menczer, and Sameer Patil'
+  venue: 'Conference - (CSCW 2021) - Human-Computer Interaction'
+  url: 'https://dl.acm.org/doi/pdf/10.1145/3449080'
+
+- id: engagement-metrics-hks-2020
+  order: 2
+  title: 'Exposure to Social Engagement Metrics Increases Vulnerability to Misinformation'
+  authors: 'Mihai Avram, Nicholas Micallef, Sameer Patil, Filippo Menczer'
+  venue: 'Journal - Misinformation Review (Harvard Kennedy School 2020)'
+  url: 'https://arxiv.org/pdf/2005.04682.pdf'
+
+- id: adversarial-attacks-mdpi-2020
+  order: 3
+  title: 'Effectiveness of the Execution and Prevention of Metric-Based Adversarial Attacks on Social Network Data'
+  authors: 'Nikolaus Nova Parulian, Tiffany Lu, Shubhanshu Mishra, Mihai Avram, Jana Diesner'
+  venue: 'Journal - Multidisciplinary Digital Publishing Institute 2020'
+  url: '/papers/MDPI-InformationPublication.pdf'
+
+- id: adversarial-perturbations-asonam-2019
+  order: 4
+  title: 'Adversarial perturbations to manipulate the perception of power and influence in networks'
+  authors: 'Mihai Valentin Avram, Shubhanshu Mishra, Nikolaus Nova Parulian, Jana Diesner'
+  venue: 'Conference - (ASONAM 2019) The 2019 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining'
+  url: '/papers/CRV-asonam_2019_paper_191.pdf'
+
+- id: curbing-misinformation-rti-2018
+  order: 5
+  title: 'Curbing the Spread of Misinformation (Response Essay)'
+  authors: 'Mihai Avram and Maria D. Molina'
+  venue: 'Journal - RTI Press (2018)'
+  url: 'https://www.rti.org/sites/default/files/resources/rti-publication-file-4295b53c-cb10-4510-a3db-50fa6ea79ea6.pdf#page=34'
+
+- id: harplda-ieee-big-data-2017
+  order: 6
+  title: 'HarpLDA+: Optimizing Latent Dirichlet Allocation for Parallel Efficiency'
+  authors: 'Bo Peng, Bingjing Zhang, Langshi Chen, Mihai Avram, Robert Henschel, Craig Stewart, Shaojuan Zhu, Emily Mccallum, Lisa Smith, Tom Zahniser, Jon Omer, Judy Qiu'
+  venue: 'Conference - IEEE Big Data 2017'
+  url: 'http://dsc.soic.indiana.edu/publications/HarpLDA%2B%20Optimizing%20Latent%20Dirichlet%20Allocation%20for%20Parallel%20Efficiency.pdf'
+
+- id: tree-subgraphs-ieee-tmscs-2017
+  order: 7
+  title: 'Finding and counting tree-like subgraphs using MapReduce'
+  authors: 'Zhao Zhao, Langshi Chen, Mihai Avram, Meng Li, Guanying Wang, Ali Butt, Maleq Khan, Madhav Marathe, Judy Qiu, Anil Vullikanti'
+  venue: 'Journal - IEEE Transactions on Multi-Scale Computing Systems 2017'
+  url: 'http://dsc.soic.indiana.edu/publications/tmscssi_2017_harp_sahad.pdf'
+
+- id: relsifter-wsdm-cup-2017
+  order: 8
+  title: 'RelSifter: Scoring Triples from Type-like Relations'
+  authors: 'Prashant Shiralkar, Mihai Avram, Giovanni Luca Ciampaglia, Filippo Menczer, Alessandro Flammini'
+  venue: 'Conference - WSDM Cup 2017'
+  url: 'http://www.uni-weimar.de/medien/webis/events/wsdm-cup-17/wsdmcup17-papers-final/wsdmcup17-triple-scoring/shiralkar17-notebook.pdf'
+
+- id: radiative-transport-report-2013
+  order: 9
+  title: 'A Fast Algorithm to the Radiative Transport Equation and Implementation of Theory Into an Applet'
+  authors: 'Mihai Avram, Manabu Machida'
+  venue: 'Report - 2013'
+  url: 'http://www.mmachida.com/ezrte/RTEReport.pdf'
+
+- id: iraq-war-jpur-2013
+  order: 10
+  title: 'Civilian Deaths and the Iraq War'
+  authors: 'Mihai Avram, Sorin Matei'
+  venue: 'Journal - Journal of Purdue Undergraduate Research 2013'
+  url: 'https://docs.lib.purdue.edu/jpur/vol3/iss1/2/'

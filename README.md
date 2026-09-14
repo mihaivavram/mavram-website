@@ -1,19 +1,37 @@
 # Mihai Avram's Website
 
-This is a repository for Mihai Avram's website which is written in React.
+Source for [mihaisplace.com](https://mihaisplace.com), built with [Astro](https://astro.build).
 
-## Configure (should only be done once)
+## Requirements
 
-1. Clone this repository
-`git clone https://github.com/mihaivavram/mavram-website.git`
-1. Ensure you have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/get-npm)
-1. Browse to the root location of the repository `mavram-website/`
-1. Run `npm install` to install all the needed dependencies
+- Node.js 22.12 or newer. The repo pins Node 24 in `.nvmrc`, so run `nvm use`.
 
+## Develop
 
-## Run
-1. Ensure all the steps under the Configure section have been performed
-1. Browse to the root location of the repository `mavram-website/`
-1. Run `npm install` to update the dependencies/packages for the project
-1. Run `npm run start`
-1. The site should launch in your browser, or you may look for the output of the previous command and see which location you may need to search in your browser e.g. `http://localhost:3000/` where the site has launched
+```sh
+npm install
+npm run dev   # http://localhost:4321
+```
+
+## Test
+
+The first time only, install the browser used by the end-to-end tests:
+
+```sh
+npx playwright install chromium
+```
+
+Run everything before committing:
+
+```sh
+npm run verify   # format check, type check, unit tests, build, end-to-end tests
+```
+
+## Project layout
+
+- `src/pages/`: one file per route
+- `src/content/`: site content (projects, publications, press, blog posts)
+- `src/layouts/`, `src/components/`: shared layout and navigation
+- `src/assets/`: images, optimised at build time
+- `public/`: files served as-is (PDFs, favicons)
+- `tests/unit/`, `tests/e2e/`: Vitest and Playwright tests

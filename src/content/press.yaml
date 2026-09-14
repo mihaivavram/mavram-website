@@ -1,0 +1,34 @@
+- id: masters-thesis-award-2020
+  order: 1
+  title: 'Distinguished Master’s Thesis Award'
+  outlet: 'CNetS'
+  date: '11/01/2020'
+  url: 'https://cnets.indiana.edu/blog/2020/11/01/distinguished-masters-thesis-award/'
+
+- id: poynter-fakey-qa-2019
+  order: 2
+  title: 'Can media literacy be gamified? A Q&A with one of Fakey’s developers'
+  outlet: 'Poynter'
+  date: '01/26/2019'
+  url: 'https://www.poynter.org/fact-checking/2019/can-media-literacy-be-gamified-a-qa-with-one-of-fakeys-developers/'
+
+- id: iu-news-fakey-app-2018
+  order: 3
+  title: 'IU grad combats the spread of fake news with new mobile app'
+  outlet: 'IU News'
+  date: '06/29/2018'
+  url: 'https://news.iu.edu/stories/2018/06/iub/inside/29-grad-combats-the-spread-of-fake-news-with-new-mobile-app.html'
+
+- id: eu-disinfolab-webinar-2019
+  order: 4
+  title: 'Fakey – A social media and news literacy game'
+  outlet: 'EU Disnfo Lab'
+  date: '2019'
+  url: 'https://www.disinfo.eu/outreach/our-webinars/webinar-fakey-a-social-media-and-news-literacy-game-with-fakeys-co-creator-mihai-avram'
+
+- id: poynter-students-2018
+  order: 5
+  title: 'Meet the students trying to solve the fake news problem'
+  outlet: 'Poynter'
+  date: '04/10/2018'
+  url: 'https://www.poynter.org/fact-checking/2018/meet-the-students-trying-to-solve-the-fake-news-problem/'

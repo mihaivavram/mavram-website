@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+import Nav from '../components/Nav.astro';
+import headshot from '../assets/mihai-headshot.jpg';
+import { SITE_NAME, pageTitle } from '../lib/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = pageTitle(),
+  description = 'mihaisplace is the web home of Mihai Avram, where he shares his progress with full stack development, web development, machine learning, network analysis, and tech innovation through his posts and blog',
+} = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <Image src={headshot} alt="Headshot of Mihai Avram" width={150} />
+        <span>{SITE_NAME}</span>
+      </a>
+      <Nav />
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      Copyright © {year} | {SITE_NAME}
+    </footer>
+  </body>
+</html>

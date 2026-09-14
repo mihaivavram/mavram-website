@@ -1,0 +1,54 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { pageTitle } from '../lib/site';
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const rendered = await Promise.all(
+  projects.map(async (project) => ({ project, Content: (await render(project)).Content })),
+);
+const groups = [
+  {
+    heading: 'Current Projects',
+    items: rendered.filter(({ project }) => project.data.group === 'current'),
+  },
+  {
+    heading: 'Past Projects',
+    items: rendered.filter(({ project }) => project.data.group === 'past'),
+  },
+];
+---
+
+<BaseLayout title={pageTitle('Projects')}>
+  <h1>Projects</h1>
+  {groups.map(({ heading, items }) => (
+    <section>
+      <h2>{heading}</h2>
+      {items.map(({ project: { data }, Content }) => (
+        <article>
+          <Image src={data.logo} alt={data.alt} width={150} />
+          <h3>
+            {data.title}
+            {data.links.length > 0 && (
+              <Fragment>
+                {' ('}
+                {data.links.map((link, index) => (
+                  <Fragment>
+                    {index > 0 && ', '}
+                    <a href={link.url} target="_blank" rel="noopener noreferrer">
+                      {link.label}
+                    </a>
+                  </Fragment>
+                ))}
+                {')'}
+              </Fragment>
+            )}
+          </h3>
+          {data.tags.length > 0 && <p>Tags: {data.tags.join(', ')}</p>}
+          <Content />
+        </article>
+      ))}
+    </section>
+  ))}
+</BaseLayout>

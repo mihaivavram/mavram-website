@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { pageTitle } from '../lib/site';
+
+const testimonials = [
+  {
+    name: 'Zach Panos',
+    role: 'Founder & CEO, 4casters',
+    text: 'Mihai is a great person to be around who has a good technical background and is eager to learn.',
+  },
+];
+
+// The original LinkedIn avatar URL expired, so show initials instead.
+function initials(name: string): string {
+  return name
+    .split(' ')
+    .map((part) => part.charAt(0))
+    .join('');
+}
+---
+
+<BaseLayout title={pageTitle('Testimonials')}>
+  <h1>What People Say</h1>
+  <p>Feedback from clients and collaborators I've had the pleasure of working with.</p>
+  {testimonials.map(({ name, role, text }) => (
+    <figure>
+      <blockquote>
+        <p>{text}</p>
+      </blockquote>
+      <figcaption>
+        <span aria-hidden="true">{initials(name)}</span>
+        <b>{name}</b>
+        <span>{role}</span>
+      </figcaption>
+    </figure>
+  ))}
+</BaseLayout>
