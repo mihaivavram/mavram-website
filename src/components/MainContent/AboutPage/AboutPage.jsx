@@ -6,7 +6,7 @@ class AboutPage extends Component {
     return (
       <div className="primary-content">
         <div style={{ textAlign: 'center' }}>
-          <h3>Founder / CTO / Full Stack Developer</h3>
+          <h3>Founder & AI Engineer</h3>
         </div>
         <div>
           Hey{' '}
@@ -16,13 +16,12 @@ class AboutPage extends Component {
           ,
         </div>
         <p>
-          I’m a <b>distinguished developer</b> and <b>startup founder</b> dedicated to leveraging
-          technology for positive impact. I lead the development of innovative, human-centered
-          software solutions that bridge <b>technology</b> and <b>impact</b> — spanning Web, Mobile,
-          and Full-Stack Development, DevOps, Machine Learning, and Generative AI.
+          I&apos;m a developer and startup founder dedicated to leveraging technology for positive
+          impact. I work across the stack, from web and mobile to backend and infrastructure, and
+          these days a lot of machine learning and generative AI.
           <br />
           <br />
-          As the founder of{' '}
+          Through{' '}
           <a
             target="_blank"
             href="https://www.linkedin.com/in/mihai-avram-15493182"
@@ -30,8 +29,8 @@ class AboutPage extends Component {
           >
             <b>Wholesome Future Labs</b>
           </a>
-          , I&apos;m passionate about building meaningful technology that addresses real-world
-          challenges through modern applications and responsible AI practices.
+          , I help companies get AI out of the demo stage and into their actual product. Fifteen
+          years of building software, some of it as CTO.
           <br />
           <br />I am also the creator of{' '}
           <a target="_blank" href="https://fakey.iuni.iu.edu/" rel="noopener noreferrer">
@@ -51,16 +50,28 @@ class AboutPage extends Component {
         <b>Currently, I&apos;m:</b>
         <ol>
           <li>
-            Helping ambitious founders turn bold ideas into high-impact digital products (see Cingo
-            Research under <Link to="/projects">Projects Page</Link>)
+            Helping founders build and ship AI into their products, from first prototype to something
+            that survives real users (most recently Cingo Research, see{' '}
+            <Link to="/projects">Projects</Link>)
           </li>
           <li>
-            Growing LACRM QuickBooks Sync, an invoicing integration that simplifies accounting
-            workflows for Less Annoying CRM users
+            Growing{' '}
+            <a
+              target="_blank"
+              href="https://www.lacrmquicksync.com/"
+              rel="noopener noreferrer"
+            >
+              LACRM QuickBooks Sync
+            </a>
+            , a SaaS that keeps invoicing and financial data in sync between QuickBooks and Less
+            Annoying CRM
           </li>
           <li>
-            Maintaining and growing GamePicker — a “Rotten Tomatoes for Gaming” platform with 4,000+
-            users
+            Running{' '}
+            <a target="_blank" href="https://gamepasspicker.com/" rel="noopener noreferrer">
+              GamePicker
+            </a>
+            , a “Rotten Tomatoes for gaming” with 4,000+ users
           </li>
         </ol>
         <p>
