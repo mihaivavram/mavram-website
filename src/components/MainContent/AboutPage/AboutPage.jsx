@@ -33,7 +33,7 @@ class AboutPage extends Component {
           years of building software, some of it as CTO.
           <br />
           <br />I am also the creator of{' '}
-          <a target="_blank" href="https://fakey.iuni.iu.edu/" rel="noopener noreferrer">
+          <a target="_blank" href="https://fakey.osome.iu.edu/" rel="noopener noreferrer">
             Fakey
           </a>{' '}
           (a news literacy tool for Web, Android, and iOS). I feel very grateful for winning the{' '}
