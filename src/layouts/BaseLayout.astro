@@ -1,6 +1,8 @@
 ---
 import { Font } from 'astro:assets';
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import Nav from '../components/Nav.astro';
+import { isAnalyticsEnabled } from '../lib/analytics';
 import { LEGACY_ROUTES } from '../lib/nav';
 import { SITE_NAME, SITE_URL, canonicalUrl, pageTitle } from '../lib/site';
 import '../styles/global.css';
@@ -22,6 +24,7 @@ const year = new Date().getFullYear();
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    {isAnalyticsEnabled() && <GoogleAnalytics />}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
     <!--

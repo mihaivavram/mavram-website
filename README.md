@@ -33,6 +33,10 @@ After a build, check external links with [lychee](https://lychee.cli.rs) (`brew 
 npm run links
 ```
 
+## Analytics
+
+Google Analytics (`G-YPXJCELYNW`, set in `src/lib/analytics.ts`) loads only on Vercel production deployments (`VERCEL_ENV=production`). Local builds, test runs and preview deployments never send data.
+
 ## Project layout
 
 - `src/pages/`: one file per route
