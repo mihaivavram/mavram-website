@@ -1,6 +1,7 @@
 ---
 import { Font } from 'astro:assets';
 import Nav from '../components/Nav.astro';
+import { LEGACY_ROUTES } from '../lib/nav';
 import { SITE_NAME, SITE_URL, canonicalUrl, pageTitle } from '../lib/site';
 import '../styles/global.css';
 
@@ -23,9 +24,13 @@ const year = new Date().getFullYear();
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
-    <!-- The old site used hash routes (mihaisplace.com/#/projects); send those links to the real page. -->
-    <script is:inline>
-      if (location.hash.startsWith('#/')) location.replace(location.hash.slice(1) || '/');
+    <!--
+      The old site used hash routes (mihaisplace.com/#/projects). Only its known pages are
+      redirected, so a crafted link such as /#//other-site.example cannot send visitors away.
+    -->
+    <script is:inline define:vars={{ legacyRoutes: LEGACY_ROUTES }}>
+      const path = location.hash.slice(1).replace(/(.)\/+$/, '$1');
+      if (location.hash.startsWith('#/') && legacyRoutes.includes(path)) location.replace(path);
     </script>
     <title>{title}</title>
     <meta name="description" content={description} />

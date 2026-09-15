@@ -11,7 +11,12 @@ const person = personJsonLd(new URL(photo.src, SITE_URL).href);
 ---
 
 <BaseLayout description="I'm a developer and startup founder dedicated to leveraging technology for positive impact.">
-  <script type="application/ld+json" slot="head" set:html={serializeJsonLd(person)}></script>
+  <script
+    is:inline
+    type="application/ld+json"
+    slot="head"
+    set:html={serializeJsonLd(person)}
+  ></script>
   <Image
     class="headshot"
     src={headshot}
