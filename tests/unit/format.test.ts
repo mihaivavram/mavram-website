@@ -10,6 +10,10 @@ describe('formatDate', () => {
     expect(formatDate('5/17/2020')).toBe('May 17, 2020');
   });
 
+  it('formats month/year dates when the day is unknown', () => {
+    expect(formatDate('1/2026')).toBe('Jan 2026');
+  });
+
   it('keeps year-only dates', () => {
     expect(formatDate('2019')).toBe('2019');
   });
@@ -17,12 +21,14 @@ describe('formatDate', () => {
   it('rejects dates in other formats', () => {
     expect(() => formatDate('2020-01-30')).toThrow();
     expect(() => formatDate('13/01/2020')).toThrow();
+    expect(() => formatDate('13/2026')).toThrow();
   });
 });
 
 describe('toIsoDate', () => {
   it('produces machine-readable dates', () => {
     expect(toIsoDate('2/16/2020')).toBe('2020-02-16');
+    expect(toIsoDate('1/2026')).toBe('2026-01');
     expect(toIsoDate('2019')).toBe('2019');
   });
 });
