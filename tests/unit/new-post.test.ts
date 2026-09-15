@@ -21,4 +21,9 @@ describe('new-post script', () => {
     expect(result.data?.draft).toBe(true);
     expect(result.data?.pubDate.toISOString()).toBe('2026-09-15T00:00:00.000Z');
   });
+
+  it('creates a draft that builds before any images are added', () => {
+    // A Markdown image pointing at a file that doesn't exist fails the build.
+    expect(postTemplate('My Post')).not.toMatch(/!\[[^\]]*\]\(/);
+  });
 });

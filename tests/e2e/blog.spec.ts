@@ -28,7 +28,6 @@ test.describe('blog', () => {
 
       const title = await page.locator('h1').innerText();
       await expect(page).toHaveTitle(`${title} - Mihai Avram`);
-      await expect(page.locator('article header time')).toBeVisible();
       await expect(page.locator('article header')).toContainText(/\d+ min read/);
 
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
@@ -43,6 +42,14 @@ test.describe('blog', () => {
       expect(posting['@type']).toBe('BlogPosting');
       expect(posting.headline).toBe(title);
       expect(posting.author.name).toBe('Mihai Avram');
+
+      // The header shows the publish date, then the updated date when a post has one.
+      const dates = page.locator('article header time');
+      await expect(dates.first()).toBeVisible();
+      await expect(dates.first()).toHaveAttribute('datetime', posting.datePublished.slice(0, 10));
+      if (posting.dateModified !== posting.datePublished) {
+        await expect(dates.last()).toHaveAttribute('datetime', posting.dateModified.slice(0, 10));
+      }
 
       for (const image of await page.locator('article img').all()) {
         await image.scrollIntoViewIfNeeded();

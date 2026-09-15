@@ -27,9 +27,7 @@ tags: []
 draft: true
 ---
 
-Write the post here in Markdown. Put images in this folder and reference them like this:
-
-![Describe what the image shows](./image.png)
+Write the post here in Markdown.
 `;
 }
 
