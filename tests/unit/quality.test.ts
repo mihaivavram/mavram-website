@@ -12,10 +12,11 @@ function filesUnder(dir: string): string[] {
   });
 }
 
-const sources = [
-  ...filesUnder(join(root, 'src/content')),
-  ...filesUnder(join(root, 'src/pages')),
-].map((path) => ({ file: relative(root, path), text: readFileSync(path, 'utf8') }));
+// Every file under src/, so old names and dead links can't come back through components or helpers either.
+const sources = filesUnder(join(root, 'src')).map((path) => ({
+  file: relative(root, path),
+  text: readFileSync(path, 'utf8'),
+}));
 
 // Links confirmed dead during the 2026 site audit. Keep them from coming back.
 const DEAD_LINKS = [
