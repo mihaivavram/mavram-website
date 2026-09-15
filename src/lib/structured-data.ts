@@ -1,11 +1,11 @@
 import { SITE_NAME, SITE_URL } from './site';
 
 export const PROFILE_LINKS = [
-  'https://www.linkedin.com/in/mihai-avram-15493182/',
-  'https://github.com/mihaivavram',
-  'https://scholar.google.com/citations?user=Yb8DVskAAAAJ',
-  'https://twitter.com/mihaivavram',
-  'https://www.facebook.com/mihai.v.avram',
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mihai-avram-15493182/' },
+  { name: 'GitHub', url: 'https://github.com/mihaivavram' },
+  { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=Yb8DVskAAAAJ' },
+  { name: 'Twitter', url: 'https://twitter.com/mihaivavram' },
+  { name: 'Facebook', url: 'https://www.facebook.com/mihai.v.avram' },
 ];
 
 // schema.org Person for the home page, so search engines and AI assistants can tell
@@ -18,7 +18,7 @@ export function personJsonLd(imageUrl: string) {
     jobTitle: 'Founder & AI Engineer',
     url: `${SITE_URL}/`,
     image: imageUrl,
-    sameAs: PROFILE_LINKS,
+    sameAs: PROFILE_LINKS.map(({ url }) => url),
     worksFor: { '@type': 'Organization', name: 'Wholesome Future Labs' },
     alumniOf: [
       { '@type': 'CollegeOrUniversity', name: 'Indiana University' },

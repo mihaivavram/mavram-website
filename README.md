@@ -52,7 +52,7 @@ npm run links
 4. **Preview:** `npm run dev`, then open `http://localhost:4321/blog/<slug>`. Drafts only show locally.
 5. **Publish:** set `draft: false` and make sure `pubDate` is the publish date.
 6. **Check:** `npm run verify` catches missing alt text, missing images, short descriptions and typos. If it flags a real name as a typo, add it to `words` in `cspell.json`.
-7. **Go live:** commit and merge into `main`, and Vercel deploys it. The blog list, the home page's latest posts, the sitemap and the RSS feed (`/rss.xml`) update on their own. Pushing a branch first gives you a Vercel preview link.
+7. **Go live:** commit and merge into `main`, and Vercel deploys it. The blog list, the home page's latest posts, the sitemap, the RSS feed (`/rss.xml`) and `/llms.txt` update on their own. Pushing a branch first gives you a Vercel preview link.
 8. **Cross-post (optional):** on Hashnode, Dev.to or Medium, set the original (canonical) URL to `https://mihaisplace.com/blog/<slug>` so search engines credit this site.
 
 ## Analytics
