@@ -5,7 +5,7 @@ order: 7
 logo: ../../assets/projects/ghSmartLogo.png
 alt: The logo of ghSMART which is just the word itself.
 links:
-  - label: Site
+  - label: Website
     url: https://ghsmart.com/
 tags:
   [Backend Dev, Python, Data Mining, ETL, Natural Language Processing, Machine Learning, Analytics]

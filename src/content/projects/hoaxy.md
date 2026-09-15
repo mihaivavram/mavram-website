@@ -5,7 +5,7 @@ order: 13
 logo: ../../assets/projects/HoaxyLogo.png
 alt: The logo for Hoaxy - two arrows forming a square
 links:
-  - label: Web
+  - label: Website
     url: https://hoaxy.iuni.iu.edu/
 ---
 

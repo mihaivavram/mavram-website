@@ -13,14 +13,14 @@
   url: 'https://www.poynter.org/fact-checking/2019/can-media-literacy-be-gamified-a-qa-with-one-of-fakeys-developers/'
 
 - id: iu-news-fakey-app-2018
-  order: 3
+  order: 4
   title: 'IU grad combats the spread of fake news with new mobile app'
   outlet: 'IU News'
   date: '06/29/2018'
   url: 'https://news.iu.edu/stories/2018/06/iub/inside/29-grad-combats-the-spread-of-fake-news-with-new-mobile-app.html'
 
 - id: eu-disinfolab-webinar-2019
-  order: 4
+  order: 3
   title: 'Fakey – A social media and news literacy game'
   outlet: 'EU Disnfo Lab'
   date: '2019'

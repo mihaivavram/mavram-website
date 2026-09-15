@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { formatDate, toIsoDate } from '../lib/format';
 import { pageTitle } from '../lib/site';
 
 const posts = (await getCollection('posts')).sort((a, b) => a.data.order - b.data.order);
@@ -8,14 +9,16 @@ const posts = (await getCollection('posts')).sort((a, b) => a.data.order - b.dat
 
 <BaseLayout title={pageTitle('Blog')}>
   <h1>Recent Posts</h1>
-  <ul>
+  <ul class="list">
     {posts.map(({ data }) => (
       <li>
-        <a href={data.url} target="_blank" rel="noopener noreferrer">
+        <a class="item-title external" href={data.url} target="_blank" rel="noopener noreferrer">
           {data.title}
         </a>
-        <p>{data.date}</p>
-        <p>Tags: {data.tags.join(', ')}</p>
+        <p class="meta">
+          <time datetime={toIsoDate(data.date)}>{formatDate(data.date)}</time>
+        </p>
+        <p class="tags">{data.tags.join(' · ')}</p>
       </li>
     ))}
   </ul>

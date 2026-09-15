@@ -5,7 +5,7 @@ order: 1
 logo: ../../assets/projects/LACRMQuickBooksLogo.png
 alt: A yellow sun over a black background
 links:
-  - label: Link
+  - label: Website
     url: https://www.lacrmquicksync.com/
 tags:
   [

@@ -1,8 +1,8 @@
 ---
-import { Image } from 'astro:assets';
+import { Font } from 'astro:assets';
 import Nav from '../components/Nav.astro';
-import headshot from '../assets/mihai-headshot.jpg';
 import { SITE_NAME, pageTitle } from '../lib/site';
+import '../styles/global.css';
 
 interface Props {
   title?: string;
@@ -21,25 +21,33 @@ const year = new Date().getFullYear();
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <Font cssVariable="--font-sans" preload />
   </head>
   <body>
-    <header>
-      <a href="/">
-        <Image src={headshot} alt="Headshot of Mihai Avram" width={150} />
-        <span>{SITE_NAME}</span>
-      </a>
-      <Nav />
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-name" href="/">
+          {SITE_NAME}
+        </a>
+        <Nav />
+      </div>
     </header>
-    <main>
+    <main id="main" class="container" tabindex="-1">
       <slot />
     </main>
-    <footer>
-      Copyright © {year} | {SITE_NAME}
+    <footer class="site-footer">
+      <div class="container">
+        Copyright © {year} | {SITE_NAME}
+      </div>
     </footer>
   </body>
 </html>

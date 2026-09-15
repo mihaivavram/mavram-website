@@ -5,7 +5,7 @@ order: 4
 logo: ../../assets/projects/EssentialStartupBytesLogo.png
 alt: A gold ore over a black background
 links:
-  - label: Web
+  - label: Website
     url: https://www.essentialstartupbytes.com/
 tags: [Startups, AI Summarization using NLP, Front-End]
 ---

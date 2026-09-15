@@ -21,17 +21,64 @@ function initials(name: string): string {
 
 <BaseLayout title={pageTitle('Testimonials')}>
   <h1>What People Say</h1>
-  <p>Feedback from clients and collaborators I've had the pleasure of working with.</p>
-  {testimonials.map(({ name, role, text }) => (
-    <figure>
-      <blockquote>
-        <p>{text}</p>
-      </blockquote>
-      <figcaption>
-        <span aria-hidden="true">{initials(name)}</span>
-        <b>{name}</b>
-        <span>{role}</span>
-      </figcaption>
-    </figure>
-  ))}
+  <p class="meta">Feedback from clients and collaborators I've had the pleasure of working with.</p>
+  <ul class="list testimonials">
+    {testimonials.map(({ name, role, text }) => (
+      <li>
+        <figure>
+          <blockquote>
+            <p>{text}</p>
+          </blockquote>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">
+              {initials(name)}
+            </span>
+            <span>
+              <b>{name}</b>
+              <span class="role">{role}</span>
+            </span>
+          </figcaption>
+        </figure>
+      </li>
+    ))}
+  </ul>
 </BaseLayout>
+
+<style>
+  .testimonials {
+    margin-top: 2rem;
+  }
+
+  figure,
+  blockquote {
+    margin: 0;
+  }
+
+  blockquote p {
+    font-size: 1.125rem;
+  }
+
+  figcaption {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .avatar {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--surface);
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .role {
+    display: block;
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+</style>

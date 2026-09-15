@@ -1,10 +1,22 @@
 ---
+import { Image } from 'astro:assets';
+import Icon from '../components/Icon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import headshot from '../assets/mihai-headshot.jpg';
 ---
 
 <BaseLayout>
+  <Image
+    class="headshot"
+    src={headshot}
+    alt="Headshot of Mihai Avram"
+    width={96}
+    height={96}
+    densities={[1, 2]}
+    loading="eager"
+  />
   <h1>Founder &amp; AI Engineer</h1>
-  <div>
+  <div class="greeting">
     Hey{' '}
     <span role="img" aria-label="waving hand">
       👋
@@ -43,8 +55,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     through my work with Fakey and Hoaxy. With experience in software/web development and machine
     learning, my portfolio spans a variety of impactful projects.
   </p>
-  <b>Currently, I'm:</b>
-  <ol>
+  <b class="label">Currently, I'm:</b>
+  <ol class="current">
     <li>
       Helping founders build and ship AI into their products, from first prototype to something that
       survives real users (most recently Cingo Research, see <a href="/projects">Projects</a>)
@@ -69,10 +81,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     For a deeper dive into my projects and experiences, feel free to check out my CV, projects, and
     publications. Let's connect if you're interested in creating meaningful tech together!
   </p>
-  <b>Connect with me via:</b>
-  <ul>
-    <li>
-      <b>E-Mail:</b> mihai (dot) v (dot) avram (at) gmail (dot) com
+  <b class="label">Connect with me via:</b>
+  <ul class="connect">
+    <li class="email">
+      <Icon name="mail" />
+      <span>
+        <b>E-Mail:</b> mihai (dot) v (dot) avram (at) gmail (dot) com
+      </span>
     </li>
     <li>
       <a
@@ -80,21 +95,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         target="_blank"
         rel="noopener noreferrer"
       >
+        <Icon name="linkedin" />
         LinkedIn
       </a>
     </li>
     <li>
       <a href="https://www.facebook.com/mihai.v.avram" target="_blank" rel="noopener noreferrer">
+        <Icon name="facebook" />
         Facebook
       </a>
     </li>
     <li>
       <a href="https://twitter.com/mihaivavram" target="_blank" rel="noopener noreferrer">
+        <Icon name="twitter" />
         Twitter
       </a>
     </li>
     <li>
       <a href="https://github.com/mihaivavram" target="_blank" rel="noopener noreferrer">
+        <Icon name="github" />
         GitHub
       </a>
     </li>
@@ -104,8 +123,68 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         target="_blank"
         rel="noopener noreferrer"
       >
+        <Icon name="scholar" />
         Google Scholar
       </a>
     </li>
   </ul>
 </BaseLayout>
+
+<style>
+  .headshot {
+    display: block;
+    width: 5.5rem;
+    height: 5.5rem;
+    margin-bottom: 1.75rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .greeting {
+    margin-bottom: 0.75rem;
+  }
+
+  .label {
+    display: block;
+    margin: 2rem 0 0.75rem;
+  }
+
+  .current li::marker {
+    color: var(--muted);
+  }
+
+  .connect {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .connect li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+  }
+
+  .connect .email {
+    flex-basis: 100%;
+    min-height: 2.25rem;
+    color: var(--muted);
+  }
+
+  .connect a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 2.25rem;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .connect a:hover {
+    color: var(--accent);
+  }
+</style>

@@ -1,4 +1,5 @@
 ---
+import Icon from '../components/Icon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { pageTitle } from '../lib/site';
 
@@ -8,9 +9,35 @@ const resume = '/cv/MihaiAvram_CV.pdf';
 <BaseLayout title={pageTitle('CV')}>
   <h1>Resume</h1>
   <p>
-    <a href={resume} target="_blank" rel="noopener noreferrer">
-      Download As PDF
+    <a class="button" href={resume} target="_blank" rel="noopener noreferrer">
+      <Icon name="download" />
+      Download PDF
     </a>
   </p>
-  <iframe title="My Resume" src={resume} width="100%" height="1000"></iframe>
+  <iframe
+    class="resume-viewer"
+    title="Resume of Mihai Avram (PDF)"
+    src={resume}
+    loading="lazy"
+  ></iframe>
 </BaseLayout>
+
+<style>
+  /* Phones get the download button only; an embedded PDF is unusable at that width. */
+  .resume-viewer {
+    display: none;
+  }
+
+  @media (min-width: 48rem) {
+    .resume-viewer {
+      display: block;
+      width: 100%;
+      height: 80vh;
+      min-height: 40rem;
+      margin-top: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+  }
+</style>

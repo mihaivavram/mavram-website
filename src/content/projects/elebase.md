@@ -5,7 +5,7 @@ order: 3
 logo: ../../assets/projects/ElebaseLogo.png
 alt: A purple elephant over a white background
 links:
-  - label: Web
+  - label: Website
     url: https://elebase.io/
 tags:
   [

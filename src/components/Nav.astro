@@ -5,13 +5,68 @@ const { pathname } = Astro.url;
 ---
 
 <nav aria-label="Main">
-  <ul>
+  <ul class="nav-list">
     {NAV_ITEMS.map(({ href, label }) => (
       <li>
-        <a href={href} aria-current={isActive(href, pathname) ? 'page' : undefined}>
+        <a
+          class="nav-link"
+          href={href}
+          aria-current={isActive(href, pathname) ? 'page' : undefined}
+        >
           {label}
         </a>
       </li>
     ))}
   </ul>
 </nav>
+
+<style>
+  .nav-list {
+    display: flex;
+    gap: 1.125rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-list li {
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.25rem;
+    color: var(--muted);
+    font-size: 0.9375rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .nav-link:hover {
+    color: var(--text);
+  }
+
+  .nav-link[aria-current='page'] {
+    color: var(--text);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.5em;
+  }
+
+  /* Tight enough that all six items fit a 390px phone without scrolling. */
+  @media (max-width: 40rem) {
+    .nav-list {
+      gap: 0.75rem;
+    }
+  }
+</style>

@@ -5,7 +5,7 @@ order: 2
 logo: ../../assets/projects/CingoResearchLogo.png
 alt: A yellow sun over a black background
 links:
-  - label: Link
+  - label: Website
     url: https://www.colorado.edu/lab/raddlab/
 tags:
   [

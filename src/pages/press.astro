@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { formatDate, toIsoDate } from '../lib/format';
 import { pageTitle } from '../lib/site';
 
 const press = (await getCollection('press')).sort((a, b) => a.data.order - b.data.order);
@@ -8,14 +9,14 @@ const press = (await getCollection('press')).sort((a, b) => a.data.order - b.dat
 
 <BaseLayout title={pageTitle('Press')}>
   <h1>Recent Press Coverage</h1>
-  <ul>
+  <ul class="list">
     {press.map(({ data }) => (
       <li>
-        <a href={data.url} target="_blank" rel="noopener noreferrer">
+        <a class="item-title external" href={data.url} target="_blank" rel="noopener noreferrer">
           {data.title}
         </a>
-        <p>
-          {data.outlet} - {data.date}
+        <p class="meta">
+          {data.outlet} · <time datetime={toIsoDate(data.date)}>{formatDate(data.date)}</time>
         </p>
       </li>
     ))}

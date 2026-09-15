@@ -5,7 +5,7 @@ order: 5
 logo: ../../assets/projects/GamepassPickerLogo.png
 alt: A cube with sides of different colored shades of white, and green.
 links:
-  - label: Web
+  - label: Website
     url: https://gamepasspicker.com/
 tags: [Gaming Media, AI, Front-End, Back-End, DevOps, Web Automation]
 ---

@@ -5,7 +5,7 @@ order: 17
 logo: ../../assets/projects/FHLBCLogo.jpeg
 alt: FHLBC Logo - Three houses above the words FHLBC Chicago
 links:
-  - label: Web
+  - label: Website
     url: https://www.fhlbc.com/
 ---
 

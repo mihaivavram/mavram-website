@@ -5,7 +5,7 @@ order: 12
 logo: ../../assets/projects/4CasterLogo.png
 alt: Logo of 4caster - a 4 and F combined
 links:
-  - label: Web
+  - label: Website
     url: https://4castersports.com/
 ---
 

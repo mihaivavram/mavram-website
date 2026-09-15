@@ -5,7 +5,7 @@ order: 16
 logo: ../../assets/projects/EchoGlobalLogistics.png
 alt: Logo ECHO - the words ECHO
 links:
-  - label: Web
+  - label: Website
     url: https://www.echo.com/careers/open-positions.html
 ---
 

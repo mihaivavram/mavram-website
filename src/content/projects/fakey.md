@@ -5,7 +5,7 @@ order: 6
 logo: ../../assets/projects/FakeyLogo.png
 alt: A newspaper with the word Fakey in the front page
 links:
-  - label: Web
+  - label: Website
     url: https://fakey.iuni.iu.edu
   - label: Android
     url: https://play.google.com/store/apps/details?id=com.cnets.fakey
