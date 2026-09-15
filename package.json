@@ -9,14 +9,16 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
+    "lint": "npm run check && npm run spell",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test:unit": "vitest run",
-    "test:e2e": "playwright test",
-    "verify": "npm run format:check && npm run check && npm run spell && npm run test:unit && npm run build && npm run test:e2e",
+    "test:e2e": "npm run build && playwright test",
+    "verify": "npm run format:check && npm run lint && npm run test:unit && npm run test:e2e",
     "spell": "cspell --no-progress --no-summary \"src/content/**\" \"src/pages/**\"",
     "links": "lychee --root-dir \"$PWD/dist\" \"dist/**/*.html\"",
-    "og-image": "node scripts/generate-og-image.mjs"
+    "og-image": "node scripts/generate-og-image.mjs",
+    "new-post": "node scripts/new-post.mjs"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,7 @@
     "node": ">=22.18.0"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.3.2"
   },

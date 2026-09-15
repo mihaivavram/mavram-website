@@ -27,6 +27,38 @@ export function personJsonLd(imageUrl: string) {
   };
 }
 
+interface BlogPostingInput {
+  title: string;
+  description: string;
+  url: string;
+  datePublished: Date;
+  dateModified?: Date;
+  imageUrl?: string;
+}
+
+// schema.org BlogPosting for a post page, credited to the same Person as the home page.
+export function blogPostingJsonLd({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  imageUrl,
+}: BlogPostingInput) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: title,
+    description,
+    url,
+    mainEntityOfPage: url,
+    datePublished: datePublished.toISOString(),
+    dateModified: (dateModified ?? datePublished).toISOString(),
+    ...(imageUrl ? { image: imageUrl } : {}),
+    author: { '@type': 'Person', name: SITE_NAME, url: `${SITE_URL}/` },
+  };
+}
+
 // Escaping "<" keeps the JSON from closing its <script> tag early.
 export function serializeJsonLd(data: unknown): string {
   return JSON.stringify(data).replace(/</g, '\\u003c');

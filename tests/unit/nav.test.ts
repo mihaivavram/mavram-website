@@ -25,6 +25,12 @@ describe('isActive', () => {
   it('does not treat the home page as a prefix of other pages', () => {
     expect(isActive('/', '/projects')).toBe(false);
   });
+
+  it('keeps a section active on the pages inside it', () => {
+    expect(isActive('/blog', '/blog/my-first-post')).toBe(true);
+    expect(isActive('/blog', '/blog/my-first-post.html')).toBe(true);
+    expect(isActive('/blog', '/blogroll')).toBe(false);
+  });
 });
 
 describe('Nav', () => {

@@ -25,6 +25,9 @@ export function normalizePath(pathname: string): string {
   return trimmed === '' ? '/' : trimmed;
 }
 
+// A nav item is active on its own page and on the pages inside it (Blog on /blog/a-post).
 export function isActive(href: string, pathname: string): boolean {
-  return normalizePath(href) === normalizePath(pathname);
+  const current = normalizePath(pathname);
+  const target = normalizePath(href);
+  return current === target || (target !== '/' && current.startsWith(`${target}/`));
 }

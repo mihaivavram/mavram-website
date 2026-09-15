@@ -3,11 +3,14 @@ import { Image, getImage } from 'astro:assets';
 import Icon from '../components/Icon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import headshot from '../assets/mihai-headshot.jpg';
+import { getPosts } from '../lib/blog';
+import { formatPostDate, isoDate } from '../lib/posts';
 import { SITE_URL } from '../lib/site';
 import { personJsonLd, serializeJsonLd } from '../lib/structured-data';
 
 const photo = await getImage({ src: headshot, width: 300, height: 300 });
 const person = personJsonLd(new URL(photo.src, SITE_URL).href);
+const latestPosts = (await getPosts()).slice(0, 3);
 ---
 
 <BaseLayout description="I'm a developer and startup founder dedicated to leveraging technology for positive impact.">
@@ -17,128 +20,146 @@ const person = personJsonLd(new URL(photo.src, SITE_URL).href);
     slot="head"
     set:html={serializeJsonLd(person)}
   ></script>
-  <Image
-    class="headshot"
-    src={headshot}
-    alt="Headshot of Mihai Avram"
-    width={96}
-    height={96}
-    densities={[1, 2]}
-    loading="eager"
-  />
-  <h1>Founder &amp; AI Engineer</h1>
-  <div class="greeting">
-    Hey{' '}
-    <span role="img" aria-label="waving hand">
-      👋
-    </span>
-    ,
-  </div>
-  <p>
-    I'm a developer and startup founder dedicated to leveraging technology for positive impact. I
-    work across the stack, from web and mobile to backend and infrastructure, and these days a lot
-    of machine learning and generative AI.
-    <br />
-    <br />
-    Through{' '}
-    <a
-      href="https://www.linkedin.com/in/mihai-avram-15493182"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <b>Wholesome Future Labs</b>
-    </a>
-    , I help companies get AI out of the demo stage and into their actual product. Fifteen years of
-    building software, some of it as CTO.
-    <br />
-    <br />I am also the creator of{' '}
-    <a href="https://fakey.osome.iu.edu/" target="_blank" rel="noopener noreferrer">
-      Fakey
-    </a>{' '}
-    (a news literacy tool for Web, Android, and iOS). I feel very grateful for winning the{' '}
-    <a
-      href="https://cnets.indiana.edu/blog/2020/11/01/distinguished-masters-thesis-award/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      IU Distinguished Master's Thesis Award
-    </a>{' '}
-    through my work with Fakey and Hoaxy. With experience in software/web development and machine
-    learning, my portfolio spans a variety of impactful projects.
-  </p>
-  <b class="label">Currently, I'm:</b>
-  <ol class="current">
-    <li>
-      Helping founders build and ship AI into their products, from first prototype to something that
-      survives real users (most recently Cingo Research, see <a href="/projects">Projects</a>)
-    </li>
-    <li>
-      Growing{' '}
-      <a href="https://www.lacrmquicksync.com/" target="_blank" rel="noopener noreferrer">
-        LACRM QuickSync
-      </a>
-      , a SaaS that keeps invoicing and financial data in sync between QuickBooks and Less Annoying
-      CRM
-    </li>
-    <li>
-      Running{' '}
-      <a href="https://gamepasspicker.com/" target="_blank" rel="noopener noreferrer">
-        GamePass Picker
-      </a>
-      , a “Rotten Tomatoes for gaming” with 4,000+ users
-    </li>
-  </ol>
-  <p>
-    For a deeper dive into my projects and experiences, feel free to check out my CV, projects, and
-    publications. Let's connect if you're interested in creating meaningful tech together!
-  </p>
-  <b class="label">Connect with me via:</b>
-  <ul class="connect">
-    <li class="email">
-      <Icon name="mail" />
-      <span>
-        <b>E-Mail:</b> mihai (dot) v (dot) avram (at) gmail (dot) com
+  <div class="about-copy">
+    <Image
+      class="headshot"
+      src={headshot}
+      alt="Headshot of Mihai Avram"
+      width={96}
+      height={96}
+      densities={[1, 2]}
+      loading="eager"
+    />
+    <h1>Founder &amp; AI Engineer</h1>
+    <div class="greeting">
+      Hey{' '}
+      <span role="img" aria-label="waving hand">
+        👋
       </span>
-    </li>
-    <li>
+      ,
+    </div>
+    <p>
+      I'm a developer and startup founder dedicated to leveraging technology for positive impact. I
+      work across the stack, from web and mobile to backend and infrastructure, and these days a lot
+      of machine learning and generative AI.
+      <br />
+      <br />
+      Through{' '}
       <a
-        href="https://www.linkedin.com/in/mihai-avram-15493182/"
+        href="https://www.linkedin.com/in/mihai-avram-15493182"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon name="linkedin" />
-        LinkedIn
+        <b>Wholesome Future Labs</b>
       </a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/mihai.v.avram" target="_blank" rel="noopener noreferrer">
-        <Icon name="facebook" />
-        Facebook
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com/mihaivavram" target="_blank" rel="noopener noreferrer">
-        <Icon name="twitter" />
-        Twitter
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/mihaivavram" target="_blank" rel="noopener noreferrer">
-        <Icon name="github" />
-        GitHub
-      </a>
-    </li>
-    <li>
+      , I help companies get AI out of the demo stage and into their actual product. Fifteen years
+      of building software, some of it as CTO.
+      <br />
+      <br />I am also the creator of{' '}
+      <a href="https://fakey.osome.iu.edu/" target="_blank" rel="noopener noreferrer">
+        Fakey
+      </a>{' '}
+      (a news literacy tool for Web, Android, and iOS). I feel very grateful for winning the{' '}
       <a
-        href="https://scholar.google.com/citations?user=Yb8DVskAAAAJ&amp;hl=en"
+        href="https://cnets.indiana.edu/blog/2020/11/01/distinguished-masters-thesis-award/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon name="scholar" />
-        Google Scholar
-      </a>
-    </li>
-  </ul>
+        IU Distinguished Master's Thesis Award
+      </a>{' '}
+      through my work with Fakey and Hoaxy. With experience in software/web development and machine
+      learning, my portfolio spans a variety of impactful projects.
+    </p>
+    <b class="label">Currently, I'm:</b>
+    <ol class="current">
+      <li>
+        Helping founders build and ship AI into their products, from first prototype to something
+        that survives real users (most recently Cingo Research, see <a href="/projects">Projects</a>
+        )
+      </li>
+      <li>
+        Growing{' '}
+        <a href="https://www.lacrmquicksync.com/" target="_blank" rel="noopener noreferrer">
+          LACRM QuickSync
+        </a>
+        , a SaaS that keeps invoicing and financial data in sync between QuickBooks and Less
+        Annoying CRM
+      </li>
+      <li>
+        Running{' '}
+        <a href="https://gamepasspicker.com/" target="_blank" rel="noopener noreferrer">
+          GamePass Picker
+        </a>
+        , a “Rotten Tomatoes for gaming” with 4,000+ users
+      </li>
+    </ol>
+    <p>
+      For a deeper dive into my projects and experiences, feel free to check out my CV, projects,
+      and publications. Let's connect if you're interested in creating meaningful tech together!
+    </p>
+    <b class="label">Connect with me via:</b>
+    <ul class="connect">
+      <li class="email">
+        <Icon name="mail" />
+        <span>
+          <b>E-Mail:</b> mihai (dot) v (dot) avram (at) gmail (dot) com
+        </span>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/mihai-avram-15493182/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="linkedin" />
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/mihai.v.avram" target="_blank" rel="noopener noreferrer">
+          <Icon name="facebook" />
+          Facebook
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/mihaivavram" target="_blank" rel="noopener noreferrer">
+          <Icon name="twitter" />
+          Twitter
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/mihaivavram" target="_blank" rel="noopener noreferrer">
+          <Icon name="github" />
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://scholar.google.com/citations?user=Yb8DVskAAAAJ&amp;hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="scholar" />
+          Google Scholar
+        </a>
+      </li>
+    </ul>
+  </div>
+  {latestPosts.length > 0 && (
+    <section class="latest" aria-labelledby="latest-posts">
+      <h2 id="latest-posts">Latest posts</h2>
+      <ul class="latest-list">
+        {latestPosts.map((post) => (
+          <li>
+            <a href={`/blog/${post.id}`}>{post.data.title}</a>
+            <time class="latest-date" datetime={isoDate(post.data.pubDate)}>
+              {formatPostDate(post.data.pubDate)}
+            </time>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 </BaseLayout>
 
 <style>
@@ -197,5 +218,21 @@ const person = personJsonLd(new URL(photo.src, SITE_URL).href);
 
   .connect a:hover {
     color: var(--accent);
+  }
+
+  .latest-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .latest-list li + li {
+    margin-top: 0.75rem;
+  }
+
+  .latest-date {
+    display: block;
+    color: var(--muted);
+    font-size: 0.9375rem;
   }
 </style>

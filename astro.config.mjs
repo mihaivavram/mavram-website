@@ -12,6 +12,12 @@ export default defineConfig({
   trailingSlash: 'never',
   build: { format: 'file' },
   integrations: [sitemap({ filter: (page) => !HIDDEN_PAGES.test(page) })],
+  markdown: {
+    // Code blocks in blog posts, in light and dark themes (see .astro-code in global.css).
+    shikiConfig: {
+      themes: { light: 'github-light', dark: 'github-dark' },
+    },
+  },
   fonts: [
     {
       provider: fontProviders.fontsource(),

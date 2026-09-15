@@ -1,19 +1,36 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getPosts } from '../lib/blog';
 import { formatDate, toIsoDate } from '../lib/format';
-import { pageTitle } from '../lib/site';
+import { formatPostDate, isoDate, readingTimeMinutes } from '../lib/posts';
+import { BLOG_DESCRIPTION, pageTitle } from '../lib/site';
 
-const posts = (await getCollection('posts')).sort((a, b) => a.data.order - b.data.order);
+const posts = await getPosts();
+const earlier = (await getCollection('posts')).sort((a, b) => a.data.order - b.data.order);
 ---
 
-<BaseLayout
-  title={pageTitle('Blog')}
-  description="Posts by Mihai Avram about startups, software development and machine learning."
->
-  <h1>Recent Posts</h1>
+<BaseLayout title={pageTitle('Blog')} description={BLOG_DESCRIPTION}>
+  <h1>Blog</h1>
   <ul class="list">
-    {posts.map(({ data }) => (
+    {posts.map((post) => (
+      <li>
+        <a class="item-title" href={`/blog/${post.id}`}>
+          {post.data.title}
+        </a>
+        <p class="meta">
+          <time datetime={isoDate(post.data.pubDate)}>{formatPostDate(post.data.pubDate)}</time> ·{' '}
+          {readingTimeMinutes(post.body ?? '')} min read
+        </p>
+        <p class="summary">{post.data.description}</p>
+      </li>
+    ))}
+  </ul>
+
+  <h2>Earlier writing</h2>
+  <p class="meta">From my previous blog, mihaisplace.blog.</p>
+  <ul class="list earlier">
+    {earlier.map(({ data }) => (
       <li>
         <a class="item-title external" href={data.url} target="_blank" rel="noopener noreferrer">
           {data.title}
@@ -26,3 +43,13 @@ const posts = (await getCollection('posts')).sort((a, b) => a.data.order - b.dat
     ))}
   </ul>
 </BaseLayout>
+
+<style>
+  .summary {
+    margin: 0.5rem 0 0;
+  }
+
+  .earlier {
+    margin-top: 1.5rem;
+  }
+</style>

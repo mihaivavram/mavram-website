@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { HIDDEN_ROUTES, PUBLIC_ROUTES } from './routes';
+import { HIDDEN_ROUTES, POST_ROUTES, PUBLIC_ROUTES } from './routes';
 
 const SITE = 'https://mihaisplace.com';
 const canonicalFor = (route: string) => (route === '/' ? `${SITE}/` : `${SITE}${route}`);
@@ -97,6 +97,6 @@ test.describe('search and social metadata', () => {
 
     const sitemap = await (await request.get('/sitemap-0.xml')).text();
     const locations = Array.from(sitemap.matchAll(/<loc>([^<]+)<\/loc>/g), (match) => match[1]);
-    expect(locations.sort()).toEqual(PUBLIC_ROUTES.map(canonicalFor).sort());
+    expect(locations.sort()).toEqual([...PUBLIC_ROUTES, ...POST_ROUTES].map(canonicalFor).sort());
   });
 });

@@ -13,7 +13,8 @@ test('About copy matches the approved text word for word', async ({ page }) => {
   const expected = normalize(await page.locator('body').innerText());
 
   await page.goto('/');
-  const actual = normalize(await page.getByRole('main').innerText());
+  // The About copy sits in .about-copy; the "Latest posts" list below it is separate.
+  const actual = normalize(await page.locator('.about-copy').innerText());
 
   expect(actual).toBe(expected);
 });

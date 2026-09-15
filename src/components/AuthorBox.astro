@@ -1,0 +1,64 @@
+---
+// Shown at the end of every blog post. The bio reuses the approved wording from the About page.
+import { Image } from 'astro:assets';
+import headshot from '../assets/mihai-headshot.jpg';
+---
+
+<footer class="author">
+  <Image class="author-photo" src={headshot} alt="" width={56} height={56} densities={[1, 2]} />
+  <div>
+    <p>
+      <b>Mihai Avram</b> · Founder &amp; AI Engineer
+    </p>
+    <p class="author-bio">
+      Through Wholesome Future Labs, I help companies get AI out of the demo stage and into their
+      actual product.
+    </p>
+    <p class="author-links">
+      <a href="/">About me</a> ·{' '}
+      <a
+        href="https://www.linkedin.com/in/mihai-avram-15493182/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>{' '}
+      · <a href="/rss.xml">RSS</a>
+    </p>
+  </div>
+</footer>
+
+<style>
+  .author {
+    display: grid;
+    grid-template-columns: 3.5rem minmax(0, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+
+  .author-photo {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .author-bio {
+    margin-top: 0.25rem;
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+
+  .author-links {
+    margin-top: 0.5rem;
+    font-size: 0.9375rem;
+  }
+</style>
