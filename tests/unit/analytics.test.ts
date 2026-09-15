@@ -1,6 +1,6 @@
 import { experimental_AstroContainer as AstroContainer } from 'astro/container';
 import { describe, expect, it } from 'vitest';
-import GoogleAnalytics from '../../src/components/GoogleAnalytics.astro';
+import CookieConsent from '../../src/components/CookieConsent.astro';
 import { GA_MEASUREMENT_ID, isAnalyticsEnabled } from '../../src/lib/analytics';
 
 describe('isAnalyticsEnabled', () => {
@@ -12,17 +12,23 @@ describe('isAnalyticsEnabled', () => {
   });
 });
 
-describe('GoogleAnalytics', () => {
-  it("renders Google's tag for the site's measurement ID", async () => {
+describe('CookieConsent', () => {
+  it('starts hidden and never loads Google Analytics from the markup itself', async () => {
     const container = await AstroContainer.create();
-    const html = await container.renderToString(GoogleAnalytics);
+    const html = await container.renderToString(CookieConsent, {
+      props: { measurementId: GA_MEASUREMENT_ID },
+    });
 
     expect(GA_MEASUREMENT_ID).toMatch(/^G-[A-Z0-9]+$/);
-    expect(html).toContain(
-      `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}">`,
-    );
-    expect(html).toContain('function gtag(){dataLayer.push(arguments);}');
-    expect(html).toContain(`gtag('config', '${GA_MEASUREMENT_ID}');`);
-    expect(html.match(/<script/g)).toHaveLength(2);
+    expect(html).toMatch(/<section(?=[^>]*id="cookie-consent")(?=[^>]*\bhidden\b)[^>]*>/);
+    expect(html).not.toMatch(/<script[^>]*src="https:\/\/www\.googletagmanager\.com/);
+    expect(html).toContain(`const measurementId = "${GA_MEASUREMENT_ID}"`);
+  });
+
+  it('has no measurement ID outside production', async () => {
+    const container = await AstroContainer.create();
+    const html = await container.renderToString(CookieConsent, { props: { measurementId: null } });
+
+    expect(html).toContain('const measurementId = null');
   });
 });

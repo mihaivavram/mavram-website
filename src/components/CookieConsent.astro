@@ -1,0 +1,141 @@
+---
+// Minimal cookie consent: Google Analytics loads only after a visitor clicks Accept, and the
+// choice is remembered in localStorage. measurementId is null outside Vercel production, so
+// the banner works in local builds and tests but never loads Google Analytics there.
+interface Props {
+  measurementId: string | null;
+}
+
+const { measurementId } = Astro.props;
+---
+
+<section id="cookie-consent" class="cookie-consent" aria-label="Cookie consent" hidden>
+  <div class="cookie-consent-inner">
+    <p>This site uses Google Analytics cookies to count visits.</p>
+    <div class="actions">
+      <button type="button" class="decline" data-consent="denied">
+        Decline
+      </button>
+      <button type="button" class="accept" data-consent="granted">
+        Accept
+      </button>
+    </div>
+  </div>
+</section>
+
+<script is:inline define:vars={{ measurementId }}>
+  const STORAGE_KEY = 'analytics-consent';
+  const banner = document.getElementById('cookie-consent');
+
+  function readChoice() {
+    try {
+      return localStorage.getItem(STORAGE_KEY);
+    } catch {
+      return null;
+    }
+  }
+
+  function loadAnalytics() {
+    if (!measurementId || window.gtag) return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function gtag() {
+      window.dataLayer.push(arguments);
+    };
+    window.gtag('js', new Date());
+    window.gtag('config', measurementId);
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+    document.head.append(script);
+  }
+
+  function choose(value) {
+    try {
+      localStorage.setItem(STORAGE_KEY, value);
+    } catch {
+      // Storage blocked (e.g. private mode): the choice applies to this page only.
+    }
+    banner.hidden = true;
+    if (value === 'granted') {
+      loadAnalytics();
+    } else if (window.gtag) {
+      // Consent withdrawn after Analytics loaded: remove its cookies and reload without it.
+      for (const name of document.cookie.split(';').map((cookie) => cookie.split('=')[0].trim())) {
+        if (name.startsWith('_ga')) {
+          // Expire both the domain-wide cookie Google sets and any host-only copy.
+          for (const domain of ['', `; domain=.${location.hostname}`]) {
+            document.cookie = `${name}=; Max-Age=0; path=/${domain}`;
+          }
+        }
+      }
+      location.reload();
+    }
+  }
+
+  const choice = readChoice();
+  if (choice === 'granted') loadAnalytics();
+  else if (choice !== 'denied') banner.hidden = false;
+
+  for (const button of banner.querySelectorAll('[data-consent]')) {
+    button.addEventListener('click', () => choose(button.dataset.consent));
+  }
+  for (const button of document.querySelectorAll('[data-cookie-settings]')) {
+    button.addEventListener('click', () => {
+      banner.hidden = false;
+    });
+  }
+</script>
+
+<style>
+  .cookie-consent {
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 20;
+    padding: 0.75rem 0 calc(0.75rem + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  .cookie-consent-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    max-width: var(--measure);
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+    font-size: 0.9375rem;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  button {
+    min-height: 2.25rem;
+    padding: 0.375rem 0.875rem;
+    border-radius: 0.5rem;
+    font: inherit;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+
+  .accept {
+    border: 1px solid var(--text);
+    background: var(--text);
+    color: var(--bg);
+  }
+
+  .decline {
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+  }
+</style>

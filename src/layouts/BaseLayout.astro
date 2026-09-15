@@ -1,8 +1,8 @@
 ---
 import { Font } from 'astro:assets';
-import GoogleAnalytics from '../components/GoogleAnalytics.astro';
+import CookieConsent from '../components/CookieConsent.astro';
 import Nav from '../components/Nav.astro';
-import { isAnalyticsEnabled } from '../lib/analytics';
+import { GA_MEASUREMENT_ID, isAnalyticsEnabled } from '../lib/analytics';
 import { LEGACY_ROUTES } from '../lib/nav';
 import { SITE_NAME, SITE_URL, canonicalUrl, pageTitle } from '../lib/site';
 import '../styles/global.css';
@@ -24,7 +24,6 @@ const year = new Date().getFullYear();
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    {isAnalyticsEnabled() && <GoogleAnalytics />}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
     <!--
@@ -74,9 +73,15 @@ const year = new Date().getFullYear();
       <slot />
     </main>
     <footer class="site-footer">
-      <div class="container">
-        Copyright © {year} | {SITE_NAME}
+      <div class="container footer-inner">
+        <span>
+          Copyright © {year} | {SITE_NAME}
+        </span>
+        <button class="link-button" type="button" data-cookie-settings>
+          Cookie settings
+        </button>
       </div>
     </footer>
+    <CookieConsent measurementId={isAnalyticsEnabled() ? GA_MEASUREMENT_ID : null} />
   </body>
 </html>

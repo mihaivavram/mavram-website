@@ -11,6 +11,17 @@ export default defineConfig({
   use: {
     baseURL: `http://localhost:${PORT}`,
     trace: 'retain-on-failure',
+    // Start every test with cookies declined so the consent banner doesn't cover the page.
+    // tests/e2e/consent.spec.ts clears this to test the banner itself.
+    storageState: {
+      cookies: [],
+      origins: [
+        {
+          origin: `http://localhost:${PORT}`,
+          localStorage: [{ name: 'analytics-consent', value: 'denied' }],
+        },
+      ],
+    },
   },
   projects: [
     {

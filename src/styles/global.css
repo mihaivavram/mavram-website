@@ -187,6 +187,27 @@ main:focus {
   font-size: 0.875rem;
 }
 
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+
+/* A button that looks like a text link (e.g. "Cookie settings" in the footer). */
+.link-button {
+  min-height: 1.5rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+
 @media (max-width: 40rem) {
   .header-inner {
     flex-direction: column;

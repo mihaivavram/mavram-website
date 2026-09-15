@@ -35,7 +35,7 @@ npm run links
 
 ## Analytics
 
-Google Analytics (`G-YPXJCELYNW`, set in `src/lib/analytics.ts`) loads only on Vercel production deployments (`VERCEL_ENV=production`). Local builds, test runs and preview deployments never send data.
+Google Analytics (`G-YPXJCELYNW`, set in `src/lib/analytics.ts`) loads only after a visitor accepts the cookie banner (`src/components/CookieConsent.astro`), and only on Vercel production deployments (`VERCEL_ENV=production`). Local builds, test runs and preview deployments show the banner but never load Google Analytics.
 
 ## Project layout
 
