@@ -4,7 +4,7 @@ Source for [mihaisplace.com](https://mihaisplace.com), built with [Astro](https:
 
 ## Requirements
 
-- Node.js 22.12 or newer. The repo pins Node 24 in `.nvmrc`, so run `nvm use`.
+- Node.js 22.18 or newer (required by the spell checker). The repo pins Node 24 in `.nvmrc`, so run `nvm use`.
 
 ## Develop
 
