@@ -9,7 +9,10 @@ const publications = (await getCollection('publications')).sort(
 );
 ---
 
-<BaseLayout title={pageTitle('Publications')}>
+<BaseLayout
+  title={pageTitle('Publications')}
+  description="Research by Mihai Avram on misinformation, social networks and machine learning, published at CSCW, IEEE and the Harvard Kennedy School Misinformation Review."
+>
   <h1>Publications</h1>
   <ul class="list">
     {publications.map(({ data }) => (

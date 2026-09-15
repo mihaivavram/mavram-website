@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mihaisplace.com/sitemap-index.xml

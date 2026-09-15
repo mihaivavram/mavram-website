@@ -7,7 +7,10 @@ import { pageTitle } from '../lib/site';
 const posts = (await getCollection('posts')).sort((a, b) => a.data.order - b.data.order);
 ---
 
-<BaseLayout title={pageTitle('Blog')}>
+<BaseLayout
+  title={pageTitle('Blog')}
+  description="Posts by Mihai Avram about startups, software development and machine learning."
+>
   <h1>Recent Posts</h1>
   <ul class="list">
     {posts.map(({ data }) => (

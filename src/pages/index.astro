@@ -1,11 +1,17 @@
 ---
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import Icon from '../components/Icon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import headshot from '../assets/mihai-headshot.jpg';
+import { SITE_URL } from '../lib/site';
+import { personJsonLd, serializeJsonLd } from '../lib/structured-data';
+
+const photo = await getImage({ src: headshot, width: 300, height: 300 });
+const person = personJsonLd(new URL(photo.src, SITE_URL).href);
 ---
 
-<BaseLayout>
+<BaseLayout description="I'm a developer and startup founder dedicated to leveraging technology for positive impact.">
+  <script type="application/ld+json" slot="head" set:html={serializeJsonLd(person)}></script>
   <Image
     class="headshot"
     src={headshot}

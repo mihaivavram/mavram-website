@@ -3,7 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { pageTitle } from '../lib/site';
 ---
 
-<BaseLayout title={pageTitle('TimeLapse')}>
+<BaseLayout
+  title={pageTitle('TimeLapse')}
+  description="A season-by-season log of Mihai Avram's projects and lessons learned from 2010 to 2021."
+  noindex
+>
   <h1>TimeLapse</h1>
 
   <section>

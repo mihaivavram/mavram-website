@@ -12,8 +12,13 @@ export const NAV_ITEMS: readonly NavItem[] = [
   { href: '/press', label: 'Press' },
 ];
 
+// With build.format 'file', Astro.url.pathname ends in .html during the static build
+// (/index.html, /projects.html), while visitors use /, /projects or /projects/.
 export function normalizePath(pathname: string): string {
-  const trimmed = pathname.replace(/\/+$/, '');
+  const trimmed = pathname
+    .replace(/\/index\.html$/, '/')
+    .replace(/\.html$/, '')
+    .replace(/\/+$/, '');
   return trimmed === '' ? '/' : trimmed;
 }
 

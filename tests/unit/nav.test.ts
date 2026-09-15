@@ -9,6 +9,11 @@ describe('normalizePath', () => {
     expect(normalizePath('/')).toBe('/');
     expect(normalizePath('')).toBe('/');
   });
+
+  it('maps build-time .html paths to the URLs visitors use', () => {
+    expect(normalizePath('/index.html')).toBe('/');
+    expect(normalizePath('/projects.html')).toBe('/projects');
+  });
 });
 
 describe('isActive', () => {

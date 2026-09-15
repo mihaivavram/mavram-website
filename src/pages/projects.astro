@@ -20,7 +20,10 @@ const groups = [
 ];
 ---
 
-<BaseLayout title={pageTitle('Projects')}>
+<BaseLayout
+  title={pageTitle('Projects')}
+  description="Current and past projects by Mihai Avram, including LACRM QuickSync, Cingo Research, Elebase and Fakey."
+>
   <h1>Projects</h1>
   {groups.map(({ heading, items }) => (
     <section>

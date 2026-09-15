@@ -6,7 +6,10 @@ import { pageTitle } from '../lib/site';
 const resume = '/cv/MihaiAvram_CV.pdf';
 ---
 
-<BaseLayout title={pageTitle('CV')}>
+<BaseLayout
+  title={pageTitle('CV')}
+  description="The resume of Mihai Avram, founder and AI engineer, available as a PDF."
+>
   <h1>Resume</h1>
   <p>
     <a class="button" href={resume} target="_blank" rel="noopener noreferrer">

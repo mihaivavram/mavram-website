@@ -7,7 +7,10 @@ import { pageTitle } from '../lib/site';
 const press = (await getCollection('press')).sort((a, b) => a.data.order - b.data.order);
 ---
 
-<BaseLayout title={pageTitle('Press')}>
+<BaseLayout
+  title={pageTitle('Press')}
+  description="Press coverage of Mihai Avram's work, including Poynter and Indiana University features on Fakey."
+>
   <h1>Recent Press Coverage</h1>
   <ul class="list">
     {press.map(({ data }) => (
