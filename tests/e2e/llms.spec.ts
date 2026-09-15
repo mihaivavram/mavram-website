@@ -15,8 +15,9 @@ test.describe('llms.txt', () => {
 
     // The llmstxt.org format: a title, a one-line summary, then lists of links.
     expect(text).toMatch(/^# Mihai Avram\n\n> \S.+\n/);
+    // Links are found by their "](url)" ending, so titles with brackets still count.
     const links = Array.from(
-      text.matchAll(/^- \[[^\]]+\]\(([^)]+)\)/gm),
+      text.matchAll(/\]\((https?:\/\/[^)\s]+)\)/g),
       (match) => match[1] ?? '',
     );
 

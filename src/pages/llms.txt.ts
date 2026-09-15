@@ -31,8 +31,9 @@ const PAGE_NOTES: Record<string, string> = {
     "Press coverage of Mihai Avram's work, including Poynter and Indiana University features on Fakey.",
 };
 
+// Escaping brackets keeps a title like "[Draft" from breaking the link.
 const link = (name: string, url: string, note?: string) =>
-  `- [${name}](${url})${note ? `: ${note}` : ''}`;
+  `- [${name.replace(/[[\]]/g, '\\$&')}](${url})${note ? `: ${note}` : ''}`;
 
 export async function GET() {
   const posts = await getPosts();
