@@ -44,15 +44,16 @@ After a build, check external links with [lychee](https://lychee.cli.rs) (`brew 
 npm run links
 ```
 
-## Blog
+## Publish a blog post
 
-Posts live in `src/content/blog/<slug>/index.md`. The folder name is the post's URL (`/blog/<slug>`), so don't rename a folder once the post is published.
-
-1. Run `npm run new-post "Post title"` to create a draft with the frontmatter to fill in.
-2. Write in Markdown. Put images in the post's folder and reference them as `![Describe the image](./image.png)`. Fenced code blocks get syntax highlighting.
-3. Preview with `npm run dev`. Drafts show there but never on the live site. Set `draft: false` to publish.
-
-When republishing a post elsewhere (Hashnode, Dev.to, Medium), set its original or canonical URL to `https://mihaisplace.com/blog/<slug>`. The RSS feed is at `/rss.xml`.
+1. **Create a draft:** `npm run new-post "Post title"` creates `src/content/blog/<slug>/index.md` with `draft: true`. The folder name is the URL (`/blog/<slug>`), so never rename it once published.
+2. **Fill in the frontmatter:** `description` (50 to 200 characters) and `tags`. Optional cover: `cover: ./cover.png` plus `coverAlt`.
+3. **Write in Markdown:** put images in the post's folder as `![Describe the image](./image.png)`. Code blocks that name a language (` ```ts `) get syntax highlighting.
+4. **Preview:** `npm run dev`, then open `http://localhost:4321/blog/<slug>`. Drafts only show locally.
+5. **Publish:** set `draft: false` and make sure `pubDate` is the publish date.
+6. **Check:** `npm run verify` catches missing alt text, missing images, short descriptions and typos. If it flags a real name as a typo, add it to `words` in `cspell.json`.
+7. **Go live:** commit and merge into `main`, and Vercel deploys it. The blog list, the home page's latest posts, the sitemap and the RSS feed (`/rss.xml`) update on their own. Pushing a branch first gives you a Vercel preview link.
+8. **Cross-post (optional):** on Hashnode, Dev.to or Medium, set the original (canonical) URL to `https://mihaisplace.com/blog/<slug>` so search engines credit this site.
 
 ## Analytics
 
