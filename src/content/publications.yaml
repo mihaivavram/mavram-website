@@ -3,7 +3,7 @@
   title: 'Fakey: A Game Intervention to Improve News Literacy on Social Media'
   authors: 'Nicholas Micallef, Mihai Avram, Filippo Menczer, and Sameer Patil'
   venue: 'Conference - (CSCW 2021) - Human-Computer Interaction'
-  url: 'https://dl.acm.org/doi/pdf/10.1145/3449080'
+  url: 'https://doi.org/10.1145/3449080'
 
 - id: engagement-metrics-hks-2020
   order: 2
@@ -31,28 +31,28 @@
   title: 'Curbing the Spread of Misinformation (Response Essay)'
   authors: 'Mihai Avram and Maria D. Molina'
   venue: 'Journal - RTI Press (2018)'
-  url: 'https://www.rti.org/sites/default/files/resources/rti-publication-file-4295b53c-cb10-4510-a3db-50fa6ea79ea6.pdf#page=34'
+  url: 'https://www.rti.org/rti-press-publication/curbing-spread-misinformation-insights-innovations-interpretations-misinformation-solutions-forum/fulltext.pdf'
 
 - id: harplda-ieee-big-data-2017
   order: 6
   title: 'HarpLDA+: Optimizing Latent Dirichlet Allocation for Parallel Efficiency'
   authors: 'Bo Peng, Bingjing Zhang, Langshi Chen, Mihai Avram, Robert Henschel, Craig Stewart, Shaojuan Zhu, Emily Mccallum, Lisa Smith, Tom Zahniser, Jon Omer, Judy Qiu'
   venue: 'Conference - IEEE Big Data 2017'
-  url: 'http://dsc.soic.indiana.edu/publications/HarpLDA%2B%20Optimizing%20Latent%20Dirichlet%20Allocation%20for%20Parallel%20Efficiency.pdf'
+  url: 'https://doi.org/10.1109/bigdata.2017.8257932'
 
 - id: tree-subgraphs-ieee-tmscs-2017
   order: 7
   title: 'Finding and counting tree-like subgraphs using MapReduce'
   authors: 'Zhao Zhao, Langshi Chen, Mihai Avram, Meng Li, Guanying Wang, Ali Butt, Maleq Khan, Madhav Marathe, Judy Qiu, Anil Vullikanti'
   venue: 'Journal - IEEE Transactions on Multi-Scale Computing Systems 2017'
-  url: 'http://dsc.soic.indiana.edu/publications/tmscssi_2017_harp_sahad.pdf'
+  url: 'https://doi.org/10.1109/tmscs.2017.2768426'
 
 - id: relsifter-wsdm-cup-2017
   order: 8
   title: 'RelSifter: Scoring Triples from Type-like Relations'
   authors: 'Prashant Shiralkar, Mihai Avram, Giovanni Luca Ciampaglia, Filippo Menczer, Alessandro Flammini'
   venue: 'Conference - WSDM Cup 2017'
-  url: 'http://www.uni-weimar.de/medien/webis/events/wsdm-cup-17/wsdmcup17-papers-final/wsdmcup17-triple-scoring/shiralkar17-notebook.pdf'
+  url: 'https://arxiv.org/abs/1712.08674'
 
 - id: radiative-transport-report-2013
   order: 9

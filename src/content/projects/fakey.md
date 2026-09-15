@@ -6,11 +6,7 @@ logo: ../../assets/projects/FakeyLogo.png
 alt: A newspaper with the word Fakey in the front page
 links:
   - label: Website
-    url: https://fakey.iuni.iu.edu
-  - label: Android
-    url: https://play.google.com/store/apps/details?id=com.cnets.fakey
-  - label: iOS
-    url: https://itunes.apple.com/us/app/fakey-news/id1386410642?mt=8
+    url: https://fakey.osome.iu.edu/
 tags:
   [
     Frontend Dev,

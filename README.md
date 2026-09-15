@@ -24,7 +24,13 @@ npx playwright install chromium
 Run everything before committing:
 
 ```sh
-npm run verify   # format check, type check, unit tests, build, end-to-end tests
+npm run verify   # format, types, spelling, unit tests, build, end-to-end tests
+```
+
+After a build, check external links with [lychee](https://lychee.cli.rs) (`brew install lychee`):
+
+```sh
+npm run links
 ```
 
 ## Project layout

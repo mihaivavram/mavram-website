@@ -1,0 +1,13 @@
+# External link check for the built site: `npm run links` (after `npm run build`).
+# These hosts reject automated requests (LinkedIn answers 999, ACM answers 403),
+# so they are skipped rather than reported as broken.
+exclude = [
+  '^https://www\.linkedin\.com/',
+  '^https://dl\.acm\.org/',
+  '^https://doi\.org/10\.1145/',
+  '^https://www\.udemy\.com/',
+  '^https://www\.blinkist\.com/',
+  '^https://www\.facebook\.com/',
+]
+max_retries = 2
+timeout = 20

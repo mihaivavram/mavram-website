@@ -68,6 +68,11 @@ describe('projects', () => {
     expect(data.alt.trim()).not.toBe('');
     expect(existsSync(join(dirname(path), data.logo))).toBe(true);
   });
+
+  it('gives every logo its own alt text', () => {
+    const alts = projects.map(({ data }) => data.alt.trim().toLowerCase());
+    expect(alts.filter((alt, index) => alts.indexOf(alt) !== index)).toEqual([]);
+  });
 });
 
 describe('content links', () => {

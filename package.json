@@ -13,7 +13,9 @@
     "format:check": "prettier --check .",
     "test:unit": "vitest run",
     "test:e2e": "playwright test",
-    "verify": "npm run format:check && npm run check && npm run test:unit && npm run build && npm run test:e2e"
+    "verify": "npm run format:check && npm run check && npm run spell && npm run test:unit && npm run build && npm run test:e2e",
+    "spell": "cspell --no-progress --no-summary \"src/content/**\" \"src/pages/**\"",
+    "links": "lychee --root-dir \"$PWD/dist\" \"dist/**/*.html\""
   },
   "repository": {
     "type": "git",
@@ -40,6 +42,7 @@
     "@axe-core/playwright": "^4.13.0",
     "@playwright/test": "^1.63.0",
     "@types/node": "^24.13.4",
+    "cspell": "^10.3.1",
     "prettier": "^3.9.6",
     "prettier-plugin-astro": "^1.0.0",
     "typescript": "^5.9.3",
