@@ -16,3 +16,9 @@ export function pageTitle(page?: string): string {
 export function canonicalUrl(pathname: string): string {
   return new URL(normalizePath(pathname), SITE_URL).href;
 }
+
+// Feed readers and email clients show a post away from the site, so root-relative image and
+// link URLs in its HTML must point back at the site.
+export function absoluteUrls(html: string): string {
+  return html.replace(/\b(src|href)="\/(?!\/)/g, `$1="${SITE_URL}/`);
+}

@@ -86,7 +86,7 @@ test.describe('blog', () => {
     }
   });
 
-  test('the RSS feed lists every post at its full URL', async ({ page, request }) => {
+  test('the RSS feed lists every post in full at its full URL', async ({ page, request }) => {
     const response = await request.get('/rss.xml');
     expect(response.status()).toBe(200);
     expect(response.headers()['content-type']).toContain('xml');
@@ -94,6 +94,9 @@ test.describe('blog', () => {
     for (const route of POST_ROUTES) {
       expect(xml).toContain(`<link>${SITE}${route}</link>`);
     }
+    // Every item carries the full post, with no root-relative URLs that break outside the site.
+    expect(xml.match(/<content:encoded>/g)?.length).toBe(POST_ROUTES.length);
+    expect(xml).not.toMatch(/(src|href)=&quot;\/(?!\/)/);
 
     await page.goto('/');
     await expect(page.locator('link[rel="alternate"][type="application/rss+xml"]')).toHaveAttribute(

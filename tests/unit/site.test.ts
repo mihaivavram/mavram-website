@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { HOME_DESCRIPTION, canonicalUrl, pageTitle } from '../../src/lib/site';
+import { HOME_DESCRIPTION, absoluteUrls, canonicalUrl, pageTitle } from '../../src/lib/site';
 import {
   PERSON_ID,
   WEBSITE_ID,
@@ -23,6 +23,20 @@ describe('canonicalUrl', () => {
     expect(canonicalUrl('/')).toBe('https://mihaisplace.com/');
     expect(canonicalUrl('/projects')).toBe('https://mihaisplace.com/projects');
     expect(canonicalUrl('/projects/')).toBe('https://mihaisplace.com/projects');
+  });
+});
+
+describe('absoluteUrls', () => {
+  it('points root-relative image and link URLs at the site', () => {
+    expect(absoluteUrls('<img src="/_astro/a.webp"> <a href="/cv">CV</a>')).toBe(
+      '<img src="https://mihaisplace.com/_astro/a.webp"> <a href="https://mihaisplace.com/cv">CV</a>',
+    );
+  });
+
+  it('leaves absolute, protocol-relative and fragment URLs alone', () => {
+    const html =
+      '<a href="https://x.com/a">x</a> <img src="//cdn.example/b.png"> <a href="#top">top</a>';
+    expect(absoluteUrls(html)).toBe(html);
   });
 });
 
