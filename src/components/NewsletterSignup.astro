@@ -1,0 +1,66 @@
+---
+// Email signup for the Buttondown newsletter. A plain form post, so it works without JavaScript;
+// Buttondown's confirmation (and any CAPTCHA) opens in a new tab so the reader keeps their place.
+import { NEWSLETTER_SUBSCRIBE_URL } from '../lib/site';
+---
+
+<form class="newsletter" action={NEWSLETTER_SUBSCRIBE_URL} method="post" target="_blank">
+  <label for="newsletter-email">
+    Get my next field report on building AI agents, about twice a month.
+  </label>
+  <div class="newsletter-fields">
+    <input
+      id="newsletter-email"
+      type="email"
+      name="email"
+      placeholder="you@example.com"
+      autocomplete="email"
+      required
+    />
+    <input type="hidden" name="embed" value="1" />
+    <button class="button" type="submit">
+      Subscribe
+    </button>
+  </div>
+</form>
+
+<style>
+  .newsletter {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+
+  label {
+    display: block;
+    font-weight: 500;
+  }
+
+  .newsletter-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  input[type='email'] {
+    flex: 1 1 14rem;
+    min-width: 0;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+  }
+
+  .button {
+    border: 0;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+  }
+</style>

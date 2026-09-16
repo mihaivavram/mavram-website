@@ -22,3 +22,6 @@ export function canonicalUrl(pathname: string): string {
 export function absoluteUrls(html: string): string {
   return html.replace(/\b(src|href)="\/(?!\/)/g, `$1="${SITE_URL}/`);
 }
+
+// The newsletter at buttondown.com/marvram that the signup form subscribes readers to.
+export const NEWSLETTER_SUBSCRIBE_URL = 'https://buttondown.com/api/emails/embed-subscribe/marvram';

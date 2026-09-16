@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getPosts } from '../lib/blog';
 import { formatDate, toIsoDate } from '../lib/format';
@@ -26,6 +27,8 @@ const earlier = (await getCollection('posts')).sort((a, b) => a.data.order - b.d
       </li>
     ))}
   </ul>
+
+  <NewsletterSignup />
 
   <h2>Earlier writing</h2>
   <p class="meta">From my previous blog, mihaisplace.blog.</p>

@@ -105,6 +105,20 @@ test.describe('blog', () => {
     );
   });
 
+  for (const route of ['/blog', ...POST_ROUTES]) {
+    test(`${route} offers a newsletter signup`, async ({ page }) => {
+      await page.goto(route);
+      const form = page.locator('form.newsletter');
+      await expect(form).toHaveAttribute(
+        'action',
+        'https://buttondown.com/api/emails/embed-subscribe/marvram',
+      );
+      await expect(form).toHaveAttribute('method', 'post');
+      await expect(form.getByLabel(/field report/)).toHaveAttribute('type', 'email');
+      await expect(form.getByRole('button', { name: 'Subscribe' })).toBeVisible();
+    });
+  }
+
   test('the home page links to the latest posts', async ({ page }) => {
     await page.goto('/');
     const latest = page.getByRole('region', { name: 'Latest posts' });

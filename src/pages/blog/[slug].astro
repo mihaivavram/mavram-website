@@ -2,6 +2,7 @@
 import { Image, getImage } from 'astro:assets';
 import { render } from 'astro:content';
 import AuthorBox from '../../components/AuthorBox.astro';
+import NewsletterSignup from '../../components/NewsletterSignup.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getPosts } from '../../lib/blog';
 import { formatPostDate, isoDate, readingTimeMinutes } from '../../lib/posts';
@@ -74,6 +75,7 @@ const jsonLd = blogPostingJsonLd({
     </div>
     {tags.length > 0 && <p class="tags">{tags.join(' · ')}</p>}
     <AuthorBox />
+    <NewsletterSignup />
   </article>
   <p class="back">
     <a href="/blog">← All posts</a>
