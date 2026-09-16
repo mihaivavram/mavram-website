@@ -6,8 +6,9 @@ export const HOME_TITLE = 'Mihai Avram - Founder & AI Engineer';
 // The home page's search and link-preview description, reusing the About page's own sentence.
 export const HOME_DESCRIPTION =
   'Founder & AI Engineer. Through Wholesome Future Labs, I help companies get AI out of the demo stage and into their actual product.';
+// What the blog is about, in Mihai's words: the /blog page, its search snippet, the RSS feed and /llms.txt.
 export const BLOG_DESCRIPTION =
-  'Writing by Mihai Avram on agentic AI, software engineering and building products.';
+  'Hands-on notes on building agentic AI. Agents, tools, memory, and orchestration, from prototype to production.';
 
 export function pageTitle(page?: string): string {
   return page ? `${page} - ${SITE_NAME}` : HOME_TITLE;
