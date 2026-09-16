@@ -29,6 +29,8 @@ export async function GET(context: APIContext) {
     site: context.site ?? SITE_URL,
     trailingSlash: false,
     items,
-    customData: '<language>en-us</language>',
+    xmlns: { atom: 'http://www.w3.org/2005/Atom' },
+    // The feed's own address, which feed validators and readers expect.
+    customData: `<language>en-us</language><atom:link href="${SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>`,
   });
 }

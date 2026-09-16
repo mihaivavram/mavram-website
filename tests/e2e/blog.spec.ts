@@ -91,6 +91,7 @@ test.describe('blog', () => {
     expect(response.status()).toBe(200);
     expect(response.headers()['content-type']).toContain('xml');
     const xml = await response.text();
+    expect(xml).toContain(`<atom:link href="${SITE}/rss.xml" rel="self"`);
     for (const route of POST_ROUTES) {
       expect(xml).toContain(`<link>${SITE}${route}</link>`);
     }
