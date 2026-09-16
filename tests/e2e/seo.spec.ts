@@ -103,5 +103,29 @@ test.describe('search and social metadata', () => {
     const sitemap = await (await request.get('/sitemap-0.xml')).text();
     const locations = Array.from(sitemap.matchAll(/<loc>([^<]+)<\/loc>/g), (match) => match[1]);
     expect(locations.sort()).toEqual([...PUBLIC_ROUTES, ...POST_ROUTES].map(canonicalFor).sort());
+
+    // Posts carry their last-modified date and the blog page the newest one; other pages have none.
+    const lastModified = new Map(
+      Array.from(
+        sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g),
+        ([, entry = '']) =>
+          [
+            entry.match(/<loc>([^<]+)<\/loc>/)?.[1],
+            entry.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1],
+          ] as const,
+      ),
+    );
+    const postDates: number[] = [];
+    for (const route of POST_ROUTES) {
+      const html = await (await request.get(route)).text();
+      const jsonLd = html.match(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/);
+      const modified = new Date(JSON.parse(jsonLd?.[1] ?? '{}').dateModified).getTime();
+      postDates.push(modified);
+      expect(new Date(lastModified.get(canonicalFor(route)) ?? '').getTime(), route).toBe(modified);
+    }
+    expect(new Date(lastModified.get(`${SITE}/blog`) ?? '').getTime()).toBe(Math.max(...postDates));
+    for (const page of PUBLIC_ROUTES.filter((route) => route !== '/blog')) {
+      expect(lastModified.get(canonicalFor(page)), page).toBeUndefined();
+    }
   });
 });
