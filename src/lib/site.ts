@@ -3,6 +3,9 @@ import { normalizePath } from './nav';
 export const SITE_URL = 'https://mihaisplace.com';
 export const SITE_NAME = 'Mihai Avram';
 export const HOME_TITLE = 'Mihai Avram - Founder & AI Engineer';
+// The home page's search and link-preview description, reusing the About page's own sentence.
+export const HOME_DESCRIPTION =
+  'Founder & AI Engineer. Through Wholesome Future Labs, I help companies get AI out of the demo stage and into their actual product.';
 export const BLOG_DESCRIPTION =
   'Writing by Mihai Avram on agentic AI, software engineering and building products.';
 
