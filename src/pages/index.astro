@@ -6,10 +6,10 @@ import headshot from '../assets/mihai-headshot.jpg';
 import { getPosts } from '../lib/blog';
 import { formatPostDate, isoDate } from '../lib/posts';
 import { HOME_DESCRIPTION, SITE_URL } from '../lib/site';
-import { personJsonLd, serializeJsonLd } from '../lib/structured-data';
+import { homeJsonLd, serializeJsonLd } from '../lib/structured-data';
 
 const photo = await getImage({ src: headshot, width: 300, height: 300 });
-const person = personJsonLd(new URL(photo.src, SITE_URL).href);
+const jsonLd = homeJsonLd(new URL(photo.src, SITE_URL).href);
 const latestPosts = (await getPosts()).slice(0, 3);
 ---
 
@@ -18,7 +18,7 @@ const latestPosts = (await getPosts()).slice(0, 3);
     is:inline
     type="application/ld+json"
     slot="head"
-    set:html={serializeJsonLd(person)}
+    set:html={serializeJsonLd(jsonLd)}
   ></script>
   <div class="about-copy">
     <Image

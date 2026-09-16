@@ -51,7 +51,7 @@ test.describe('search and social metadata', () => {
     expect(descriptions.size).toBe(PUBLIC_ROUTES.length);
   });
 
-  test('the home page has the approved title and Person structured data', async ({
+  test('the home page has the approved title and connected Person structured data', async ({
     page,
     request,
   }) => {
@@ -59,10 +59,15 @@ test.describe('search and social metadata', () => {
     await expect(page).toHaveTitle('Mihai Avram - Founder & AI Engineer');
 
     const json = await page.locator('script[type="application/ld+json"]').textContent();
-    const person = JSON.parse(json ?? '{}');
-    expect(person['@type']).toBe('Person');
+    const { '@graph': graph = [] } = JSON.parse(json ?? '{}');
+    const node = (type: string) =>
+      graph.find((item: { '@type': string }) => item['@type'] === type);
+    const person = node('Person');
     expect(person.name).toBe('Mihai Avram');
     expect(person.url).toBe(`${SITE}/`);
+    expect(person['@id']).toBe(`${SITE}/#person`);
+    expect(node('ProfilePage').mainEntity['@id']).toBe(person['@id']);
+    expect(node('WebSite').publisher['@id']).toBe(person['@id']);
 
     const photo = await request.get(new URL(person.image).pathname);
     expect(photo.status()).toBe(200);

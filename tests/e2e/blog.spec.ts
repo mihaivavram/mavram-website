@@ -69,6 +69,23 @@ test.describe('blog', () => {
     });
   }
 
+  test('every post is credited to the Person described on the home page', async ({ page }) => {
+    await page.goto('/');
+    const home = JSON.parse(
+      (await page.locator('script[type="application/ld+json"]').textContent()) ?? '{}',
+    );
+    const person = home['@graph'].find((node: { '@type': string }) => node['@type'] === 'Person');
+
+    for (const route of POST_ROUTES) {
+      await page.goto(route);
+      const posting = JSON.parse(
+        (await page.locator('script[type="application/ld+json"]').textContent()) ?? '{}',
+      );
+      expect(posting.author['@id'], route).toBe(person['@id']);
+      expect(posting.publisher['@id'], route).toBe(person['@id']);
+    }
+  });
+
   test('the RSS feed lists every post at its full URL', async ({ page, request }) => {
     const response = await request.get('/rss.xml');
     expect(response.status()).toBe(200);
