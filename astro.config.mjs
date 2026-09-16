@@ -2,7 +2,7 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
-import { parse } from 'yaml';
+import { readFrontmatter } from './scripts/frontmatter.mjs';
 
 const SITE = 'https://mihaisplace.com';
 
@@ -21,7 +21,7 @@ function blogLastModified() {
     } catch {
       continue;
     }
-    const frontmatter = parse(markdown.split('---')[1] ?? '') ?? {};
+    const frontmatter = readFrontmatter(markdown);
     if (frontmatter.draft) continue;
     const date = new Date(frontmatter.updatedDate ?? frontmatter.pubDate);
     dates.set(`${SITE}/blog/${slug}`, date.toISOString());

@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
+import { readFrontmatter } from '../../scripts/frontmatter.mjs';
 
 export const PUBLIC_ROUTES = ['/', '/cv', '/projects', '/blog', '/publications', '/press'];
 export const HIDDEN_ROUTES = ['/testimonials', '/timelapse'];
@@ -10,8 +11,7 @@ export const POST_ROUTES = (existsSync(blogDir) ? readdirSync(blogDir) : [])
   .filter((slug) => {
     const file = `${blogDir}${slug}/index.md`;
     if (!existsSync(file)) return false;
-    const frontmatter = readFileSync(file, 'utf8').split('---')[1] ?? '';
-    return !/^draft:\s*true\s*$/m.test(frontmatter);
+    return readFrontmatter(readFileSync(file, 'utf8')).draft !== true;
   })
   .map((slug) => `/blog/${slug}`);
 
