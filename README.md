@@ -55,6 +55,16 @@ npm run links
 7. **Go live:** commit and merge into `main`, and Vercel deploys it. The blog list, the home page's latest posts, the sitemap, the RSS feed (`/rss.xml`) and `/llms.txt` update on their own. Pushing a branch first gives you a Vercel preview link.
 8. **Cross-post (optional):** on Hashnode, Dev.to or Medium, set the original (canonical) URL to `https://mihaisplace.com/blog/<slug>` so search engines credit this site.
 
+### Writing for search and AI
+
+Search results and AI answers tend to quote posts that are clear and specific:
+
+- **Title:** name the topic in the plain words people search for or ask about.
+- **Description:** answer "what will I get from this?" in a sentence or two. It's the snippet in search results and link previews.
+- **Opening:** start with the answer or the key takeaways, then go into detail.
+- **Structure:** one idea per `##` heading, with numbered lists for steps.
+- **Specifics:** name the tools, numbers and examples, and link to related posts.
+
 ## Analytics
 
 Google Analytics (`G-YPXJCELYNW`, set in `src/lib/analytics.ts`) loads only on Vercel production deployments (`VERCEL_ENV=production`). Local builds, test runs and preview deployments never send data.
