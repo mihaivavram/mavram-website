@@ -50,8 +50,9 @@ export default defineConfig({
   ],
   markdown: {
     // Code blocks in blog posts, in light and dark themes (see .astro-code in global.css).
+    // github-dark-default, not github-dark, whose comments fail WCAG AA contrast (3:1).
     shikiConfig: {
-      themes: { light: 'github-light', dark: 'github-dark' },
+      themes: { light: 'github-light', dark: 'github-dark-default' },
     },
   },
   fonts: [
