@@ -4,7 +4,7 @@ description: 'AI coding agents write code faster than teams can review it. Here 
 pubDate: 2026-10-14
 tags: [Agentic AI, AI engineering, Code review, Software verification]
 cover: ./cover.png
-coverAlt: 'Illustration of a stream of AI-generated code flowing from a robot through five glowing verification gates that drop bugs, warnings and security issues into bins, while a person watches the verified code reach a city at sunrise'
+coverAlt: 'Illustration of a stream of code blocks passing through five translucent verification panels that drop red defects into bins, while a person holding a laptop watches the checked code travel down a winding road toward server buildings and a rising sun'
 ---
 
 _Automated Software Verification in the Age of AI Coding Agents_
