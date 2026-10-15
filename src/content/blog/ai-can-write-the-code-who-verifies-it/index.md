@@ -1,7 +1,7 @@
 ---
 title: 'AI Can Write the Code. Who Verifies It?'
 description: 'AI coding agents write code faster than teams can review it. Here are the automated checks to run at each stage, from pre-commit to production, and the multi-agent review workflow I use.'
-pubDate: 2026-10-14
+pubDate: 2026-10-15
 tags: [Agentic AI, AI engineering, Code review, Software verification]
 cover: ./cover.png
 coverAlt: 'Illustration of a stream of code blocks passing through five translucent verification panels that drop red defects into bins, while a person holding a laptop watches the checked code travel down a winding road toward server buildings and a rising sun'
@@ -89,6 +89,8 @@ That's what we talk about next.
 
 Here is a comprehensive verification pipeline, built as a _superset_ of what is possible. Each step can add confidence that the code works as intended, though not all teams will need every check, and no set of checks can prove software is perfect. The broader philosophy is well established in software engineering and aligns with frameworks such as [NIST's Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final).
 
+Not a fan of walls of text? There's a diagram of the whole pipeline at the end of this section.
+
 ### Code quality & build checks
 
 - **Linter checks:** Check code for style violations and common mistakes.
@@ -130,7 +132,7 @@ Depending on the application, add **performance and load testing**, **accessibil
 
 ![Diagram of an automated software verification stack: a code change passes code quality and build checks, automated tests, security and dependency scans, AI code review, infrastructure and database checks, architecture and maintainability review, and human review before production, with production monitoring feeding back into the code, tests and architecture. A legend separates deterministic checks from AI-assisted ones, and a bar shows verification depth growing with the risk of the change](./verification-stack.png)
 
-## Putting it all together — how can we configure these checks?
+## Putting it all together, how can we configure these checks?
 
 Most of the verification patterns we've discussed have been established practices for decades, and major platforms already provide tools to automate them. GitHub Actions, GitLab CI/CD, and Jenkins are common ways to orchestrate them.
 
@@ -216,6 +218,8 @@ This is where pre-commit, post-push, pull request, pre-production, and post-prod
 
 Ideally, in a mature testing workflow, we categorize the checks by stage and by the risk of the change.
 
+Still text-avoidant? Another diagram is waiting for you at the end of this section.
+
 ### Pre-commit
 
 This is the stage before code is committed locally.
@@ -248,13 +252,25 @@ This is the stage after code has been deployed and is running in production.
 
 ![Diagram of when each check runs: pre-commit (format and lint, types and unit tests, secret scanning), post-commit or push (AI commit review, integration tests, SAST and dependencies), pull request (AI and spec review, required checks, human approval), pre-production (end-to-end tests, migration validation, smoke tests) and production (monitoring, anomalies, rollback), going from fast, inexpensive checks to deeper, risk-based verification](./verification-by-stage.png)
 
+## How big tech runs AI software factories
+
+Some large enterprises have been tinkering with this topic for years now, as they have the talent to pull it off and the deep pockets to tokenmax. As Adam Faik lays out in [How to build an AI-native software factory](https://www.theaithinker.com/p/how-to-build-an-ai-native-software), Uber, Shopify, DoorDash, Spotify, and Stripe all offer a glimpse into where the state of the art lives right now in this constantly evolving software factory lifecycle.
+
+In short, teams generally get a gateway or front door that routes their requests, those requests are qualified through proper permissions and governance, then pushed through a largely automated pipeline. This pipeline has access to the code, company context, and internal tools it needs to research the request, land on a spec, propose a plan, build the thing, test the thing, and have proof to show for it. Diffs, screenshots, tests, automated reviews, and a whole slew of analytics, which are then reviewed by developers before code is actually merged or pushed to production.
+
+In other words, developers increasingly focus on coming up with the problem to be solved, providing some input on how that might happen, and letting the agentic workflow handle much of the implementation and verification. Once done, developers serve as glorified reviewers and final gatekeepers before the PR merge or production push. Of course, the degree of autonomy varies between companies, and humans are still involved in important decisions along the way.
+
+There is a lot more to this process, particularly around security, isolated environments, verification, and costs, and many details I've left out, but I think [Adam's article](https://www.theaithinker.com/p/how-to-build-an-ai-native-software) is a fascinating read for anyone curious about the different ways these AI software factories are configured and run at scale.
+
 ## The practical agentic software development workflow I use
 
 So, for those of you who have gotten this far, allow me to walk through one PR to bring the case home.
 
+A diagram summarizing my full pipeline follows at the end of this section.
+
 Say I have a new request to create a profile page for my app so users can see and update their profiles.
 
-Using a strong coding model—often Claude in my setup—I explain in as much detail as I can muster what the profile page should do and look like.
+Using a strong coding model (often Claude in my setup) I explain in as much detail as I can muster what the profile page should do and look like.
 
 My agentic workflow returns a spec. We go back and forth a couple of times, I review it carefully, and we update it until I'm satisfied. I then ask the agent to create an implementation plan broken into strategic, practical, sequential steps that can logically be divided into commits.
 
@@ -264,7 +280,7 @@ I review the plan, iterate on it if needed, and approve it.
 
 At that point, my main coding agent starts working on the plan, step by step or commit by commit. After each step, it asks another strong model to review the changes.
 
-If the change is high-stakes—for example, it touches payments or sensitive production flows—I also review each commit in the meantime. Otherwise, I may wait until the whole feature is finished before doing my deep human review.
+If the change is high-stakes; for example, it touches payments or sensitive production flows, I also review each commit in the meantime. Otherwise, I may wait until the whole feature is finished before doing my deep human review.
 
 Once the coding agent gets suggestions for improvement, either from the second LLM or from me, it incorporates those changes and moves on to the next step.
 
@@ -274,17 +290,17 @@ Finally, when we get to the last commit, I ask another model to review **the ent
 
 Now we are at the PR stage. We've implemented, reviewed, and re-reviewed the code against the spec and run tests along the way to ensure everything still works.
 
-I then review the full diff myself, giving it attention commensurate with the gravity of the change. The more important the change, the more careful the review. I also run the other automated checks—SAST, dependency scanning, agentic bug review, and agentic security review. Some of these use AI agents; others use deterministic tools.
+I then review the full diff myself, giving it attention commensurate with the gravity of the change. The more important the change, the more careful the review. I also run the other automated checks: SAST, dependency scanning, agentic bug review, and agentic security review. Some of these use AI agents; others use deterministic tools.
 
 Finally, I ask the agent that built the feature to come up with short and simple manual tests I can do to confirm that the change works.
 
 I launch the code locally or in a test environment, run those checks, and deploy to production if everything passes.
 
-If the change is very complex or touches sensitive data, I may also run a limited, safe set of smoke tests in production—without exposing real user data or making destructive changes.
+If the change is very complex or touches sensitive data, I may also run a limited, safe set of smoke tests in production, without exposing real user data or making destructive changes.
 
 ![Diagram of Mihai's workflow in three phases: plan (feature request, spec, plan); implement, repeated per commit (the agent implements a commit, a separate AI reviews it, tests run, findings get fixed); and verify and release (a whole-change review against the spec, human PR review alongside CI and security checks, a manual smoke test, then deploy and monitor)](./review-workflow.png)
 
-This flow allows me and my team to ship code quickly while building confidence that what we ship meets spec and has gone through meaningful testing and security checks. Not perfect confidence—software is never guaranteed bug-free or impossible to hack—but far more confidence than blindly merging whatever an agent generates.
+This flow allows me and my team to ship code quickly while building confidence that what we ship meets spec and has gone through meaningful testing and security checks. Not perfect confidence. Software is never guaranteed bug-free or impossible to hack, but far more confidence than blindly merging whatever an agent generates.
 
 And this is really the point: **if AI makes writing code cheap, verification has to become a first-class part of how we build software.**
 
@@ -313,3 +329,4 @@ The sources below support the research findings, product capabilities, and CI/CD
 11. **NIST:** [Secure Software Development Framework (SSDF), SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final). Security practices across the software-development lifecycle.
 12. **GitHub:** [GitHub Actions documentation](https://docs.github.com/en/actions), [repository rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets), and [secure `pull_request_target` usage](https://docs.github.com/en/actions/reference/security/securely-using-pull_request_target). Workflows, status checks, and trust boundaries.
 13. **OpenAI:** [Codex GitHub Action](https://github.com/openai/codex-action) and [security guidance](https://github.com/openai/codex-action/blob/main/docs/security.md). Action configuration, read-only permissions, and secret-handling cautions.
+14. **Adam Faik, The AI Thinker:** [How to build an AI-native software factory](https://www.theaithinker.com/p/how-to-build-an-ai-native-software) (October 2026). How Uber, Shopify, DoorDash, Spotify, Stripe and others run coding agents at scale, from intake to merge.
