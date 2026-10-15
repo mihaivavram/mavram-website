@@ -177,9 +177,9 @@ jobs:
       - run: ./ci/infrastructure.sh
 
   agent-review:
-    # This example limits secret-backed review to branches
-    # in the same repository, not external fork PRs.
-    if: github.event.pull_request.head.repo.full_name == github.repository
+    # This example skips external forks and Dependabot-triggered runs;
+    # bot reviews need separate setup.
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -214,7 +214,7 @@ However, running this _whole_ pipeline for every PR can get expensive, especiall
 
 It is much faster and more convenient to run cheap checks early and save the heavier ones for later stages or higher-risk changes.
 
-This is where pre-commit, post-push, pull request, pre-production, and post-production stages come in.
+This is where the pre-commit, post-commit/push, pull request, pre-production, and production stages come in.
 
 Ideally, in a mature testing workflow, we categorize the checks by stage and by the risk of the change.
 
@@ -280,7 +280,7 @@ I review the plan, iterate on it if needed, and approve it.
 
 At that point, my main coding agent starts working on the plan, step by step or commit by commit. After each step, it asks another strong model to review the changes.
 
-If the change is high-stakes; for example, it touches payments or sensitive production flows, I also review each commit in the meantime. Otherwise, I may wait until the whole feature is finished before doing my deep human review.
+If the change is high-stakes, for example if it touches payments or sensitive production flows, I also review each commit in the meantime. Otherwise, I may wait until the whole feature is finished before doing my deep human review.
 
 Once the coding agent gets suggestions for improvement, either from the second LLM or from me, it incorporates those changes and moves on to the next step.
 
@@ -300,7 +300,7 @@ If the change is very complex or touches sensitive data, I may also run a limite
 
 ![Diagram of Mihai's workflow in three phases: plan (feature request, spec, plan); implement, repeated per commit (the agent implements a commit, a separate AI reviews it, tests run, findings get fixed); and verify and release (a whole-change review against the spec, human PR review alongside CI and security checks, a manual smoke test, then deploy and monitor)](./review-workflow.png)
 
-This flow allows me and my team to ship code quickly while building confidence that what we ship meets spec and has gone through meaningful testing and security checks. Not perfect confidence. Software is never guaranteed bug-free or impossible to hack, but far more confidence than blindly merging whatever an agent generates.
+This flow allows me and my team to ship code quickly while building confidence that what we ship meets spec and has gone through meaningful testing and security checks. Not perfect confidence (software is never guaranteed bug-free or impossible to hack), but far more confidence than blindly merging whatever an agent generates.
 
 And this is really the point: **if AI makes writing code cheap, verification has to become a first-class part of how we build software.**
 
