@@ -1,0 +1,19 @@
+---
+// Reports clicks on elements marked with data-cta-action and data-cta-placement to Google
+// Analytics as a cta_click event. Only those two fixed values are sent, never anything the visitor
+// typed. Google Analytics only loads on production, so elsewhere gtag is missing and this does
+// nothing; the links and buttons work the same either way.
+---
+
+<script is:inline>
+  document.addEventListener('click', (event) => {
+    const target =
+      event.target instanceof Element ? event.target.closest('[data-cta-action]') : null;
+    if (!target || typeof window.gtag !== 'function') return;
+    window.gtag('event', 'cta_click', {
+      cta_action: target.getAttribute('data-cta-action'),
+      cta_placement: target.getAttribute('data-cta-placement'),
+      transport_type: 'beacon',
+    });
+  });
+</script>

@@ -306,6 +306,8 @@ And this is really the point: **if AI makes writing code cheap, verification has
 
 If you're curious about how I run this lightweight workflow harness, let me know and I'd be happy to share it with you.
 
+And if you've built an app with Lovable, Replit or a similar tool and need help getting it working for real users, [see how I can help with AI app rescue](/ai-app-rescue).
+
 Until next time, may your tests pass and your context windows never run out.
 
 ~Mihai

@@ -106,6 +106,43 @@ export function blogPostingJsonLd({
   };
 }
 
+interface ServicePageInput {
+  name: string;
+  title: string;
+  description: string;
+  url: string;
+}
+
+// schema.org data for an offer page: the page itself and the service Mihai provides, credited by
+// @id to the same Person as the home page. No price or rating markup: the offer is still being tested.
+export function servicePageJsonLd({ name, title, description, url }: ServicePageInput) {
+  const serviceId = `${url}#service`;
+  const webPage = {
+    '@type': 'WebPage',
+    '@id': url,
+    url,
+    name: title,
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': WEBSITE_ID },
+    mainEntity: { '@id': serviceId },
+  };
+  const service = {
+    '@type': 'Service',
+    '@id': serviceId,
+    name,
+    description,
+    url,
+    areaServed: 'Worldwide',
+    provider: { '@type': 'Person', '@id': PERSON_ID, name: SITE_NAME, url: HOME_URL },
+  };
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [webPage, service] as const,
+  };
+}
+
 // Escaping "<" keeps the JSON from closing its <script> tag early.
 export function serializeJsonLd(data: unknown): string {
   return JSON.stringify(data).replace(/</g, '\\u003c');

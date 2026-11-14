@@ -2,8 +2,16 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { readFrontmatter } from '../../scripts/frontmatter.mjs';
 
-export const PUBLIC_ROUTES = ['/', '/cv', '/projects', '/blog', '/publications', '/press'];
-export const HIDDEN_ROUTES = ['/testimonials', '/timelapse'];
+export const PUBLIC_ROUTES = [
+  '/',
+  '/cv',
+  '/projects',
+  '/blog',
+  '/publications',
+  '/press',
+  '/ai-app-rescue',
+];
+export const HIDDEN_ROUTES = ['/testimonials', '/timelapse', '/ai-app-rescue/thanks'];
 
 // Published blog posts, read from src/content/blog (drafts never reach a build).
 const blogDir = fileURLToPath(new URL('../../src/content/blog/', import.meta.url));

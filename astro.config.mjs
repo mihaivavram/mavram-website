@@ -7,7 +7,7 @@ import { readFrontmatter } from './scripts/frontmatter.mjs';
 const SITE = 'https://mihaisplace.com';
 
 // Published but not linked or indexed yet (see src/lib/site.ts).
-const HIDDEN_PAGES = /\/(testimonials|timelapse)\/?$/;
+const HIDDEN_PAGES = /\/(testimonials|timelapse|ai-app-rescue\/thanks)\/?$/;
 
 // Sitemap last-modified dates: each published post's updated (or publish) date, and the newest
 // of those for the blog page. Other pages have no reliable date, so they get none.

@@ -1,0 +1,50 @@
+---
+// Where the AI app rescue form sends visitors after Web3Forms accepts their message. Hidden from
+// search and the sitemap; a page view here is how analytics counts sent inquiries.
+import CtaTracking from '../../components/CtaTracking.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { NEXT_STEPS, RESCUE_PATH, bookingUrl } from '../../lib/rescue';
+import { pageTitle } from '../../lib/site';
+---
+
+<BaseLayout
+  title={pageTitle('Message sent')}
+  description="Your AI app rescue inquiry reached Mihai Avram. Here's what happens next."
+  noindex
+>
+  <h1>Got it. Thanks for the details.</h1>
+  <p>Here's what happens next:</p>
+  <ol class="steps">
+    {NEXT_STEPS.map((step) => (
+      <li>{step}</li>
+    ))}
+  </ol>
+  <p>
+    <b>Want to talk sooner?</b>{' '}
+    <a
+      class="external"
+      href={bookingUrl('thanks')}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-cta-action="book_call"
+      data-cta-placement="thanks"
+    >
+      Book a free 20-minute call
+    </a>
+  </p>
+  <p class="meta">
+    <a href={RESCUE_PATH}>Back to AI app rescue</a> · <a href="/blog">Read the blog</a>
+  </p>
+
+  <CtaTracking />
+</BaseLayout>
+
+<style>
+  .steps {
+    margin-bottom: 1.5rem;
+  }
+
+  .steps li::marker {
+    color: var(--muted);
+  }
+</style>

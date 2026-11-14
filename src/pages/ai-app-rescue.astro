@@ -1,0 +1,697 @@
+---
+// The AI app rescue offer: senior engineering help for founders whose AI-built app is stuck,
+// insecure or not ready for real users. Not in the nav; the home page and one blog post link here.
+// Settings (booking link, form key) and shared copy live in src/lib/rescue.ts.
+import { Image } from 'astro:assets';
+import CtaTracking from '../components/CtaTracking.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import headshot from '../assets/mihai-headshot.jpg';
+import {
+  BUILDERS,
+  NEXT_STEPS,
+  RESCUE_PATH,
+  RESCUE_THANKS_URL,
+  WEB3FORMS_ACCESS_KEY,
+  WEB3FORMS_ENDPOINT,
+  bookingUrl,
+} from '../lib/rescue';
+import { canonicalUrl, pageTitle } from '../lib/site';
+import { serializeJsonLd, servicePageJsonLd } from '../lib/structured-data';
+
+const title = pageTitle('AI App Rescue for Lovable, Replit & Bolt Apps');
+const description =
+  'Senior engineering help for founders whose AI-built app is stuck, insecure or not ready for real users. Fixes, production reviews, tests and migrations.';
+const jsonLd = servicePageJsonLd({
+  name: 'AI App Rescue',
+  title,
+  description,
+  url: canonicalUrl(RESCUE_PATH),
+});
+const builderList = `${BUILDERS.slice(0, -1).join(', ')} or ${BUILDERS.at(-1)}`;
+---
+
+<BaseLayout title={title} description={description}>
+  <script
+    is:inline
+    type="application/ld+json"
+    slot="head"
+    set:html={serializeJsonLd(jsonLd)}
+  ></script>
+  <section class="hero" aria-labelledby="rescue-title">
+    <h1 id="rescue-title">Built your app with AI? Get it working for real users.</h1>
+    <p class="lead">
+      I help founders fix broken logins, payments and deployments, and work out what needs to change
+      before launch.
+    </p>
+    <p class="builders">Built with {builderList}? Start here.</p>
+    <div class="actions">
+      <a class="button" href="#start" data-cta-action="form_jump" data-cta-placement="hero">
+        Tell me what's broken
+      </a>
+      <a
+        class="external"
+        href={bookingUrl('hero')}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-cta-action="book_call"
+        data-cta-placement="hero"
+      >
+        or book a free 20-minute call
+      </a>
+    </div>
+    <ul class="assurances">
+      <li>No call needed to start</li>
+      <li>No code access needed for the first conversation</li>
+      <li>I aim to reply within one business day</li>
+    </ul>
+    <p class="byline">
+      <a href="#about">Mihai Avram</a>, 15 years building software, including CTO roles
+    </p>
+  </section>
+
+  <section aria-labelledby="familiar">
+    <h2 id="familiar">Does this sound familiar?</h2>
+    <ul class="list problems">
+      <li>
+        <b>A core feature keeps failing.</b> People can't sign in, payments don't unlock access, or
+        the live app behaves differently from the preview.
+      </li>
+      <li>
+        <b>Each fix causes another problem.</b> You keep prompting, patching and re-checking the
+        same things by hand.
+      </li>
+      <li>
+        <b>You're ready for customers, but unsure about the foundations.</b> Someone needs to check
+        who can see what, payments, backups and the flows your users depend on.
+      </li>
+      <li>
+        <b>You're thinking about leaving your builder.</b> You want to know what can stay, what
+        needs to change and what a move would involve.
+      </li>
+    </ul>
+    <p>
+      None of this means you did it wrong. AI builders are great at getting you to a working demo;
+      production needs a different kind of attention.
+    </p>
+    <p class="meta">
+      This is for founders with an app already built, especially when customers, revenue or a launch
+      date are on the line.
+    </p>
+  </section>
+
+  <section aria-labelledby="about">
+    <h2 id="about">Work directly with the engineer doing the work</h2>
+    <div class="intro">
+      <Image class="photo" src={headshot} alt="" width={80} height={80} densities={[1, 2]} />
+      <p>
+        I'm Mihai Avram, a founder and software engineer. I've spent 15 years building software,
+        including architecture and CTO roles. I build and run my own products, so I know the job
+        doesn't end at launch. And I use AI coding tools such as Claude Code and Codex every day.
+      </p>
+    </div>
+    <ul class="list evidence">
+      <li>
+        <b>A product I own and operate.</b> I'm the sole founder and developer of{' '}
+        <a href="https://www.lacrmquicksync.com/" target="_blank" rel="noopener noreferrer">
+          LACRM QuickSync
+        </a>
+        , which keeps customers and invoices in sync between QuickBooks Online and Less Annoying
+        CRM: authentication, billing, two-way sync and production deployment.{' '}
+        <a
+          class="external"
+          href="https://app.bentonow.com/share/l740G6j8DGJarP"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Less Annoying CRM's announcement
+        </a>
+      </li>
+      <li>
+        <b>Experience with production failures.</b> At Avanade, I supported banking applications for
+        the Federal Home Loan Bank of Chicago, including live launches and critical production
+        incidents. <a href="/cv">CV</a>
+      </li>
+      <li>
+        <b>Architecture and delivery.</b> Fractional CTO at Elebase, software architect at ghSMART,
+        and I built a HIPAA-compliant AI health app (Cingo) on AWS. <a href="/projects">Projects</a>
+      </li>
+    </ul>
+    <p class="more">
+      <a
+        class="external"
+        href="https://www.linkedin.com/in/mihai-avram-15493182/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+      <a href="/blog/ai-can-write-the-code-who-verifies-it">How I verify AI-written code</a>
+    </p>
+    <figure class="quote">
+      <figcaption class="quote-label">From an earlier collaboration</figcaption>
+      <blockquote>
+        <p>
+          “Mihai is a great person to be around who has a good technical background and is eager to
+          learn.”
+        </p>
+      </blockquote>
+      <p class="quote-source">Zach Panos, Founder &amp; CEO, 4casters</p>
+    </figure>
+  </section>
+
+  <section aria-labelledby="engagements">
+    <h2 id="engagements">Start with the smallest useful step</h2>
+    <p>
+      Send me the problem or book a short call. If it's clear enough to quote, we start with the
+      fix. If there's more uncertainty, I'll suggest a review first.
+    </p>
+    <ul class="list offers">
+      <li>
+        <h3>A specific fix</h3>
+        <p class="terms">Quoted after scoping</p>
+        <p>
+          For a broken login, payment flow, integration or deployment. We agree what to fix, how
+          we'll check it works, and the price before any work starts.
+        </p>
+      </li>
+      <li>
+        <h3>Production Readiness Review</h3>
+        <p class="terms">$750 introductory price</p>
+        <p>
+          One app, up to three agreed critical user journeys. You get a prioritized written
+          assessment, a walkthrough, a Stay / Harden / Migrate / Rebuild recommendation and, where
+          the findings support one, a separately scoped proposal for the fixes. Implementation isn't
+          included in the review fee.
+        </p>
+        <p class="credit">
+          The full fee is credited toward fixes you book within 30 days of receiving the review.
+        </p>
+      </li>
+      <li>
+        <h3>Rescue and hardening sprint</h3>
+        <p class="terms">Fixed quote after scoping</p>
+        <p>
+          For several connected problems, or a launch that needs engineering support: repairs,
+          automated tests on critical flows, access controls, deployment improvements and handover
+          notes.
+        </p>
+      </li>
+    </ul>
+    <p>
+      <b>Considering a migration?</b> I'll first check whether your current platform can meet your
+      needs. Migration scope and price depend on your code, data, logins and integrations.
+    </p>
+    <p class="fine-print">
+      Prices in USD. Scope, access, dates and payment terms are agreed before paid work starts. A
+      review covers the agreed scope and says what wasn't checked; it isn't a penetration test or a
+      compliance certification. I'm not affiliated with Lovable, Replit, Bolt, Base44, v0, Cursor or
+      Anthropic.
+    </p>
+  </section>
+
+  <section aria-labelledby="example">
+    <h2 id="example">What a useful answer looks like</h2>
+    <article class="memo" aria-label="Illustrative review excerpt">
+      <header class="memo-header">
+        <p>Illustrative review excerpt</p>
+        <p>Fictional app, not a client result</p>
+      </header>
+      <p class="memo-verdict">Recommendation: Harden in place.</p>
+      <p class="memo-summary">
+        The current platform can support the planned launch. The immediate work is in payments and
+        account permissions.
+      </p>
+      <dl class="memo-findings">
+        <div>
+          <dt>Before launch</dt>
+          <dd>
+            Repair the flow where a successful payment leaves the customer without access. Add an
+            automated check covering payment confirmation and retries.
+          </dd>
+        </div>
+        <div>
+          <dt>Before inviting more users</dt>
+          <dd>
+            Verify that one account can't read or change another account's records. Test the agreed
+            user roles.
+          </dd>
+        </div>
+        <div>
+          <dt>Still unknown</dt>
+          <dd>
+            Recovery from a failed deployment and behavior under heavier traffic were outside this
+            example's scope.
+          </dd>
+        </div>
+        <div>
+          <dt>Next step</dt>
+          <dd>Agree the repair scope, acceptance checks and delivery date.</dd>
+        </div>
+      </dl>
+    </article>
+    <p>
+      Your recommendation may be to stay, harden, migrate or rebuild. It should explain the
+      evidence, the trade-offs and what still needs checking.
+    </p>
+  </section>
+
+  <section aria-labelledby="questions">
+    <h2 id="questions">Common questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Do I have to pay for a review before you fix anything?</summary>
+        <p>
+          No. If the problem is clear, I quote the fix directly. If more investigation is needed, we
+          agree on that work and its price first.
+        </p>
+      </details>
+      <details>
+        <summary>What access do you need?</summary>
+        <p>
+          Start with a description and, if you can, an app link. Don't send passwords, keys or
+          customer data. Before technical work, we agree the access needed; where practical I start
+          with read-only access or a test environment, and access is removed when we're done.
+        </p>
+      </details>
+      <details>
+        <summary>Will you move my app off its builder?</summary>
+        <p>
+          Only for a good reason. I'll explain whether staying, hardening, migrating or rebuilding
+          fits best. The tool you used doesn't decide that on its own.
+        </p>
+      </details>
+      <details>
+        <summary>Can I keep building with AI afterwards?</summary>
+        <p>
+          Yes. The handover explains what changed and how to check the important behavior. Fixes can
+          include automated tests that help catch regressions from future changes.
+        </p>
+      </details>
+      <details>
+        <summary>Does a review mean my app is completely secure?</summary>
+        <p>
+          No. It gives findings within an agreed scope, including what wasn't checked. Nobody can
+          guarantee an app has no vulnerabilities.
+        </p>
+      </details>
+      <details>
+        <summary>Can you maintain the app afterwards?</summary>
+        <p>
+          We can discuss ongoing care after the first piece of work, with a defined scope and
+          response expectations. This isn't a 24/7 incident service.
+        </p>
+      </details>
+      <details>
+        <summary>Do you work with agencies or freelancers?</summary>
+        <p>Yes, including reviews delivered under your name.</p>
+      </details>
+    </div>
+  </section>
+
+  <section aria-labelledby="start">
+    <h2 id="start">Tell me what's blocking your app</h2>
+    <p>
+      A few sentences are enough: what the app should do, what happens instead, and whether
+      customers are affected. You don't need a technical diagnosis.
+    </p>
+    <h3 class="steps-title">What happens next</h3>
+    <ol class="steps">
+      {NEXT_STEPS.map((step) => (
+        <li>{step}</li>
+      ))}
+    </ol>
+
+    <form class="inquiry" action={WEB3FORMS_ENDPOINT} method="post">
+      <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
+      <input type="hidden" name="subject" value="New AI app rescue inquiry" />
+      <input type="hidden" name="from_name" value="mihaisplace.com" />
+      <input type="hidden" name="redirect" value={RESCUE_THANKS_URL} />
+
+      <div class="field">
+        <label for="inquiry-email">Your email</label>
+        <input id="inquiry-email" type="email" name="email" autocomplete="email" required />
+      </div>
+      <div class="field">
+        <label for="inquiry-message">What's broken, or what are you unsure about?</label>
+        <textarea id="inquiry-message" name="message" rows="5" required></textarea>
+      </div>
+      <div class="field">
+        <label for="inquiry-link">App link, if you can share it</label>
+        <input
+          id="inquiry-link"
+          type="text"
+          name="app_link"
+          inputmode="url"
+          autocomplete="url"
+          placeholder="your-app.lovable.app"
+        />
+      </div>
+      <div class="field">
+        <label for="inquiry-builder">What did you build it with?</label>
+        <select id="inquiry-builder" name="built_with">
+          <option value="">Choose one (optional)</option>
+          {BUILDERS.map((builder) => (
+            <option>{builder}</option>
+          ))}
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="check">
+        <input id="inquiry-urgent" type="checkbox" name="urgent" value="Yes" />
+        <label for="inquiry-urgent">Real users are affected right now</label>
+      </div>
+      <button class="button" type="submit">
+        Send app details
+      </button>
+      <p class="form-note">
+        This form uses Web3Forms to deliver your message; your details are only used to reply.
+        Please leave out passwords, keys and customer data.
+      </p>
+    </form>
+
+    <p class="talk">
+      <b>Prefer to talk?</b>{' '}
+      <a
+        class="external"
+        href={bookingUrl('contact')}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-cta-action="book_call"
+        data-cta-placement="contact"
+      >
+        Book a free 20-minute call
+      </a>
+      . We'll talk through the blocker, your goal and whether I'm the right person to help. It's for
+      scoping, not live debugging. If the booking page doesn't work for you, use the form above to
+      request a call and include your timezone and two times that suit you.
+    </p>
+    <p class="meta">Or email me: mihai (dot) v (dot) avram (at) gmail (dot) com</p>
+  </section>
+
+  <CtaTracking />
+</BaseLayout>
+
+<style>
+  section + section {
+    margin-top: 3.5rem;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  /* Hero: headline, one sentence, then the two ways to start, all above the fold on a phone. */
+  .hero h1 {
+    margin-bottom: 1rem;
+  }
+
+  .lead {
+    font-size: 1.125rem;
+  }
+
+  .builders {
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1.25rem;
+    margin: 1.5rem 0 1.25rem;
+  }
+
+  /* One short promise per line, so none starts mid-line when the screen narrows. */
+  .assurances {
+    margin: 0 0 1rem;
+    padding: 0;
+    color: var(--muted);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    list-style: none;
+  }
+
+  .assurances li + li {
+    margin-top: 0.125rem;
+  }
+
+  .byline {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+
+  .problems,
+  .evidence,
+  .offers {
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .problems > li,
+  .evidence > li {
+    padding-block: 1rem;
+  }
+
+  /* Credibility */
+  .intro {
+    display: grid;
+    grid-template-columns: 5rem minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: start;
+    margin-bottom: 1.25rem;
+  }
+
+  .photo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .intro p {
+    margin: 0;
+  }
+
+  .more {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1.25rem;
+    font-size: 0.9375rem;
+  }
+
+  .quote {
+    margin: 2rem 0 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--border);
+  }
+
+  .quote-label,
+  .quote-source {
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+
+  .quote blockquote {
+    margin: 0.25rem 0;
+  }
+
+  .quote blockquote p {
+    margin: 0;
+  }
+
+  .quote-source {
+    margin: 0;
+  }
+
+  /* Engagements */
+  .offers h3 {
+    font-size: 1.0625rem;
+  }
+
+  .terms {
+    margin: 0.125rem 0 0.5rem;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .offers p:last-child {
+    margin-bottom: 0;
+  }
+
+  .credit {
+    font-size: 0.9375rem;
+  }
+
+  .fine-print {
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+
+  /* The example review: the one place the page shows the work itself, laid out like a short memo. */
+  .memo {
+    margin-bottom: 1.25rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--accent);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+
+  .memo-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0 1rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+
+  .memo-header p {
+    margin: 0;
+  }
+
+  .memo-verdict {
+    margin-bottom: 0.5rem;
+    font-size: 1.375rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+  }
+
+  .memo-summary {
+    color: var(--muted);
+  }
+
+  .memo-findings {
+    margin: 1.25rem 0 0;
+  }
+
+  .memo-findings > div {
+    display: grid;
+    grid-template-columns: 11rem minmax(0, 1fr);
+    gap: 1rem;
+    padding-block: 0.875rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .memo-findings dt {
+    font-weight: 600;
+  }
+
+  .memo-findings dd {
+    margin: 0;
+  }
+
+  @media (max-width: 40rem) {
+    .memo {
+      padding: 1.25rem;
+    }
+
+    .memo-findings > div {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.25rem;
+    }
+  }
+
+  /* Questions: native disclosure widgets, so they work without JavaScript. */
+  .faq {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .faq details {
+    border-top: 1px solid var(--border);
+  }
+
+  .faq summary {
+    padding-block: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .faq details p {
+    margin: 0 0 1rem;
+    color: var(--muted);
+  }
+
+  /* Contact */
+  .steps-title {
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  .steps li::marker {
+    color: var(--muted);
+  }
+
+  .inquiry {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+
+  .field + .field,
+  .field + .check {
+    margin-top: 1rem;
+  }
+
+  .field label {
+    display: block;
+    margin-bottom: 0.375rem;
+    font-weight: 500;
+  }
+
+  .field input,
+  .field textarea,
+  .field select {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+  }
+
+  .field textarea {
+    resize: vertical;
+  }
+
+  .check {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    min-height: 2.75rem;
+  }
+
+  .check input {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin: 0;
+    accent-color: var(--accent);
+  }
+
+  .inquiry .button {
+    margin-top: 1.25rem;
+    border: 0;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .form-note {
+    margin: 0.75rem 0 0;
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+
+  .talk {
+    margin-top: 1.5rem;
+  }
+</style>

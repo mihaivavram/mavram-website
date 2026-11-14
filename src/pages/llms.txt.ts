@@ -1,6 +1,7 @@
 import { getPosts } from '../lib/blog';
 import { NAV_ITEMS } from '../lib/nav';
 import { isoDate } from '../lib/posts';
+import { RESCUE_PATH } from '../lib/rescue';
 import { BLOG_DESCRIPTION, SITE_NAME, canonicalUrl } from '../lib/site';
 import { PROFILE_LINKS } from '../lib/structured-data';
 
@@ -51,6 +52,15 @@ export async function GET() {
     '## Pages',
     '',
     ...NAV_ITEMS.map(({ href, label }) => link(label, canonicalUrl(href), PAGE_NOTES[href])),
+    '',
+    '## Services',
+    '',
+    // Not in the nav, so listed on its own.
+    link(
+      'AI App Rescue',
+      canonicalUrl(RESCUE_PATH),
+      'senior engineering help for founders whose app built with Lovable, Replit, Bolt, Base44, v0, Cursor or Claude Code is stuck, insecure or not ready for real users: fixes, production readiness reviews, tests and migrations.',
+    ),
     '',
     '## Blog posts',
     '',
