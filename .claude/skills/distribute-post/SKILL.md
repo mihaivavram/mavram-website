@@ -18,10 +18,11 @@ Walk Mihai through sharing one live post, one platform at a time. You prepare ev
 - **Run the humanizer on every piece of new prose** before Mihai sees it: notes, intros, footers, LinkedIn and Reddit posts, alternative subject lines. **REQUIRED SUB-SKILL:** use humanizer:humanizer. Hacker News is the exception (see its file).
 - **Voice:** Mihai's, first person, plain and specific, and matching the post's own voice. The consultancy is "Wholesome Future Labs".
 - **Output:** write each step to `.distribution/<slug>/<platform>.md`, with each field under its own heading so it's easy to copy. In chat, show the short fields (titles, subject, tags, URLs) and the path to the file.
+- **A post body to paste gets a file of its own** (`<platform>-body.md`, or all of `devto.md`) with nothing else in it, so Mihai can select all and copy. Never wrap a post body in a code fence: the post's own code blocks close it early.
 
 ## Step 0: Prepare
 
-1. **Pick the post.** Use the slug in `$ARGUMENTS`. If there isn't one, take the newest post in `src/content/blog/` with `draft: false` and confirm it with Mihai.
+1. **Pick the post.** Use the slug in `$ARGUMENTS`. If there isn't one, take the post in `src/content/blog/` with the latest `pubDate` that isn't a draft (no `draft` field means it's published), and confirm it with Mihai.
 2. **Run** `node .claude/skills/distribute-post/scripts/prepare-post.mjs <slug>`. It checks that the post is live and writes `post.json` and `body.md` to `.distribution/<slug>/`.
    - Exit code 1: the post isn't ready. Tell Mihai why and stop.
    - Exit code 2: some images have no live URL. Show Mihai the list and stop.

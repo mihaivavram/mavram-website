@@ -4,7 +4,21 @@ The same cross-post as Dev.to, without the front-matter header: Hashnode takes i
 
 UTM tags: `utm_source=hashnode&utm_medium=referral`.
 
-## Output: `.distribution/<slug>/hashnode.md`
+## Output: two files
+
+`.distribution/<slug>/hashnode-body.md`, the post body and nothing else:
+
+```markdown
+_Originally published on [mihaisplace.com](<url with UTM tags>)._
+
+<body.md, verbatim>
+
+---
+
+<the footer>
+```
+
+`.distribution/<slug>/hashnode.md`, the fields:
 
 ```markdown
 ## Title
@@ -19,15 +33,9 @@ UTM tags: `utm_source=hashnode&utm_medium=referral`.
 
 Upload <post.json coverFile> (the local file in the repo).
 
-## Body (paste into the editor)
+## Body
 
-_Originally published on [mihaisplace.com](<url with UTM tags>)._
-
-<body.md, verbatim>
-
----
-
-<the footer>
+Paste all of hashnode-body.md into the editor.
 
 ## Publish panel
 

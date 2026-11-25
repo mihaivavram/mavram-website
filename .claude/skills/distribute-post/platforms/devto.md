@@ -6,8 +6,7 @@ UTM tags: `utm_source=devto&utm_medium=referral`.
 
 ## Output: `.distribution/<slug>/devto.md`
 
-````markdown
-## Paste this into the Dev.to editor
+The whole file is the paste, with nothing before or after it, so Mihai can select all and copy it into the editor. Show the checks below in chat.
 
 ```markdown
 ---
@@ -27,7 +26,6 @@ _Originally published on [mihaisplace.com](<url with UTM tags>)._
 
 <the footer>
 ```
-````
 
 Quote `title` and `description` in single quotes, and double any single quote inside them (`''`), so a colon or apostrophe doesn't break the YAML.
 

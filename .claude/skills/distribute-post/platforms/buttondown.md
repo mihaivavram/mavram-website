@@ -4,7 +4,9 @@ The email is the whole post with a short note from Mihai at the top. Buttondown 
 
 UTM tags: `utm_source=newsletter&utm_medium=email`.
 
-## Output: `.distribution/<slug>/buttondown.md`
+## Output: two files
+
+`.distribution/<slug>/buttondown.md`, the fields:
 
 ```markdown
 ## Subject
@@ -23,8 +25,14 @@ UTM tags: `utm_source=newsletter&utm_medium=email`.
 
 https://mihaisplace.com/blog/<slug>
 
-## Body (paste into Markdown mode)
+## Body
 
+Paste all of buttondown-body.md into Markdown mode.
+```
+
+`.distribution/<slug>/buttondown-body.md`, the email body and nothing else:
+
+```markdown
 <the note>
 
 Prefer the web version? [Read it on mihaisplace.com](<url with UTM tags>).
