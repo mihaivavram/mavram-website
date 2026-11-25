@@ -306,7 +306,7 @@ There's no universal best platform. The right choice depends on whether you're p
 | Larger organization               | AWS Bedrock AgentCore, Microsoft Defender for AI Agents, Palo Alto Prisma AIRS, plus existing IAM and SIEM systems             | Centralized access management, detection, traceability, governance, incident response                              |
 | Teams building their own policies | Open Policy Agent and service-level authorization checks                                                                       | Explicit allow/deny rules that work even when the model makes a bad decision                                       |
 
-Note that these tools are constantly changing, and is by no means a comprehensive list - just something to get you started.
+Note that these tools are constantly changing, and this is by no means a comprehensive list - just something to get you started.
 Do your own research and pros/cons analysis based on your use-cases using these tools as a starting point.
 
 These tools solve different problems. A sandbox isolates execution, IAM controls authority, a credential broker protects how secrets get delivered, a gateway may inspect and route requests, and monitoring helps you spot trouble. You'll often need several of them together.
