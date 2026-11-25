@@ -55,7 +55,8 @@ export function rewriteBody(markdown, liveImages, postDir) {
     .trimStart()
     .split('\n')
     .map((line) => {
-      const marker = /^\s*(`{3,}|~{3,})(.*)$/.exec(line);
+      // \r? because splitting a file with Windows line endings on \n leaves a \r on each line.
+      const marker = /^\s*(`{3,}|~{3,})(.*?)\r?$/.exec(line);
       const run = marker?.[1] ?? '';
       if (fence) {
         // Only the same character, at least as long, with nothing after it closes the block.

@@ -62,4 +62,19 @@ describe('distribute-post prepare script', () => {
     expect(body).toContain(`![A diagram](${diagramUrl})`);
     expect(unmatched).toEqual([]);
   });
+
+  it('recognizes code fences in files with Windows (CRLF) line endings', () => {
+    const markdown = post(
+      '```md',
+      '![Example](./example.png)',
+      '```',
+      '',
+      '![A diagram](./diagram.png)',
+    ).replace(/\n/g, '\r\n');
+    const { body, unmatched } = rewriteBody(markdown, live, postDir);
+
+    expect(body).toContain('![Example](./example.png)');
+    expect(body).toContain(`![A diagram](${diagramUrl})`);
+    expect(unmatched).toEqual([]);
+  });
 });
