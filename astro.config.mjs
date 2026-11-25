@@ -53,7 +53,9 @@ export default defineConfig({
     // Astro's default Markdown processor, plus two accessibility fixes for posts. Tables scroll
     // sideways on small screens (.prose table in global.css), so each one is focusable for
     // keyboard users, as Shiki does for code blocks. A task list (- [ ]) is a read-only
-    // checklist, not a form, so its disabled checkboxes are hidden from screen readers.
+    // checklist, not a form, so its unticked boxes are hidden from screen readers. Ticked
+    // (- [x]) boxes stay exposed, so the accessibility test fails until they get a real label
+    // rather than silently losing their done state.
     processor: satteri({
       hastPlugins: [
         {
@@ -62,7 +64,11 @@ export default defineConfig({
             filter: ['table', 'input'],
             visit(node, ctx) {
               if (node.tagName === 'table') ctx.setProperty(node, 'tabIndex', 0);
-              else if (node.properties.type === 'checkbox' && node.properties.disabled) {
+              else if (
+                node.properties.type === 'checkbox' &&
+                node.properties.disabled &&
+                !node.properties.checked
+              ) {
                 ctx.setProperty(node, 'ariaHidden', 'true');
               }
             },
