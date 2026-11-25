@@ -1,5 +1,6 @@
 // @ts-check
 import { readFileSync, readdirSync } from 'node:fs';
+import { satteri } from '@astrojs/markdown-satteri';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
 import { readFrontmatter } from './scripts/frontmatter.mjs';
@@ -49,6 +50,26 @@ export default defineConfig({
     }),
   ],
   markdown: {
+    // Astro's default Markdown processor, plus two accessibility fixes for posts. Tables scroll
+    // sideways on small screens (.prose table in global.css), so each one is focusable for
+    // keyboard users, as Shiki does for code blocks. A task list (- [ ]) is a read-only
+    // checklist, not a form, so its disabled checkboxes are hidden from screen readers.
+    processor: satteri({
+      hastPlugins: [
+        {
+          name: 'accessible-prose',
+          element: {
+            filter: ['table', 'input'],
+            visit(node, ctx) {
+              if (node.tagName === 'table') ctx.setProperty(node, 'tabIndex', 0);
+              else if (node.properties.type === 'checkbox' && node.properties.disabled) {
+                ctx.setProperty(node, 'ariaHidden', 'true');
+              }
+            },
+          },
+        },
+      ],
+    }),
     // Code blocks in blog posts, in light and dark themes (see .astro-code in global.css).
     // github-dark-default, not github-dark, whose comments fail WCAG AA contrast (3:1).
     shikiConfig: {
