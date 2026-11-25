@@ -64,7 +64,7 @@ npm run links
 5. **Publish:** set `draft: false` and make sure `pubDate` is the publish date.
 6. **Check:** `npm run verify` catches missing alt text, missing images, short descriptions and typos. If it flags a real name as a typo, add it to `words` in `cspell.json`.
 7. **Go live:** commit and merge into `main`, and Vercel deploys it. The blog list, the home page's latest posts, the sitemap, the RSS feed (`/rss.xml`) and `/llms.txt` update on their own. Pushing a branch first gives you a Vercel preview link.
-8. **Cross-post (optional):** on Hashnode, Dev.to or Medium, set the original (canonical) URL to `https://mihaisplace.com/blog/<slug>`. It tells search engines which copy is the original, but it's a hint: they can still show or rank the cross-post instead.
+8. **Cross-post:** see [Distribute](#distribute). Each cross-post sets the original (canonical) URL to `https://mihaisplace.com/blog/<slug>`. It tells search engines which copy is the original, but it's a hint: they can still show or rank the cross-post instead.
 
 ### Writing for search and AI
 
@@ -78,11 +78,12 @@ Search results and AI answers tend to quote posts that are clear and specific:
 
 ### Distribute
 
-After the post is live:
+After the post is live, run `/distribute-post <slug>` in Claude Code. It goes through Buttondown, Dev.to, Hashnode, LinkedIn, Hacker News and Reddit one at a time, writes what to paste into `.distribution/<slug>/` (git-ignored), and waits for you between steps. Its instructions live in `.claude/skills/distribute-post/`, one file per platform. You do the posting yourself.
 
-1. **Newsletter:** write the issue of Context Overflow in [Buttondown](https://buttondown.com) and link to the post. The RSS feed has the full post if you want to quote from it.
-2. **Share with UTM tags** so Google Analytics shows where readers came from, e.g. `https://mihaisplace.com/blog/<slug>?utm_source=linkedin&utm_medium=social&utm_campaign=<slug>`. Change `utm_source` per place (`linkedin`, `x`, `hackernews`, `newsletter`).
-3. **Scorecard:** once a month, note subscribers, inbound conversations, top referrers and notable comments. Leads and subscribers matter more than pageviews.
+1. **Newsletter:** each issue of Context Overflow in [Buttondown](https://buttondown.com) is the full post with a short note on top, and its canonical URL points back to the blog.
+2. **Cross-posts** on Dev.to and Hashnode set their canonical URL to the post.
+3. **Share with UTM tags** so Google Analytics shows where readers came from, e.g. `https://mihaisplace.com/blog/<slug>?utm_source=linkedin&utm_medium=social&utm_campaign=<slug>`. Hacker News gets the plain URL.
+4. **Scorecard:** once a month, note subscribers, inbound conversations, top referrers and notable comments. Leads and subscribers matter more than pageviews.
 
 ## Analytics
 

@@ -21,3 +21,6 @@ npm-debug.log*
 
 # roborev snapshots
 /.roborev/
+
+# distribute-post skill output (copy to paste into each platform)
+/.distribution/
